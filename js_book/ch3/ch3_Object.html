@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Ch3-对象</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 2、检索 -- || 用法（设默认值）
+		var a2 = {};
+		a2.name = 'biankai';
+		a2.age = 27;
+		var home = a2.home || '{Liao Ning Province}';
+		console.log(home);
+		console.log('========== 分隔线 ==========');
+
+		// 2、检索 -- && 用法（避免报异常错误）
+		a2.company = undefined;
+		//var company_info = a2.company.info ;  // Throw 'TypeError'
+		var company_info = a2.company && a2.company.info;  // 问题得到解决,注意 xx_l && xx_r （！！注意xx_l和r的顺序）
+		console.log(company_info);		
+		console.log('========== 分隔线 ==========');
+
+
+
+		
+		// 2、for...in方法
+		
+
+
+
+	</script>
+</body>
+</html>
