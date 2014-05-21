@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Ch4-函数</title>
+	<meta http-equiv="content-type" content="text/html; charset=gbk" />
+</head>
+<body>
+	<script type="text/javascript">
+		// 1、函数调用的4种模式
+		//1.1 方法调用
+		var myObj1 = {
+			value:0,
+			increment:function(inc){
+				this.value += typeof inc === 'number' ? inc : 1;
+			}
+		};
+		myObj1.increment();
+		console.log(myObj1.value);
+		myObj1.increment(2);
+		console.log(myObj1.value);
+		console.log('========== 分隔线 ==========');
+
+
+
+		//1.2 函数调用
+		function add02 (a2,b2){
+			return parseInt(a2) + parseInt(b2);
+		};
+
+		myObj1.double02 = function () {
+			var that = this;   // ② 解决方法，创建一个局部变量that
+			function helper(){
+				// console.log(this); // ① *** 此处可以看出，this绑定的是 ‘全局变量’
+				// console.log(that);
+				that.value = add02(that.value,that.value);
+			}
+			helper(); // 以函数的形式调用 helper()
+		};
+
+		myObj1.double02();
+		console.log(myObj1.value);
+		console.log('========== 分隔线 ==========');
+
+
+
+		//1.3 构造器调用模式
+		var Quo = function(string){
+			this.status = string;
+		};
+		Quo.prototype.get_status = function(){
+			return this.status;
+		};
+		var myQuo = new Quo('myQuo function');
+		
+		console.log(myQuo.get_status());
+		console.log('========== 分隔线 ==========');
+
+
+	</script>
+</body>
+</html>
