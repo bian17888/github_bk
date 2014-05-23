@@ -4,6 +4,12 @@
 	<meta http-equiv="content-type" content="text/html; charset=gbk" />
 </head>
 <body>
+	<p>111</p>
+	<p>222</p>
+	<p>333111</p>
+	<p>4444111</p>
+	<div id="clock"><span id="clock_text">xx:xx:xx</span> <input id="clock_btn_start" type="button" value="开始计时"> <input id="clock_btn_stop" type="button" value="停止"></div>
+
 	<script type="text/javascript">
 		// 1、函数调用的4种模式
 		//1.1 方法调用
@@ -22,7 +28,7 @@
 
 
 		//1.2 函数调用
-		function add02 (a2,b2){
+		function add (a2,b2){
 			return parseInt(a2) + parseInt(b2);
 		};
 
@@ -31,7 +37,7 @@
 			function helper(){
 				// console.log(this); // ① *** 此处可以看出，this绑定的是 ‘全局变量’
 				// console.log(that);
-				that.value = add02(that.value,that.value);
+				that.value = add(that.value,that.value);
 			}
 			helper(); // 以函数的形式调用 helper()
 		};
@@ -43,16 +49,158 @@
 
 
 		//1.3 构造器调用模式
+		// 创建一个名为Quo的构造函数。它构造一个带有status属性的对象
 		var Quo = function(string){
 			this.status = string;
 		};
+		// 给Quo所有的实例，创建一个get_status的公共方法
 		Quo.prototype.get_status = function(){
 			return this.status;
 		};
+		// 构造一个实例
 		var myQuo = new Quo('myQuo function');
 		
 		console.log(myQuo.get_status());
 		console.log('========== 分隔线 ==========');
+
+
+
+		//1.4 Apply调用模式
+		// *** 因为js是一门函数式的面向对象编程语言，所以函数也可以有方法
+		var a4 = [3,5];
+		var sum = add.apply(null,a4);
+		console.log(sum);
+
+		var statusObj = {status:'A-Ok'};
+		console.log(Quo.prototype.get_status.apply(statusObj,null));
+		console.log('========== 分隔线 ==========');
+
+
+
+		// 2、参数
+		var d2_sum = function(){
+			var i , sum = 0;
+			for (i=0; i < arguments.length; i++){
+				sum += arguments[i] ;
+			}
+			return sum;
+		}
+		console.log(d2_sum(1,2,3,5,6,7,8,9,9));
+		console.log('========== 分隔线 ==========');
+
+
+
+		// 7、扩展类型的功能
+		Function.prototype.method = function(name,func){
+			if(!this.prototype[name]){
+				this.prototype[name] = func;
+			}
+			return this;
+		}
+
+		Number.method('integer',function(){
+			return Math[this<0 ? 'ceil' : 'floor'](this);
+		});
+		console.log((3.1).integer());
+		String.method('trim',function(){
+			return this.replace(/^\s+|\s+$/g,'');
+		});
+		console.log(('   this is a string     ').trim());
+		console.log('========== 分隔线 ==========');
+
+
+
+		// 11、闭包
+		// 11.1 demo01：***** 闭包的基本形式，牢记！！！！
+		var myobj11 = function(){
+			var value = 0;
+			return {
+				increment: function(val){value+= (typeof val) === 'number' ? val : 1 },
+				get_value: function(){ return value }
+			}
+		}();
+		myobj11.increment(4);
+		console.log(myobj11.get_value());
+		console.log('========== 分隔线 ==========');
+
+		// 11.2 demo02 背景色渐变
+		// var fade = function(node){
+		// 	var level = 1;
+		// 	var step = function(){
+		// 		var hex = level.toString(16);
+		// 		node.style.backgroundColor = '#ffff'+hex+hex;
+		// 		if(level < 15){
+		// 			level +=1;
+		// 			setTimeout(step,100);
+		// 		}
+		// 	};
+		// 	setTimeout(step,100);
+		// };
+		// fade(document.body);
+
+		// 11.2.1 setTimeout 扩展练习 -- 时钟
+		var clock_obj;
+		var clock = function(){
+			var myDate = new Date();
+			var h = myDate.getHours();
+			var m = myDate.getMinutes();
+			var s = myDate.getSeconds();
+			var checkTime = function(t){
+				if(t<10){
+					t='0'+t.toString(10);
+				}
+				return t;
+			}
+			m= checkTime(m);
+			s= checkTime(s);
+			document.getElementById('clock_text').innerHTML=h+":"+m+":"+s;
+			clock_obj = setTimeout('clock()',1000);
+		}
+		var stop_clock = function(){
+			clearTimeout(clock_obj);
+		}
+		document.getElementById('clock_btn_start').onclick = clock;
+		document.getElementById('clock_btn_stop').onclick = stop_clock;
+
+		
+		// 11.3 demo03
+		var arr_p = document.getElementsByTagName('p');
+		var add_the_handlers = function show_index (arr){
+			var helper = function(i){
+				return function(){alert(i)};
+			}
+			var i;
+			var len = arr.length;
+			for (i=0; i<len; i++){
+				arr[i].onclick = helper(i);
+			}
+		}
+		// 11.3 demo04：思考与demo03 有什么不同？
+		// var add_the_handlers = function show_index (arr){
+		// 	var len = arr.length;
+		// 	var i;
+		// 	var helper = function(){
+		// 		return alert(i);
+		// 	}
+		// 	for (i=0; i<len; i++){
+		// 		arr[i].onclick = helper;
+		// 	}
+		// }
+		add_the_handlers(arr_p);
+		console.log('========== 分隔线 ==========');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	</script>
