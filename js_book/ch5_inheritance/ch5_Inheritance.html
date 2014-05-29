@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Ch4-继承</title>
+	<meta http-equiv="content-type" content="text/html; charset=gbk" />
+</head>
+<body>
+	<script type="text/javascript" charset="gbk">
+		// 1、
+		Function.prototype.method = function(name,fnc){
+			this.prototype[name] = fnc;
+			return this;
+		}
+
+		// 1.1 method() 测试
+		// String.method('myString',function(){
+		// 	console.log('myString');
+		// });
+		// 'abc'.myString();
+		// console.log('========== 分隔线 ==========');
+		
+		// 1.2 Apply() 方法
+		// function add (a2,b2){
+		// 	return parseInt(a2) + parseInt(b2);
+		// };
+
+		// var a = [3,5];
+		// var sum = add.apply(null,a);
+		// console.log(sum);
+		
+		// var Quo = function(string){ this.status = string;}
+		// Quo.prototype.get_status = function(){return this.status;}
+		// var objA = {'status':'A-ok'};
+		// var status = Quo.prototype.get_status.apply(objA);
+		// console.log(ss);
+		// console.log('========== 分隔线 ==========');
+
+		var Mammal = function(name){ this.name = name};
+		Mammal.prototype.get_name = function(){return this.name;}
+		Mammal.prototype.says = function(){return this.saying || '';}
+		// var myMammal = new Mammal('Herb the Mammal');
+		// console.log(myMammal.name);
+
+		var Cat = function(name){
+			this.name = name;
+			this.saying = 'meow';
+		};
+
+		Cat.prototype = new Mammal();
+		Cat.prototype.purr = function(n){
+			var i,s = '';
+			for(i=0; i<n; i++){
+				if(s){
+					s+='-';
+				}
+				s += 'r';
+			}
+			return s;
+		};
+		Cat.prototype.get_name = function(){
+			return this.says() + ' '+this.name + ' '+this.says();
+		}
+
+		var myCat = new Cat('happy');
+		console.log(myCat.get_name());
+		console.log(myCat.says());
+		console.log(myCat.purr(5));
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

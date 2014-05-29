@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Ch4-其他知识点</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	
+	<script type="text/javascript">
+		// 1 new运算符 -- 构造器函数
+
+		var Quo = function(str){
+			this.state = str;
+		};
+		Quo.prototype.get_state = function(){
+			return this.state;
+		}
+
+		// (**Important) Object.getPrototypeOf(myQuo) 的值
+		// var Quo = function(str){
+		// 	this.state = str;
+		// 	function get_state(){return this.state;};
+		// };  
+		var myQuo = new Quo('china');  // (**important:此处可以看到this，有window -->object)
+		console.log(myQuo.get_state());
+		console.log(Object.getPrototypeOf(myQuo));
+		console.log('========== 分割线 ==========');
+		
+
+
+		// 2 object 方法
+		var new_nullObj = Object.create(null,{
+			size: {
+                value: "large",
+                enumerable: true
+            }
+		});
+		console.log('size:'+new_nullObj.size);
+		console.log('Prototype is: '+Object.getPrototypeOf(new_nullObj));
+		
+		var new_fnObj = Object.create(Function,{
+			size: {
+                value: "small",
+                enumerable: true
+            }
+		});
+		console.log('size:'+new_fnObj.size);
+		console.log('Prototype is: '+Object.getPrototypeOf(new_fnObj));
+		console.log('========== 分割线 ==========');
+
+		// 2.1 object 改进
+		var stooge = {'first-name':'Jerome','last-name':'Haward'};
+		if(typeof Object.beget !== 'function'){
+			Object.create = function(o){
+				var F = function(){};
+				F.prototype = o;
+				return new F();
+			}
+		}
+		var another_stooge = Object.create(stooge);
+		var another_fnStooge = Object.create(Function);
+		console.log('Prototype is: '+Object.getPrototypeOf(another_stooge));
+		console.log('Prototype is: '+Object.getPrototypeOf(another_fnStooge));
+		console.log('========== 分割线 ==========');
+
+
+
+		// 3 函数4种调用模式
+
+		// 3.2函数调用
+
+
+
+		// 4 '&&' 与 '||'
+
+		// 4.1 '&&' ，2种情况
+		// ① 左侧为假 -- 以左侧为主
+		// ② 左侧为真 -- 以右侧为主
+		var i=""&&"真值";//->i=""
+		i="真值"&&"其他真值";//->i="其他真值"
+		i="真值"&&"";//->i=""
+
+		// 4.2 '||' ，2种情况
+		// ① 左侧为假 -- 以右侧为主
+		// ② 左侧为真 -- 以左侧为主
+		var i=""||"真值";//->i="真值"
+		i="真值"||"其他真值";//->i="真值"
+		i="真值"||"";//->i="真值"
+
+
+
+
+
+		
+
+
+		
+
+	</script>
+</body>
+</html>
