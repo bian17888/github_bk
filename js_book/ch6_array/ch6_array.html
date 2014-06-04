@@ -79,7 +79,56 @@
 		var a4 = [1,2,3] , b4 = 'string';
 		console.log(is_array(a4));
 		console.log(is_array(b4));
+		console.log('========== 分隔线 ==========');
 
+
+
+		// 5、方法
+		// 5.1 扩展 ‘reduce()’ 方法
+		Array.method('reduce',function(f,value){
+			var i;
+			for(i=0; i<this.length; i++){
+				value = f(this[i],value);
+			}
+			return value;
+		});
+		var sum = function(a,b){
+			return a+b;
+		}
+		var a5 = [1,2,3,4,5];
+		console.log(a5.reduce(sum,0));
+
+		// 5.2 向a5中添加‘total()’方法
+		a5.total = function(){
+			return this.reduce(sum,0);
+		}
+		console.log(a5.total());
+
+		// 5.3 对数组应用Object.create()方法
+		var b5 = Object.create(a5);
+		console.log(a5);
+		console.log(b5);  // 注意b5的类型是对象Object
+		console.log('========== 分隔线 ==========');
+		
+
+
+		// 6、初始值
+		// 6.1 dim 方法
+		Array.method('dim',function(dimension,initial){
+			var i;
+			for(i=0; i<dimension; i++){
+				this[i] = initial;
+			}
+			return this;
+		});
+		var a6 = [];
+		console.log(a6.dim(10,'a'));
+
+		// 6.2 dim 方法不能用在二维数组:（？？每个元素都指向同一个数组的引用，那后果不堪设想）
+		// console.log(a6.dim(5,[1,2]));
+		// a6[1] = [11,22];
+		// console.log(a6);
+		//console.log('========== 分隔线 ==========');
 
 
 
