@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Ch6-数组</title>
+	<meta http-equiv="content-type" content="text/html; charset=gbk" />
+</head>
+<body>
+	<script type="text/javascript" charset="gbk">
+		Function.prototype.method = function(name,fnc){
+			this.prototype[name] = fnc;
+			return this;
+		}
+		// 1、数组长度 length
+		var a1 = [];  // length:0
+		a1[10000] = 10000;  // length:10001
+		// console.log(a1.length);
+
+		var b2 = [1,2,3,4,5];
+		b2.length = 3;  // b2:[1,2,3]
+		// b2.push(44,55);
+		console.log(b2); 		
+		console.log('========== 分隔线 ==========');
+
+		
+
+		// 2、删除
+		var a2 = ['a','b','c','d'];
+		console.log(a2);
+		delete a2[1];
+		console.log(a2);
+		a2.splice(1,1);
+		console.log(a2);
+		console.log('========== 分隔线 ==========');
+
+
+		// 3、枚举:对比 ‘for’ 与 ‘for-in’
+		// 情况 1
+		var x3;
+		var a3 = [1,2,'a',undefined,'b',null,'','string'];
+		for(x3 in a3){
+			document.writeln(a3[x3]);
+		}
+		document.writeln('<br/>');
+
+		var i3;
+		var b3 = [1,2,'a',undefined,'b',null,'','string'];
+		for(i3=0; i3<b3.length; i3++){
+			document.writeln(b3[i3]);
+		}
+		document.writeln('<br/>'+'========== 分割线 =========='+'<br/>');
+
+		// 情况 2
+		var y3;
+		var c3 = [];
+		c3[10] = 10;
+		for(y3 in c3){
+			document.writeln(c3[y3]);
+		}
+		document.writeln('<br/>');
+
+		var j3;
+		var d3 = [];
+		d3[10] = 10;
+		for(j3=0; j3<d3.length; j3++){
+			document.writeln(d3[j3]);
+		}
+
+
+
+		// 4、检测
+		// 4.1 is_array() -- 此方法在识别从 不同窗口（window）或帧（frame）里构造的数组时会失败。
+		// var is_array = function(value){
+		// 	return value && typeof value === 'object' && value.constructor === Array;
+		// };
+
+		// 4.2 is_array() 的升级版
+		var is_array = function(value){
+			return Object.prototype.toString.apply(value) === '[object Array]';
+		};
+		var a4 = [1,2,3] , b4 = 'string';
+		console.log(is_array(a4));
+		console.log(is_array(b4));
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
