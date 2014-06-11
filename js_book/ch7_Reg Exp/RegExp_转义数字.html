@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RegExp_'\number'</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// 1.1、‘\number’的用法 -- 寻找重复单词
+			// *Tip: ‘\1’ -- 指向分组1所捕获到的文本的一个引用
+			//  Ex1：([a-z]+)+\1/ -- ‘\1’为([a-z]+)所捕获文本的引用
+			var str = 'book good cook cook books books cooksa12 test';
+			var double_words = /([a-z]+)\s+\1/g;
+			var re = /([a-z]+)\s+([a-z]+)/g;
+
+			var result011 = double_words.exec(str);
+			var result012 = re.exec(str);
+			console.log(result011);
+			console.log(result012);
+			console.log('========== Line ==========');
+
+			var result021 = str.match(double_words);
+			var result022 = str.match(re);
+			console.log(result021);
+			console.log(result022);
+			console.log('========== Line ==========');
+
+			// 情况2，去掉捕获分组符号（）
+			// var double_words03 = /[a-z]+\s+\1/g;   // \1失效，仅用于捕获型分组
+			var re03 = /[a-z]+\s+[a-z]+/g;
+			var result032 = re03.exec(str);
+			console.log(result032);
+			console.log('========== Line ==========');
+
+			var result042 = str.match(re03);
+			console.log(result042);
+			console.log('========== Line ==========');
+
+
+		</script>	
+	</body>
+
+</html>

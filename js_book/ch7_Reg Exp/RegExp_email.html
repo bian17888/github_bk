@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RegExp_email</title>
+		<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+	</head>
+
+	<body>
+		<h2>Email</h2>
+		<div>
+			<p><input id="textValue01" type="text" value="">
+			<input id="btn01" type="button" value="clear tag" /></p>
+			<p>
+		</div>
+		<script type="text/javascript">
+			var $textValue01 = document.getElementById('textValue01');
+			var $btn01 = document.getElementById('btn01');
+			$btn01.onclick =function(){
+				var re = /^\w+@[0-9a-z]+\.[a-z]+$/;
+				var istrue = re.test($textValue01.value);
+				if(istrue)
+				{
+					alert('congratulations, you have succeeded!');
+				}
+				else
+				{
+					alert('sorry,please try again!');
+				}
+			}
+		</script>	
+	</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RegExp_'\number'</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// 1、统一空格个数
+			var str_01 = '字符串	 javascript权威指南   权威 regular expression bo  p l';
+			console.log('原字符串：'+str_01);
+			re = /\s+/g;
+			var new_str_01 = str_01.replace(re,' ');
+			console.log(new_str_01);
+			console.log('========== Line ==========');
+			
+
+
+			// 2、判断字符串是不是由数字组成  
+			// 描述：有没有简单的方法判断字符串由数字组成？
+			var isDigit = function(str){
+				re = /[\d]+/g;
+				return re.test(str);
+			}
+			var str_21 = 'sdfs 123cds 323';
+			var str_22 = 'sacv ';
+			console.log(isDigit(str_21));
+			console.log(isDigit(str_22));
+			console.log('========== Line ==========');
+
+
+
+			// 3、电话号码
+			// 描述：区号（3~4位）-电话号码（7~8位）-分机号（3~4位，选填）
+			// *** Tip: 不要忘记/^.....$/，否则‘asd-010-2565112’会返回true
+			var isPhoneNum = function(str){
+				re = /^(?:[\d]{3,4}\-)(?:[\d]{7,8})(?:\-[\d]{3,4})?$/g;
+				return re.test(str);
+			}
+			var num_31 = '010-2565110-112';
+			var num_32 = '010-2565110';
+			var num_33 = '01022-2565110';
+			var num_34 = '010-25651';
+			var num_35 = 'asd-010-2565112';
+			console.log(isPhoneNum(num_31));
+			console.log(isPhoneNum(num_32));
+			console.log(isPhoneNum(num_33));
+			console.log(isPhoneNum(num_34));
+			console.log(isPhoneNum(num_35));
+			console.log('========== Line ==========');
+
+
+
+			// 4、手机号码
+			// 描述：正则验证手机号，忽略前面的0，支持130-139，150-159。忽略前面0之后判断它是11位的。  
+			var isMobile = function(str){
+				re = /^0?13|15[\d]{9}$/g;
+				return re.test(str);
+			}
+			var num_41 = '013065325687';
+			var num_42 = '18911466536';
+			console.log(isMobile(num_41));
+			console.log(isMobile(num_42));
+			console.log('========== Line ==========');
+
+
+
+			// 5、去字符串中的空格
+			var str_05 = '  abc 123 dfsa23123 xs11sd_12 mmd    	k21k	2k1k  ';
+			re_051 = /^\s+|\s+$/g;		// 去两端空格；
+			re_052 = /^\s+/g;			// 去行首空格；
+			re_053 = /\s+$/g;			// 去行尾空格；
+			console.log(str_05.replace(re_051,''));
+			console.log(str_05.replace(re_052,''));
+			console.log(str_05.replace(re_053,''));
+
+
+
+			// 6、贪婪与非贪婪模式
+			// * Tip: 在‘量词’后面加‘？’，即为非贪婪模式
+			var str_06 =  "<td><p>aa</p></td> <td><p>bb</p></td>";
+			re_061 = /<td>(.*)<\/td>/g;
+			re_062 = /<td>(.*?)<\/td>/g;
+			console.log(re_061.exec(str_06));
+			console.log(re_062.exec(str_06));
+
+
+
+
+
+
+			
+
+		</script>	
+	</body>
+
+</html>
