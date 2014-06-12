@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Array</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			Function.prototype.method = function(name,fnc){
+				this.prototype[name] = fnc;
+				return this;
+			}
+
+			// 1、concat()
+			var a1 = [];
+			var b1 = ['a','b',1];
+			var c = a1.concat(b1,true,333);
+			console.log(c);
+			console.log('========== Line ==========');
+
+
+
+			// 2、join()
+			// Tip: 连接字符串，也可用+号。
+			var a2 = [1,2,3,4,5,'a','b',true];
+			var result2= a2.join('_');
+			console.log(result2);
+			console.log('========== Line ==========');
+
+
+
+			// 3、pop()
+			// Tip: 移除Array中最后的元素，并返回这个元素。
+			var a3 = [1,2,'a','b','abc'];
+			var result3= a3.pop();
+			console.log(a3);
+			console.log(result3);
+			console.log('========== Line ==========');
+			// Tip: 自定义popNew方法
+			// Array.method('popNew',function(){
+			// 	return this.splice(this.length-1,1)[0];
+			// });
+			// var result3_new = a3.popNew();
+			// console.log(result3_new);
+
+
+
+			// 4、push(item...)
+			// Tip: 把一个或多个参数item附加到数组的尾部
+			var a4 = [];
+			var b4 = [1,2,'a','b']
+			var result4= a4.push(b4,true);
+			console.log(a4);
+			console.log(result4);
+			console.log('========== Line ==========');
+			// Tip: 自定义pushNew方法
+			// Array.method('pushNew',function(){
+			// 	this.splice.apply(this,[this.length,0].concat(Array.prototype.slice.apply(arguments)));
+			// 	return this.length;
+			// });
+			// var result4_new = a4.pushNew(b4,true);
+			// console.log(a4);
+			// console.log(result4_new);
+
+
+
+			// 5、reverse() 
+			var a5 = ['1','2','a','b'];
+			var result5 = a5.reverse();
+			console.log(result5);
+			console.log('========== Line ==========');
+			// Tip: 自定义reverseNew方法 -- by 'biankai'
+			// Array.method('reverseNew',function(){
+			// 	var i;
+			// 	var length = this.length;
+			// 	var newArr = [];
+			// 	for(i=0;i<length;i++){
+			// 		newArr[length-i-1] = this[i];
+			// 	}
+			// 	return newArr;
+			// });
+			// console.log(a5.reverseNew());
+
+
+
+			// 6、shift()
+			var a6 = ['1','2','a','b'];
+			var result6 = a6.shift();
+			console.log(a6);
+			console.log(result6);
+			console.log('========== Line ==========');
+
+
+
+			// 7、slice(start,[end])
+			// Tip:slice(1,3) -- [1,3)
+			var a7 = [1,2,'a','b'];
+			var result71 = a7.slice(1);			// [2,'a','b']
+			var result72 = a7.slice(1,3);		// [2,'a']
+			var result73 = a7.slice(1,-1);		// [2,'a']      // '-1'转换成 a7.length + (-1) = 3
+			console.log(result71);
+			console.log(result72);
+			console.log(result73);	
+			console.log('========== Line ==========');			
+
+
+
+			// 8、sort(compareFn)
+			var arr8 = [4,8,15,16,23,42];
+			// 8.1、默认：按字符串进行排序
+			var result81 = arr8.sort();			// [15, 16, 23, 4, 42, 8]
+			console.log(result81);			
+			// 8.2、自定义：由小到大
+			var result82 = arr8.sort(
+				function(a,b)
+				{
+					return a-b;
+				}
+			);
+			console.log(result82);			// [4, 8, 15, 16, 23, 42]
+
+			// 8.3、完善8.2
+			var arr8_new = ['aa','bb','a'].concat(arr8);
+			var result83 = arr8_new.sort(
+				function(a,b)
+				{
+					if(a===b)
+					{
+						return 0;
+					}
+					if(typeof a === typeof b)
+					{
+						return a < b ? -1 : 1;
+					}
+					return typeof a < typeof b ? -1 : 1;
+				}
+			); 
+			console.log(result83);
+
+
+			// 1、concat()
+			// *Tip: 
+			//  Ex1：
+		</script>	
+	</body>
+
+</html>
