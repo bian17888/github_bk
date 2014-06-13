@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Array</title>
+	</head>
+
+	<body>
+		<!--This script file includes all of the YUI utilities:-->
+		<script type="text/javascript" src="http://yui.yahooapis.com/2.2.2/build/utilities/utilities.js"></script>
+
+		<ul id="myList">
+			<li class="draggable">Item one.</li>
+			<li>Item two.</li> <!--item two won't be draggable-->
+			<li class="draggable">Item three.</li>
+		</ul>
+
+		<script>
+		YAHOO.namespace("myProject");
+		YAHOO.myProject.myModule = function () {
+
+			//private shorthand references to YUI utilities:
+			var yue = YAHOO.util.Event,
+				yud = YAHOO.util.Dom;
+
+			//private method:
+			var getListItems = function () {
+				
+				//note that we can use other private variables here, including
+				//our "yud" shorthand to YAHOO.util.Dom:
+				var elList = yud.get("myList");
+				var aListItems = yud.getElementsByClassName(
+					"draggable", //get only items with css class "draggable"
+					"li", //only return list items
+					elList //restrict search to children of this element
+				);
+				return aListItems;
+			};
+			
+			//the returned object here will become YAHOO.myProject.myModule:
+			return  {
+
+				aDragObjects: [], //a publicly accessible place to store our DD objects
+				
+				init: function () {
+					//we'll defer making list items draggable until the DOM is fully loaded:
+					yue.onDOMReady(this.makeLIsDraggable, this, true);
+				},
+				
+				makeLIsDraggable: function () {
+					var aListItems = getListItems(); //these are the elements we'll make draggable
+					for (var i=0, j=aListItems.length; i<j; i++) {
+						this.aDragObjects.push(new YAHOO.util.DD(aListItems[i]));
+					}
+				}
+
+			};
+		}(); // the parens here cause the anonymous function to execute and return
+
+		//The above code has already executed, so we can access the init
+		//method immediately:
+		YAHOO.myProject.myModule.init();
+		</script>
+	</body>
+
+</html>
