@@ -1,0 +1,10 @@
+var net = require('net');
+
+var server = net.createServer(function(socket) {
+    socket.on('data', function(data) {
+        socket.write('callback info: -----> '+data);
+    });
+});
+
+server.listen(3000);
+	
