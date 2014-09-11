@@ -1,2 +1,1 @@
-hello world~
-add one line~
+README.txt
