@@ -1,2 +1,1 @@
-create rebase txt
-add new line
+add a new line after master modify
