@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="popup-ksyun">倒计时 ：
+        <span class="popup-time">5</span>
+    </div>
+    <p></p>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    $(function() {
+        var temp, className;
+        // className = $('.popup-time').attr("class");
+        className = $('.popup-time').className;
+        temp += className;
+        console.log(className); 
+        $('.popup-time').attr({"class":temp})
+    })
+    
+    </script>
+</body>
+
+</html>
