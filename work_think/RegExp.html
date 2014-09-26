@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    $(function() {
+        var url = 'http://git.op.ksyun.com/ksc-web/ksc-fed';
+        var words = 'my my are your books ';
+        var exp = /^(?:([\w]+):)?(\/{0,3})?([\w\.]+)/
+        var exp_word = /([\w]+)\s+\1/gi
+        var result = exp.exec(url);
+        var result_word = exp_word.exec(words);
+        console.log(result); 
+        console.log(result_word); 
+    })
+    
+    </script>
+</body>
+
+</html>
