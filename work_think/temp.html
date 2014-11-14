@@ -18,10 +18,26 @@
         // className = $('.popup-time').attr("class");
         className = $('.popup-time').className;
         temp += className;
-        console.log(className); 
         $('.popup-time').attr({"class":temp})
     })
+
+    var ksc = {};
+    var rds = {};
     
+    name = {"name":"biankai"};
+    rds.name = name;
+    ksc.rds = rds;
+
+    console.log('-===========1');
+    console.log(ksc.rds);
+
+    name = { "age" : "15"};
+    rds.name = name;
+    ksc.rds = rds;
+
+    console.log('-===========2');
+    console.log(ksc.rds.name.age);
+
     </script>
 </body>
 
