@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "20db";
+    src: url("../fonts/20db.otf");
+}
+
+body {
+	font:normal 10pt/1 "20db";
+	height: 100%;
+}
+
+/* 2_demo.html */
+.demo-wrap { height: 100%;}
+.demo-wrap section { width: 90%; margin: 1em auto;}
+.demo-wrap header { display: -webkit-box; display: -moz-box; display: -box; width: 100%; height: 40%; background-color: rgba(0,0,0,0.8);  }
+.demo-wrap header .logo { display: block; font-size: 1em; text-decoration: none; -webkit-box-flex: 1.0; -moz-box-flex: 1.0; box-flex: 1.0; color: #fff;}
+.demo-wrap header nav { -webkit-box-flex: 1.0; -moz-box-flex: 1.0; box-flex: 1.0; color: #fff;}
+.demo-wrap .main { height: 15em; background-color: #ccc; }
+/* box、flex-box */
+.demo-wrap .column-3 {display: -webkit-box; display: -moz-box; display: -box;  }
+.demo-wrap .column-3 div { -webkit-box-flex: 1.0; -moz-box-flex: 1.0; box-flex: 1.0; background-color: #ddd;}
+/* column */
+.demo-wrap .column-3-ul ul { display: block; padding: 0; -webkit-column-count: 3; column-count: 3; -webkit-column-gap: 0; -column-gap: 0; background-color: #ddd;}
+
+
+/* 3_media.html */
+@media screen and (max-width: 320px){
+	body { background-color: #ddd;}
+}
+@media screen and (min-width: 321px) and (max-width: 640px)  {
+	body { background-color: #999;}
+}
