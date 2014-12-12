@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>react - get started</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/javascript" src="js/libs/react.js"></script>
+    <script type="text/javascript" src="js/libs/JSXTransformer.js"></script>
+    <script type="text/jsx">
+        var Hello = React.createClass({
+            render : function  () {
+                return <div>
+                            <h3>the time is : {this.props.now}</h3>
+                        </div>
+            }
+        });
+
+        React.render(<Hello now={new Date().toString() } />, document.getElementById('container'));
+    </script>
+</body>
+</html>
