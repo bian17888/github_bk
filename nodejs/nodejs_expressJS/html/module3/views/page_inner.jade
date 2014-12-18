@@ -1,0 +1,13 @@
+//
+   Created by biankai on 14/12/17.
+
+extends page_outer
+
+block page_inner
+
+    - var env = "dev";
+    - if (env == 'dev') {
+        p We are in dev development
+    - } else {
+        p We are in dev enviroment
+    - }
