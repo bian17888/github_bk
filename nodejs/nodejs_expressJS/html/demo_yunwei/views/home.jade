@@ -1,0 +1,30 @@
+doctype
+html
+    head
+        title= title
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+    body
+        .container
+
+                .row
+                    .col-md-5
+                        .form-group
+                            label.col-sm-3.control-label(for="uuid") 实例ID：
+                            .col-sm-9
+                                input#uuid.form-control(placeholder="请输入用户ID", type="text", value="" ,name="uuid")
+                    .col-md-5
+                        .form-group
+                            label.col-sm-3.control-label(for="ip") 实例IP：
+                            .col-sm-9
+                                input#ip.form-control(placeholder="请输入实例IP", type="text", value="" ,name="ip")
+                    .col-md-2
+                        button#btn_submit.btn.btn-primary(type="submit" value="") 查 询
+                .row
+                    .col-md-10
+                        h5 实例信息
+                    .col-md-2
+                        a.btn.btn-primary(href="monitor") 资源监控
+                .row
+
+        script(src="/js/jquery-1.11.1.min.js")
+        script(src="/js/main.js")

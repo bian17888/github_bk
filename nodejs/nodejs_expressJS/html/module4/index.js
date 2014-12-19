@@ -29,6 +29,10 @@ app.get('/contact' , Home.contact);
 app.get('/customer' , Customer.index);
 app.get('/customer/create' , Customer.create);
 app.post('/customer/create' , Customer.createCustomer);
+app.get('/customer/edit/:id' , Customer.edit);
+app.post('/customer/edit/:id' , Customer.editCustomer);
+app.del('/customer/edit/:id' , Customer.delete);
+
 
 app.locals.clock = {datetime : new Date().toUTCString()};
 
