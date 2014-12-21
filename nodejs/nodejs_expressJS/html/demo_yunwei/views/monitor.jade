@@ -12,15 +12,14 @@ html
                 table.table
                     thead
                         tr
-                            th 实例名称：test_rds_1234
-                            th 实例 ID：8ab8d78a-97cd-4987-a230-4b1e1a6f4458
-                            th 内存容量：4GB
-                            th 磁盘空间：20GB
-                            th 所在机房：北京BGP
-
+                            th 实例名称：#{caseInfoDb.rdsName}
+                            th 实例 ID：#{caseInfoDb.rdsId}
+                            th 内存容量：#{caseInfoDb.ram}
+                            th 磁盘空间：#{caseInfoDb.disk}
+                            th 所在机房：#{caseInfoDb.region}
             .m-main
                 .cdn-management
-                    <input type="hidden" id="monitor_rdsid" name="monitor_rdsid" value="0035455d-fc71-4fa7-b33b-031ce6a5b02b">
+                    <input type="hidden" id="monitor_rdsid" name="monitor_rdsid" value=#{caseInfoDb.rdsId}>
                     .rds-tabList
                         .rds-tabC
                             ul.m-monitor-list

@@ -13,7 +13,7 @@ var db = require('./../db.js');
 
 /* 首页路由 */
 exports.index = function(req, res){
-    res.render('monitor', {title : "monitor page"})
+    res.render('monitor', {title : "monitor page",caseInfoDb:db.listCaseInfo()})
 }
 
 /* 首页form请求数据 */

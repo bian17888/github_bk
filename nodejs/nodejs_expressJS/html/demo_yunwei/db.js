@@ -5,7 +5,7 @@ var caseInfoDb = {};
 var initNum = 0
 
 exports.listCaseInfo = function () {
-    return caseInfoDb;
+    return caseInfoDb[initNum];
 };
 
 exports.saveCaseInfo = function (caseinfo) {
