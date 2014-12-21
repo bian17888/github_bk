@@ -1,4 +1,4 @@
-/**
+ /**
  * Created by biankai on 14/12/17.
  */
 var customerDb = {};
@@ -13,7 +13,6 @@ exports.addCustomer = function (customer) {
     customer.id = id_inc;
     customerDb[customer.id] = customer;
 };
-
 
 exports.getCustomerById = function (id) {
     return customerDb[id];
