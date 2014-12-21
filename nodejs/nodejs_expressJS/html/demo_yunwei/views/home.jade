@@ -3,9 +3,9 @@ html
     head
         title= title
         link(rel="stylesheet", href="css/bootstrap.min.css")
-    body
+        link(rel="stylesheet", href="css/main.css")
+    body.home
         .container
-
                 .row
                     .col-md-5
                         .form-group
@@ -19,12 +19,79 @@ html
                                 input#ip.form-control(placeholder="请输入实例IP", type="text", value="" ,name="ip")
                     .col-md-2
                         button#btn_submit.btn.btn-primary(type="submit" value="") 查 询
-                .row
-                    .col-md-10
-                        h5 实例信息
-                    .col-md-2
-                        a.btn.btn-primary(href="monitor") 资源监控
-                .row
+
+                .row(style="display:none;")
+                    table.table
+                        thead
+                            tr
+                                th 实例信息
+                                th
+                                th
+                                    a.btn.btn-link(href="monitor",target="_blank") 资源监控
+                        tbody
+                            tr
+                                td 实例名：
+                                    span(data-rdsName="rdsName", data-key="rdsName")
+                                td 实例 ID：
+                                    span(data-rdsId="rdsId", data-key="rdsId")
+                                td 创建时间：
+                                    span(data-createTime="createTime", data-key="createTime")
+                            tr
+                                td 实例VIP：
+                                    span(data-vip="vip", data-key="vip")
+                                td 所在机房：
+                                    span(data-region="region", data-key="region")
+                                td 到期时间：
+                                    span(data-expiration="expiration", data-key="expiration")
+                            tr
+                                td 端口号：
+                                    span(data-port="port", data-key="port")
+                                td 数据库类型：
+                                    span(data-dbType="dbType", data-key="dbType")
+                                td 管理员账号：
+                                    span(data-adminUser="adminUser", data-key="adminUser")
+                            tr
+                                td 任务状态：
+                                    span(data-status="status", data-key="status")
+                                td mysql状态：
+                                    span(data-xx="xx", data-key="xx")
+                                td 白名单：
+                                    span(data-xx="xx", data-key="xx")
+                .row(style="display:none;")
+                    table.table
+                        thead
+                            tr
+                                th 配置信息
+                        tbody
+                            tr
+                                td 内存容量：
+                                    span(data-ram="ram", data-key="ram")
+                                    |（最大连接数
+                                    span(data-maxConn="maxConn", data-key="maxConn")
+                                    |， 总IOPS
+                                    span(data-iops="iops", data-key="iops")
+                                    |）
+                            tr
+                                td 存储空间：
+                                    span(data-disk="disk", data-key="disk")
+                            tr
+                                td 已用空间：
+                                    span(data-storageUsed="storageUsed", data-key="storageUsed")
+
+                .row(style="display:none;")
+                    table.table
+                        thead
+                            tr
+                                th 用户信息
+                        tbody
+                            tr
+                                td 用户邮箱：
+                                    span(data-userEmail="userEmail", data-key="userEmail")
+                            tr
+                                td 用户id：
+                                    span(data-xx="xx", data-key="xx")
+
+
 
         script(src="/js/jquery-1.11.1.min.js")
         script(src="/js/main.js")

@@ -2,7 +2,155 @@ doctype
 html
     head
         title= title
-    body
-        p= title
-        p Monitor page
-        
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/rds/rds-detail.css")
+        link(rel="stylesheet", href="css/main.css")
+    body.monitor
+        .container
+            .topbar
+                table.table
+                    thead
+                        tr
+                            th 实例名称：test_rds_1234
+                            th 实例 ID：8ab8d78a-97cd-4987-a230-4b1e1a6f4458
+                            th 内存容量：4GB
+                            th 磁盘空间：20GB
+                            th 所在机房：北京BGP
+
+            .m-main
+                .cdn-management
+                    <input type="hidden" id="monitor_rdsid" name="monitor_rdsid" value="0035455d-fc71-4fa7-b33b-031ce6a5b02b">
+                    .rds-tabList
+                        .rds-tabC
+                            ul.m-monitor-list
+                                li(data-metric="/rds/disk", data-dayname="disk", class="active")
+                                    .m-monitor-title
+                                        i
+                                        h4 磁盘空间
+                                        span 磁盘空间占用历史趋势
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (%)
+                                            .clearfix
+                                        div(id="chart_disk" class="m-monitor-chart" style="width:90%; height:400px;")
+                                li(data-metric="/rds/qps", data-dayname="qps")
+                                    .m-monitor-title
+                                        i
+                                        h4 QPS
+                                        span 平均每秒查询数
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (次/秒)
+                                            .clearfix
+                                        div(id="chart_qps" class="m-monitor-chart" style="width:90%; height:400px;")
+                                li(data-metric="/rds/tps", data-dayname="tps")
+                                    .m-monitor-title
+                                        i
+                                        h4 TPS
+                                        span 平均每秒事务数
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (事务数/秒)
+                                            .clearfix
+                                        div(id="chart_tps" class="m-monitor-chart" style="width:90%; height:400px")
+                                li(data-metric="/rds/connection", data-dayname="connection")
+                                    .m-monitor-title
+                                        i
+                                        h4 连接数
+                                        span 已使用连接数
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (个/秒)
+                                            .clearfix
+                                        div(id="chart_connect" class="m-monitor-chart" style="width:90%; height:400px")
+                                li(data-metric="/rds/iobs", data-dayname="iobs")
+                                    .m-monitor-title
+                                        i
+                                        h4 IOBS
+                                        span 磁盘I/O读写
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (字节/秒)
+                                            .clearfix
+                                        div(id="chart_iobs" class="m-monitor-chart" style="width:90%; height:400px")
+                                li(data-metric="/rds/iops", data-dayname="iops")
+                                    .m-monitor-title
+                                        i
+                                        h4 IOPS
+                                        span 实例的IOPS
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (次/秒)
+                                            .clearfix
+                                        div(id="chart_iops" class="m-monitor-chart" style="width:90%; height:400px")
+                                li(data-metric="/rds/memory", data-dayname="memory")
+                                    .m-monitor-title
+                                        i
+                                        h4 内存使用率
+                                        span 实例的内存使用历史趋势
+                                        .clearfix
+                                    .m-monitor-info
+                                        .m-monitor-info-tabs
+                                            span 时间范围
+                                            ul
+                                                li(class="active" data-timeType="2" data-timeValue="30" data-day="_30minutes" ) 最近0.5小时
+                                                li(data-timeType="4" data-timeValue="1" data-day="_1day" ) 最近1天
+                                                li(data-timeType="4" data-timeValue="3" data-day="_3day" ) 最近3天
+                                                li(data-timeType="5" data-timeValue="1" data-day="_7day" ) 最近7天
+                                            p(class="m-monitor-info-unit" style="display:none")
+                                                span (MB)
+                                            .clearfix
+                                        div(id="chart_ram" class="m-monitor-chart" style="width:90%; height:400px")
+        script(src="/js/echarts-plain-0.2.5.js")
+        script(src="/js/jquery-1.11.1.min.js")
+        script(src="/js/ksc.rds.js")
+        script(src="/js/monitor.js")

@@ -6,7 +6,8 @@ var express = require('express'),
     path = require('path'),
     http = require('http');
 
-var Home = require('./routes/home.js');
+var Home = require('./routes/home.js'),
+    Monitor = require('./routes/monitor.js');
 
 var app = express();
 
@@ -23,14 +24,10 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.use(multer()); // for parsing multipart/form-data
 
 /* ====== Routes ====== */
-app.get('/' , function(req, res){
-    res.render('home', {title : "home page"})
-});
+app.get('/' , Home.index);
 app.post('/' , Home.sendIdIp);
-
-app.get('/monitor' , function(req, res){
-    res.render('monitor', {title : "monitor page"})
-});
+app.get('/monitor', Monitor.index);
+app.post('/monitor', Monitor.sendMonitorInfo);
 
 
 app.listen(3000);

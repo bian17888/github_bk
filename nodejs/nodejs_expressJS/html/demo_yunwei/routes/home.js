@@ -6,48 +6,60 @@ var sha1 = require('node-sha1'),
     bodyParser = require('body-parser'),
     multer = require('multer'),
     path = require('path'),
-    http = require('http');
+    http = require('http'),
+    superagent = require('superagent');
 
+var db = require('./../db.js');
+
+/* 首页路由 */
+exports.index = function(req, res){
+    res.render('home', {title : "home page", caseInfo : db.listCaseInfo()})
+}
+
+/* 首页form请求数据 */
 exports.sendIdIp = function(req, res){
     var timenow,
         dealvalue;
-    var postheaders,
-        optionspost,
-        reqData = {};
+    var resData = {success:1};
 
     databody = req.body;
-    databody = JSON.stringify(databody);
-    console.dir(databody);
-//    timeNow = new Date().getTime();
+//    console.dir(databody);
+    timeNow = new Date().getTime();
+//    console.log(timeNow);
 
-
-//    dealValue = sha1(timeNow+'2TTGF2BCOBEZOSJRWIUA');
-    dealValue = sha1('1418708348'+'2TTGF2BCOBEZOSJRWIUA');
-
+    dealValue = sha1(timeNow+'2TTGF2BCOBEZOSJRWIUA');
     optionspost = {
         host : '10.0.3.202',
         port : '8066',
-        path : '/console/rds/api/inner/instance/detail/query',
-        method : 'POST',
+        path : '/console/rds/api/inner/instance/detail/query?uuid=' + databody.uuid + '&ip=' + databody.ip,
+        method : 'GET',
         headers : {
-            "Content-Type" : "application/x-www-form-urlencoded; charset=UTF-8",
-            "Content-Length": databody.length,
-            "timestamp" : '1418708348',     //timeNow
-            "key" : 'fb3bdbf5a7f3a7bff940a340e935f3aebe236bb7',  //dealValue
+            "timestamp" : timeNow,     //timeNow
+            "key" : dealValue,  //dealValue
             "X-Requested-With" : "XMLHttpRequest"
         }
     };
+
     var reqPost = http.request(optionspost, function(resPost){
+        var str = '';
         console.log('STATUS: ' + resPost.statusCode);
         console.log('HEADERS: ' + JSON.stringify(resPost.headers));
-        resPost.setEncoding('utf8');
         resPost.on('data', function(chunk){
-            console.log('BODY: ' + chunk);
-            res.send(chunk);
+            console.log('===================');
+            console.log(typeof(chunk));
+            console.log(chunk);
+            str += chunk;
+        });
+        resPost.on('end', function(){
+            console.log('000000');
+            console.log(typeof(str));
+            res.send(str);
+
+            console.log(str);
         })
     });
-    reqPost.write('databody');
+    reqPost.on('error', function(e) {
+        console.log('problem with request: ' + e.message);
+    });
     reqPost.end();
-
-    res.render('home', {title : "home page"})
 }
