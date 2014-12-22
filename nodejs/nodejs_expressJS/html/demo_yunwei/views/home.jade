@@ -6,19 +6,22 @@ html
         link(rel="stylesheet", href="css/main.css")
     body.home
         .container
+                h2.page-header 运维监控系统
+                    small.ml-10 (输入ID或IP进行查询)
                 .row
-                    .col-md-5
-                        .form-group
-                            label.col-sm-3.control-label(for="uuid") 实例ID：
-                            .col-sm-9
-                                input#uuid.form-control(placeholder="请输入用户ID", type="text", value="" ,name="uuid")
-                    .col-md-5
-                        .form-group
-                            label.col-sm-3.control-label(for="ip") 实例IP：
-                            .col-sm-9
-                                input#ip.form-control(placeholder="请输入实例IP", type="text", value="" ,name="ip")
-                    .col-md-2
-                        button#btn_submit.btn.btn-primary(type="submit" value="") 查 询
+                    .form-horizontal
+                        .col-md-5
+                            .form-group
+                                label.col-sm-3.control-label(for="uuid") 实例ID：
+                                .col-sm-9
+                                    input#uuid.form-control(placeholder="请输入用户ID", type="text", value="" ,name="uuid")
+                        .col-md-5
+                            .form-group
+                                label.col-sm-3.control-label(for="ip") 实例IP：
+                                .col-sm-9
+                                    input#ip.form-control(placeholder="请输入实例IP", type="text", value="" ,name="ip")
+                        .col-md-2
+                            button#btn_submit.btn.btn-primary(type="submit" value="") 查 询
 
                 .row(style="display:none;")
                     table.table

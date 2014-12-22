@@ -1,6 +1,6 @@
 /* 首页 */
 .home {}
-
+.ml-10 { margin-left: 10px;}
 /* 监控页面 */
 .monitor * { box-sizing:content-box;}
 .monitor .m-main { padding: 0;}

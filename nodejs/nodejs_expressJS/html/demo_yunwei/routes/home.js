@@ -48,26 +48,32 @@ exports.sendIdIp = function(req, res){
             console.log('===================');
             console.log(typeof(chunk));
             console.log(chunk);
-            console.dir(chunk);
             str += chunk;
         });
         resPost.on('end', function(){
-//            console.log('000000');
-//            console.log(typeof(str));
-            res.send(str);
-
-            var dataM = {};
+            var status;
+            console.log('000000');
+            console.log(typeof(str));
+            console.log(str);
+            status = db.judgeCaseInfo(str);
+            console.log('status------'+status);
+            if(status){
+                res.send(str);
+                var dataM = {};
 //            console.log('=========');
 //            console.log(typeof(str));
-            var allData = JSON.parse(str);
+                var allData = JSON.parse(str);
 //            console.log(typeof(allData));
-            dataM.rdsName = allData.instance.rdsName;
-            dataM.rdsId = allData.instance.rdsId;
-            dataM.ram = allData.flavor.ram;
-            dataM.disk = allData.flavor.disk;
-            dataM.region = allData.instance.region;
-            db.saveCaseInfo(dataM);
-            console.log(str);
+                dataM.rdsName = allData.instance.rdsName;
+                dataM.rdsId = allData.instance.rdsId;
+                dataM.ram = allData.flavor.ram;
+                dataM.disk = allData.flavor.disk;
+                dataM.region = allData.instance.region;
+                db.saveCaseInfo(dataM);
+            }
+            else {
+                res.send(str);
+            }
         })
     });
     reqPost.on('error', function(e) {

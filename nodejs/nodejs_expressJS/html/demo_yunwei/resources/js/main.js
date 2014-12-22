@@ -16,17 +16,32 @@ $(function(){
       var dataM = {};
 
       $('#btn_submit').click(function(){
+          // 点击查询按钮时，检查
+          uuid = judgeBeforeSubmit ('uuid');
+          ip = judgeBeforeSubmit ('ip');
           $.ajax({
               url:'/',
               type:'POST',
               data : {uuid : uuid, ip : ip},
               dataType : 'json',
               success : function(data){
-                  modify(data);
-                  showInfo();
+                  var status = data.status;
+                  if(status === 0){
+                      modify(data);
+                      showInfo();
+                  }
+                  else{
+                      $('.row:gt(0)').hide();
+                      alert('未查到相关rds信息，\n请重新输入 “实例ID” 或 “实例IP” ');
+                  }
               }
           })
       });
+
+      // 初始化判断
+      function judgeBeforeSubmit(id){
+        return $('#'+id).val();
+      }
 
       // 获取表单value
       $('#uuid').blur(function(){
@@ -35,8 +50,6 @@ $(function(){
       $('#ip').blur(function(){
           ip = $(this).val();
       });
-
-
 
       // 格式化数据： 将返回的json数据过滤出来，提到dataM对象内
       function modify(data){
@@ -103,8 +116,6 @@ $(function(){
         resultTime = y+'-'+m+'-'+r+' ' + hour+':'+minute+':'+second;
         return resultTime;
       }
-
-
 
   }
 
