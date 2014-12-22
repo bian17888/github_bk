@@ -48,18 +48,19 @@ exports.sendIdIp = function(req, res){
             console.log('===================');
             console.log(typeof(chunk));
             console.log(chunk);
+            console.dir(chunk);
             str += chunk;
         });
         resPost.on('end', function(){
-            console.log('000000');
-            console.log(typeof(str));
+//            console.log('000000');
+//            console.log(typeof(str));
             res.send(str);
 
             var dataM = {};
-            console.log('=========');
-            console.log(typeof(str));
+//            console.log('=========');
+//            console.log(typeof(str));
             var allData = JSON.parse(str);
-            console.log(typeof(allData));
+//            console.log(typeof(allData));
             dataM.rdsName = allData.instance.rdsName;
             dataM.rdsId = allData.instance.rdsId;
             dataM.ram = allData.flavor.ram;
