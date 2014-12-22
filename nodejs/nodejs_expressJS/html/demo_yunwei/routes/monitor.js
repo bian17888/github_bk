@@ -13,7 +13,7 @@ var db = require('./../db.js');
 
 /* 首页路由 */
 exports.index = function(req, res){
-    res.render('monitor', {title : "monitor page",caseInfoDb:db.listCaseInfo()})
+    res.render('monitor', {title : "首页",caseInfoDb:db.listCaseInfo()})
 }
 
 /* 首页form请求数据 */
@@ -23,9 +23,7 @@ exports.sendMonitorInfo = function(req, res){
     var resData = {success:1};
 
     databody = req.body;
-    console.dir(databody);
     timeNow = new Date().getTime();
-    console.log(timeNow);
     dealValue = sha1(timeNow+'2TTGF2BCOBEZOSJRWIUA');
 
     optionspost = {
@@ -42,17 +40,12 @@ exports.sendMonitorInfo = function(req, res){
 //    res.setHeader('Content-Type','application/json;charset=UTF-8');
     var reqPost = http.request(optionspost, function(resPost){
         var str = '';
-        console.log('STATUS: ' + resPost.statusCode);
-        console.log('HEADERS: ' + JSON.stringify(resPost.headers));
+//        console.log('STATUS: ' + resPost.statusCode);
+//        console.log('HEADERS: ' + JSON.stringify(resPost.headers));
         resPost.on('data', function(chunk){
-            console.log('================= ');
-            console.log(chunk);
             str += chunk;
-//            str += chunk;
-//            res.send(JSON.stringify(chunk));
         });
         resPost.on('end', function(){
-            console.log('----------------- ');
             res.send(str);
         });
     });

@@ -13,7 +13,7 @@ var db = require('./../db.js');
 
 /* 首页路由 */
 exports.index = function(req, res){
-    res.render('home', {title : "home page", caseInfo : db.listCaseInfo()})
+    res.render('home', {title : "监控详情页", caseInfo : db.listCaseInfo()})
 }
 
 /* 首页form请求数据 */
@@ -23,9 +23,7 @@ exports.sendIdIp = function(req, res){
     var resData = {success:1};
 
     databody = req.body;
-//    console.dir(databody);
     timeNow = new Date().getTime();
-//    console.log(timeNow);
 
     dealValue = sha1(timeNow+'2TTGF2BCOBEZOSJRWIUA');
     optionspost = {
@@ -42,28 +40,18 @@ exports.sendIdIp = function(req, res){
 
     var reqPost = http.request(optionspost, function(resPost){
         var str = '';
-        console.log('STATUS: ' + resPost.statusCode);
-        console.log('HEADERS: ' + JSON.stringify(resPost.headers));
+//        console.log('STATUS: ' + resPost.statusCode);
+//        console.log('HEADERS: ' + JSON.stringify(resPost.headers));
         resPost.on('data', function(chunk){
-            console.log('===================');
-            console.log(typeof(chunk));
-            console.log(chunk);
             str += chunk;
         });
         resPost.on('end', function(){
             var status;
-            console.log('000000');
-            console.log(typeof(str));
-            console.log(str);
             status = db.judgeCaseInfo(str);
-            console.log('status------'+status);
             if(status){
                 res.send(str);
                 var dataM = {};
-//            console.log('=========');
-//            console.log(typeof(str));
                 var allData = JSON.parse(str);
-//            console.log(typeof(allData));
                 dataM.rdsName = allData.instance.rdsName;
                 dataM.rdsId = allData.instance.rdsId;
                 dataM.ram = allData.flavor.ram;
