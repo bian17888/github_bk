@@ -1,0 +1,2979 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose cache add [ 'bower', null ]
+5 verbose cache add name=undefined spec="bower" args=["bower",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bower',
+6 verbose parsed url   path: 'bower',
+6 verbose parsed url   href: 'bower' }
+7 silly lockFile 206e3ce5-bower bower
+8 verbose lock bower /Users/biankai/.npm/206e3ce5-bower.lock
+9 silly lockFile 206e3ce5-bower bower
+10 silly lockFile 206e3ce5-bower bower
+11 verbose addNamed [ 'bower', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 1240aab1-bower bower@
+14 verbose lock bower@ /Users/biankai/.npm/1240aab1-bower.lock
+15 silly addNameRange { name: 'bower', range: '*', hasData: false }
+16 verbose request where is /bower
+17 verbose request registry http://r.cnpmjs.org/
+18 verbose request id ce875e737408005d
+19 verbose url raw /bower
+20 verbose url resolving [ 'http://r.cnpmjs.org/', './bower' ]
+21 verbose url resolved http://r.cnpmjs.org/bower
+22 verbose request where is http://r.cnpmjs.org/bower
+23 info trying registry request attempt 1 at 20:50:16
+24 http GET http://r.cnpmjs.org/bower
+25 http 200 http://r.cnpmjs.org/bower
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'nginx/1.6.2',
+26 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:18 GMT',
+26 silly registry.get     'content-type': 'application/json; charset=utf-8',
+26 silly registry.get     'content-length': '122967',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-powered-by': 'koa',
+26 silly registry.get     etag: '"1411908388000"',
+26 silly registry.get     'x-readtime': '637' } ]
+27 silly addNameRange number 2 { name: 'bower', range: '*', hasData: true }
+28 silly addNameRange versions [ 'bower',
+28 silly addNameRange   [ '1.3.12',
+28 silly addNameRange     '1.3.11',
+28 silly addNameRange     '1.3.10',
+28 silly addNameRange     '1.3.9',
+28 silly addNameRange     '1.3.8',
+28 silly addNameRange     '1.3.7',
+28 silly addNameRange     '1.3.6',
+28 silly addNameRange     '1.3.5',
+28 silly addNameRange     '1.3.4',
+28 silly addNameRange     '1.3.3',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.2.8',
+28 silly addNameRange     '1.2.7',
+28 silly addNameRange     '1.2.6',
+28 silly addNameRange     '1.2.5',
+28 silly addNameRange     '1.2.4',
+28 silly addNameRange     '1.2.3',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '0.10.0',
+28 silly addNameRange     '0.9.2',
+28 silly addNameRange     '0.9.1',
+28 silly addNameRange     '0.9.0',
+28 silly addNameRange     '0.8.6',
+28 silly addNameRange     '0.8.5',
+28 silly addNameRange     '0.8.4',
+28 silly addNameRange     '0.8.3',
+28 silly addNameRange     '0.8.2',
+28 silly addNameRange     '0.8.1',
+28 silly addNameRange     '0.8.0',
+28 silly addNameRange     '0.7.1',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.6.8',
+28 silly addNameRange     '0.6.7',
+28 silly addNameRange     '0.6.6',
+28 silly addNameRange     '0.6.5',
+28 silly addNameRange     '0.6.4',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.1',
+28 silly addNameRange     '0.6.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.3.2',
+28 silly addNameRange     '0.3.1',
+28 silly addNameRange     '0.3.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.0' ] ]
+29 verbose addNamed [ 'bower', '1.3.12' ]
+30 verbose addNamed [ '1.3.12', '1.3.12' ]
+31 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+32 verbose lock bower@1.3.12 /Users/biankai/.npm/9819431c-bower-1-3-12.lock
+33 silly lockFile 7848ba56--bower-download-bower-1-3-12-tgz http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+34 verbose lock http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz /Users/biankai/.npm/7848ba56--bower-download-bower-1-3-12-tgz.lock
+35 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz',
+35 verbose addRemoteTarball   '37de0edb3904baf90aee13384a1a379a05ee214c' ]
+36 info retry fetch attempt 1 at 20:50:20
+37 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+38 http GET http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+39 http 200 http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+40 silly lockFile 7848ba56--bower-download-bower-1-3-12-tgz http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+41 silly lockFile 7848ba56--bower-download-bower-1-3-12-tgz http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz
+42 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+43 silly lockFile 9819431c-bower-1-3-12 bower@1.3.12
+44 silly lockFile 1240aab1-bower bower@
+45 silly lockFile 1240aab1-bower bower@
+46 silly resolved [ { name: 'bower',
+46 silly resolved     version: '1.3.12',
+46 silly resolved     description: 'The browser package manager',
+46 silly resolved     author: { name: 'Twitter' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/bower/bower' },
+46 silly resolved     main: 'lib',
+46 silly resolved     homepage: 'http://bower.io',
+46 silly resolved     engines: { node: '>=0.10.0' },
+46 silly resolved     dependencies:
+46 silly resolved      { abbrev: '~1.0.4',
+46 silly resolved        archy: '0.0.2',
+46 silly resolved        'bower-config': '~0.5.2',
+46 silly resolved        'bower-endpoint-parser': '~0.2.2',
+46 silly resolved        'bower-json': '~0.4.0',
+46 silly resolved        'bower-logger': '~0.2.2',
+46 silly resolved        'bower-registry-client': '~0.2.0',
+46 silly resolved        cardinal: '0.4.0',
+46 silly resolved        chalk: '0.5.0',
+46 silly resolved        chmodr: '0.1.0',
+46 silly resolved        'decompress-zip': '0.0.8',
+46 silly resolved        fstream: '~1.0.2',
+46 silly resolved        'fstream-ignore': '~1.0.1',
+46 silly resolved        glob: '~4.0.2',
+46 silly resolved        'graceful-fs': '~3.0.1',
+46 silly resolved        handlebars: '~2.0.0',
+46 silly resolved        inquirer: '0.7.1',
+46 silly resolved        insight: '0.4.3',
+46 silly resolved        'is-root': '~1.0.0',
+46 silly resolved        junk: '~1.0.0',
+46 silly resolved        lockfile: '~1.0.0',
+46 silly resolved        'lru-cache': '~2.5.0',
+46 silly resolved        mkdirp: '0.5.0',
+46 silly resolved        mout: '~0.9.0',
+46 silly resolved        nopt: '~3.0.0',
+46 silly resolved        opn: '~1.0.0',
+46 silly resolved        osenv: '0.1.0',
+46 silly resolved        'p-throttler': '0.1.0',
+46 silly resolved        promptly: '0.2.0',
+46 silly resolved        q: '~1.0.1',
+46 silly resolved        request: '~2.42.0',
+46 silly resolved        'request-progress': '0.3.0',
+46 silly resolved        retry: '0.6.0',
+46 silly resolved        rimraf: '~2.2.0',
+46 silly resolved        semver: '~2.3.0',
+46 silly resolved        'shell-quote': '~1.4.1',
+46 silly resolved        'stringify-object': '~1.0.0',
+46 silly resolved        'tar-fs': '0.5.2',
+46 silly resolved        tmp: '0.0.23',
+46 silly resolved        'update-notifier': '0.2.0',
+46 silly resolved        which: '~1.0.5' },
+46 silly resolved     devDependencies:
+46 silly resolved      { coveralls: '~2.11.0',
+46 silly resolved        'expect.js': '~0.3.1',
+46 silly resolved        grunt: '~0.4.4',
+46 silly resolved        'grunt-cli': '^0.1.13',
+46 silly resolved        'grunt-contrib-jshint': '~0.10.0',
+46 silly resolved        'grunt-contrib-watch': '~0.6.1',
+46 silly resolved        'grunt-exec': '~0.4.2',
+46 silly resolved        'grunt-simple-mocha': '~0.4.0',
+46 silly resolved        istanbul: '~0.3.2',
+46 silly resolved        'load-grunt-tasks': '~0.6.0',
+46 silly resolved        mocha: '~1.21.4',
+46 silly resolved        nock: '~0.46.0',
+46 silly resolved        'node-uuid': '~1.4.1',
+46 silly resolved        proxyquire: '~1.0.1' },
+46 silly resolved     scripts: { test: 'grunt test' },
+46 silly resolved     bin: { bower: 'bin/bower' },
+46 silly resolved     preferGlobal: true,
+46 silly resolved     gitHead: 'b26c072f0db054a1902ec4d2e3726dbf8a1c799a',
+46 silly resolved     bugs: { url: 'https://github.com/bower/bower/issues' },
+46 silly resolved     _id: 'bower@1.3.12',
+46 silly resolved     _shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+46 silly resolved     _from: 'bower@',
+46 silly resolved     _npmVersion: '2.0.0',
+46 silly resolved     _npmUser: { name: 'sheerun', email: 'sheerun@sher.pl' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '37de0edb3904baf90aee13384a1a379a05ee214c',
+46 silly resolved        size: 117317,
+46 silly resolved        noattachment: false,
+46 silly resolved        tarball: 'http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     publish_time: 1411922395809,
+46 silly resolved     _cnpm_publish_time: 1411922395809,
+46 silly resolved     _resolved: 'http://r.cnpmjs.org/bower/download/bower-1.3.12.tgz' } ]
+47 info install bower@1.3.12 into /usr/local/lib
+48 info installOne bower@1.3.12
+49 verbose lib/node_modules/bower unbuild
+50 verbose tar unpack /Users/biankai/.npm/bower/1.3.12/package.tgz
+51 silly lockFile 1396471b-usr-local-lib-node-modules-bower tar:///usr/local/lib/node_modules/bower
+52 verbose lock tar:///usr/local/lib/node_modules/bower /Users/biankai/.npm/1396471b-usr-local-lib-node-modules-bower.lock
+53 silly lockFile a3104b81-kai-npm-bower-1-3-12-package-tgz tar:///Users/biankai/.npm/bower/1.3.12/package.tgz
+54 verbose lock tar:///Users/biankai/.npm/bower/1.3.12/package.tgz /Users/biankai/.npm/a3104b81-kai-npm-bower-1-3-12-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry .npmignore
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm extractEntry LICENSE
+60 silly gunzTarPerm extractEntry Gruntfile.js
+61 silly gunzTarPerm extractEntry HOOKS.md
+62 silly gunzTarPerm extractEntry CHANGELOG.md
+63 silly gunzTarPerm extractEntry CONTRIBUTING.md
+64 silly gunzTarPerm extractEntry .editorconfig
+65 silly gunzTarPerm extractEntry .jshintrc
+66 silly gunzTarPerm extractEntry bin/bower
+67 silly gunzTarPerm extractEntry lib/config.js
+68 silly gunzTarPerm extractEntry lib/index.js
+69 silly gunzTarPerm extractEntry lib/commands/version.js
+70 silly gunzTarPerm extractEntry lib/commands/info.js
+71 silly gunzTarPerm extractEntry lib/commands/init.js
+72 silly gunzTarPerm extractEntry lib/commands/install.js
+73 silly gunzTarPerm extractEntry lib/commands/index.js
+74 silly gunzTarPerm extractEntry lib/commands/list.js
+75 silly gunzTarPerm extractEntry lib/commands/lookup.js
+76 silly gunzTarPerm extractEntry lib/commands/prune.js
+77 silly gunzTarPerm extractEntry lib/commands/register.js
+78 silly gunzTarPerm extractEntry lib/commands/search.js
+79 silly gunzTarPerm extractEntry lib/commands/home.js
+80 silly gunzTarPerm extractEntry lib/commands/uninstall.js
+81 silly gunzTarPerm extractEntry lib/commands/help.js
+82 silly gunzTarPerm extractEntry lib/commands/update.js
+83 silly gunzTarPerm extractEntry lib/commands/completion.js
+84 silly gunzTarPerm extractEntry lib/commands/link.js
+85 silly gunzTarPerm extractEntry lib/commands/cache/clean.js
+86 silly gunzTarPerm extractEntry lib/commands/cache/list.js
+87 silly gunzTarPerm extractEntry lib/core/Manager.js
+88 silly gunzTarPerm extractEntry lib/core/PackageRepository.js
+89 silly gunzTarPerm extractEntry lib/core/Project.js
+90 silly gunzTarPerm extractEntry lib/core/ResolveCache.js
+91 silly gunzTarPerm extractEntry lib/core/resolverFactory.js
+92 silly gunzTarPerm extractEntry lib/core/scripts.js
+93 silly gunzTarPerm extractEntry lib/core/resolvers/FsResolver.js
+94 silly gunzTarPerm extractEntry lib/core/resolvers/GitFsResolver.js
+95 silly gunzTarPerm extractEntry lib/core/resolvers/GitHubResolver.js
+96 silly gunzTarPerm extractEntry lib/core/resolvers/GitRemoteResolver.js
+97 silly gunzTarPerm extractEntry lib/core/resolvers/GitResolver.js
+98 silly gunzTarPerm extractEntry lib/core/resolvers/Resolver.js
+99 silly gunzTarPerm extractEntry lib/core/resolvers/SvnResolver.js
+100 silly gunzTarPerm extractEntry lib/core/resolvers/UrlResolver.js
+101 silly gunzTarPerm extractEntry lib/core/resolvers/index.js
+102 silly gunzTarPerm extractEntry lib/renderers/JsonRenderer.js
+103 silly gunzTarPerm extractEntry lib/renderers/StandardRenderer.js
+104 silly gunzTarPerm extractEntry lib/renderers/index.js
+105 silly gunzTarPerm extractEntry lib/util/analytics.js
+106 silly gunzTarPerm extractEntry lib/util/createError.js
+107 silly gunzTarPerm extractEntry lib/util/createLink.js
+108 silly gunzTarPerm extractEntry lib/util/download.js
+109 silly gunzTarPerm extractEntry lib/util/copy.js
+110 silly gunzTarPerm extractEntry lib/util/md5.js
+111 silly gunzTarPerm extractEntry lib/util/readJson.js
+112 silly gunzTarPerm extractEntry lib/util/removeIgnores.js
+113 silly gunzTarPerm extractEntry lib/util/rootCheck.js
+114 silly gunzTarPerm extractEntry lib/util/semver.js
+115 silly gunzTarPerm extractEntry lib/util/cmd.js
+116 silly gunzTarPerm extractEntry lib/util/template.js
+117 silly gunzTarPerm extractEntry lib/util/cli.js
+118 silly gunzTarPerm extractEntry lib/util/validLink.js
+119 silly gunzTarPerm extractEntry lib/util/extract.js
+120 silly gunzTarPerm extractEntry templates/helpers/colors.js
+121 silly gunzTarPerm extractEntry templates/helpers/condense.js
+122 silly gunzTarPerm extractEntry templates/helpers/indent.js
+123 silly gunzTarPerm extractEntry templates/helpers/index.js
+124 silly gunzTarPerm extractEntry templates/helpers/rpad.js
+125 silly gunzTarPerm extractEntry templates/helpers/sum.js
+126 silly gunzTarPerm extractEntry templates/json/help-lookup.json
+127 silly gunzTarPerm extractEntry templates/json/help-cache/clean.json
+128 silly gunzTarPerm extractEntry templates/json/help-cache/list.json
+129 silly gunzTarPerm extractEntry templates/json/help-home.json
+130 silly gunzTarPerm extractEntry templates/json/help-info.json
+131 silly gunzTarPerm extractEntry templates/json/help-init.json
+132 silly gunzTarPerm extractEntry templates/json/help-install.json
+133 silly gunzTarPerm extractEntry templates/json/help-link.json
+134 silly gunzTarPerm extractEntry templates/json/help-list.json
+135 silly gunzTarPerm extractEntry templates/json/help-cache.json
+136 silly gunzTarPerm extractEntry templates/json/help-prune.json
+137 silly gunzTarPerm extractEntry templates/json/help-register.json
+138 silly gunzTarPerm extractEntry templates/json/help-search.json
+139 silly gunzTarPerm extractEntry templates/json/help-uninstall.json
+140 silly gunzTarPerm extractEntry templates/json/help-update.json
+141 silly gunzTarPerm extractEntry templates/json/help-version.json
+142 silly gunzTarPerm extractEntry templates/json/help.json
+143 silly gunzTarPerm extractEntry templates/std/conflict-resolved.std
+144 silly gunzTarPerm extractEntry templates/std/conflict.std
+145 silly gunzTarPerm extractEntry templates/std/help-cache.std
+146 silly gunzTarPerm extractEntry templates/std/help-generic.std
+147 silly gunzTarPerm extractEntry templates/std/help.std
+148 silly gunzTarPerm extractEntry templates/std/info.std
+149 silly gunzTarPerm extractEntry templates/std/lookup.std
+150 silly gunzTarPerm extractEntry templates/std/register.std
+151 silly gunzTarPerm extractEntry templates/std/search-results.std
+152 silly gunzTarPerm extractEntry .travis.yml
+153 silly gunzTarPerm extractEntry test/helpers.js
+154 silly gunzTarPerm extractEntry test/packages-svn.js
+155 silly gunzTarPerm extractEntry test/packages.js
+156 silly gunzTarPerm extractEntry test/test.js
+157 silly gunzTarPerm extractEntry test/packages-svn.json
+158 silly gunzTarPerm extractEntry test/commands/index.js
+159 silly gunzTarPerm extractEntry test/commands/init.js
+160 silly gunzTarPerm extractEntry test/commands/install.js
+161 silly gunzTarPerm extractEntry test/commands/uninstall.js
+162 silly gunzTarPerm extractEntry test/commands/update.js
+163 silly gunzTarPerm extractEntry test/assets/package-zip-single-bower-json.zip
+164 silly gunzTarPerm extractEntry test/assets/package-tar.tar.gz
+165 silly gunzTarPerm extractEntry test/assets/package-zip-folder-single-file.zip
+166 silly gunzTarPerm extractEntry test/assets/package-zip-folder.zip
+167 silly gunzTarPerm extractEntry test/assets/package-zip-single-component-json.zip
+168 silly gunzTarPerm extractEntry test/assets/package-zip-single-file.zip
+169 silly gunzTarPerm extractEntry test/assets/package-zip.zip
+170 silly gunzTarPerm extractEntry test/assets/resolve-cache/list-json-1.json
+171 silly gunzTarPerm extractEntry test/assets/test-temp-dir/test-exception.js
+172 silly gunzTarPerm extractEntry test/assets/test-temp-dir/test.js
+173 silly gunzTarPerm extractEntry test/packages.json
+174 silly gunzTarPerm extractEntry test/core/Manager.js
+175 silly gunzTarPerm extractEntry test/core/packageRepository.js
+176 silly gunzTarPerm extractEntry test/core/resolveCache.js
+177 silly gunzTarPerm extractEntry test/core/resolverFactory.js
+178 silly gunzTarPerm extractEntry test/core/scripts.js
+179 silly gunzTarPerm extractEntry test/core/resolvers/fsResolver.js
+180 silly gunzTarPerm extractEntry test/core/resolvers/gitFsResolver.js
+181 silly gunzTarPerm extractEntry test/core/resolvers/gitHubResolver.js
+182 silly gunzTarPerm extractEntry test/core/resolvers/gitRemoteResolver.js
+183 silly gunzTarPerm extractEntry test/core/resolvers/gitResolver.js
+184 silly gunzTarPerm extractEntry test/core/resolvers/resolver.js
+185 silly gunzTarPerm extractEntry test/core/resolvers/svnResolver.js
+186 silly gunzTarPerm extractEntry test/core/resolvers/urlResolver.js
+187 silly gunzTarPerm extractEntry test/util/analytics.js
+188 silly gunzTarPerm extractEntry test/util/index.js
+189 silly gunzTarPerm extractEntry test/util/removeIgnores.js
+190 silly lockFile 1396471b-usr-local-lib-node-modules-bower tar:///usr/local/lib/node_modules/bower
+191 silly lockFile 1396471b-usr-local-lib-node-modules-bower tar:///usr/local/lib/node_modules/bower
+192 silly lockFile a3104b81-kai-npm-bower-1-3-12-package-tgz tar:///Users/biankai/.npm/bower/1.3.12/package.tgz
+193 silly lockFile a3104b81-kai-npm-bower-1-3-12-package-tgz tar:///Users/biankai/.npm/bower/1.3.12/package.tgz
+194 info preinstall bower@1.3.12
+195 verbose readDependencies using package.json deps
+196 verbose readDependencies using package.json deps
+197 verbose cache add [ 'abbrev@~1.0.4', null ]
+198 verbose cache add name=undefined spec="abbrev@~1.0.4" args=["abbrev@~1.0.4",null]
+199 verbose parsed url { protocol: null,
+199 verbose parsed url   slashes: null,
+199 verbose parsed url   auth: null,
+199 verbose parsed url   host: null,
+199 verbose parsed url   port: null,
+199 verbose parsed url   hostname: null,
+199 verbose parsed url   hash: null,
+199 verbose parsed url   search: null,
+199 verbose parsed url   query: null,
+199 verbose parsed url   pathname: 'abbrev@~1.0.4',
+199 verbose parsed url   path: 'abbrev@~1.0.4',
+199 verbose parsed url   href: 'abbrev@~1.0.4' }
+200 verbose cache add [ 'archy@0.0.2', null ]
+201 verbose cache add name=undefined spec="archy@0.0.2" args=["archy@0.0.2",null]
+202 verbose parsed url { protocol: null,
+202 verbose parsed url   slashes: null,
+202 verbose parsed url   auth: null,
+202 verbose parsed url   host: null,
+202 verbose parsed url   port: null,
+202 verbose parsed url   hostname: null,
+202 verbose parsed url   hash: null,
+202 verbose parsed url   search: null,
+202 verbose parsed url   query: null,
+202 verbose parsed url   pathname: 'archy@0.0.2',
+202 verbose parsed url   path: 'archy@0.0.2',
+202 verbose parsed url   href: 'archy@0.0.2' }
+203 verbose cache add name="abbrev" spec="~1.0.4" args=["abbrev","~1.0.4"]
+204 verbose parsed url { protocol: null,
+204 verbose parsed url   slashes: null,
+204 verbose parsed url   auth: null,
+204 verbose parsed url   host: null,
+204 verbose parsed url   port: null,
+204 verbose parsed url   hostname: null,
+204 verbose parsed url   hash: null,
+204 verbose parsed url   search: null,
+204 verbose parsed url   query: null,
+204 verbose parsed url   pathname: '~1.0.4',
+204 verbose parsed url   path: '~1.0.4',
+204 verbose parsed url   href: '~1.0.4' }
+205 verbose addNamed [ 'abbrev', '~1.0.4' ]
+206 verbose addNamed [ null, '>=1.0.4-0 <1.1.0-0' ]
+207 silly lockFile efa0e9e0-abbrev-1-0-4 abbrev@~1.0.4
+208 verbose lock abbrev@~1.0.4 /Users/biankai/.npm/efa0e9e0-abbrev-1-0-4.lock
+209 verbose cache add [ 'bower-config@~0.5.2', null ]
+210 verbose cache add name=undefined spec="bower-config@~0.5.2" args=["bower-config@~0.5.2",null]
+211 verbose parsed url { protocol: null,
+211 verbose parsed url   slashes: null,
+211 verbose parsed url   auth: null,
+211 verbose parsed url   host: null,
+211 verbose parsed url   port: null,
+211 verbose parsed url   hostname: null,
+211 verbose parsed url   hash: null,
+211 verbose parsed url   search: null,
+211 verbose parsed url   query: null,
+211 verbose parsed url   pathname: 'bower-config@~0.5.2',
+211 verbose parsed url   path: 'bower-config@~0.5.2',
+211 verbose parsed url   href: 'bower-config@~0.5.2' }
+212 verbose cache add [ 'bower-endpoint-parser@~0.2.2', null ]
+213 verbose cache add name=undefined spec="bower-endpoint-parser@~0.2.2" args=["bower-endpoint-parser@~0.2.2",null]
+214 verbose parsed url { protocol: null,
+214 verbose parsed url   slashes: null,
+214 verbose parsed url   auth: null,
+214 verbose parsed url   host: null,
+214 verbose parsed url   port: null,
+214 verbose parsed url   hostname: null,
+214 verbose parsed url   hash: null,
+214 verbose parsed url   search: null,
+214 verbose parsed url   query: null,
+214 verbose parsed url   pathname: 'bower-endpoint-parser@~0.2.2',
+214 verbose parsed url   path: 'bower-endpoint-parser@~0.2.2',
+214 verbose parsed url   href: 'bower-endpoint-parser@~0.2.2' }
+215 verbose cache add [ 'bower-json@~0.4.0', null ]
+216 verbose cache add name=undefined spec="bower-json@~0.4.0" args=["bower-json@~0.4.0",null]
+217 verbose parsed url { protocol: null,
+217 verbose parsed url   slashes: null,
+217 verbose parsed url   auth: null,
+217 verbose parsed url   host: null,
+217 verbose parsed url   port: null,
+217 verbose parsed url   hostname: null,
+217 verbose parsed url   hash: null,
+217 verbose parsed url   search: null,
+217 verbose parsed url   query: null,
+217 verbose parsed url   pathname: 'bower-json@~0.4.0',
+217 verbose parsed url   path: 'bower-json@~0.4.0',
+217 verbose parsed url   href: 'bower-json@~0.4.0' }
+218 verbose cache add [ 'bower-logger@~0.2.2', null ]
+219 verbose cache add name=undefined spec="bower-logger@~0.2.2" args=["bower-logger@~0.2.2",null]
+220 verbose parsed url { protocol: null,
+220 verbose parsed url   slashes: null,
+220 verbose parsed url   auth: null,
+220 verbose parsed url   host: null,
+220 verbose parsed url   port: null,
+220 verbose parsed url   hostname: null,
+220 verbose parsed url   hash: null,
+220 verbose parsed url   search: null,
+220 verbose parsed url   query: null,
+220 verbose parsed url   pathname: 'bower-logger@~0.2.2',
+220 verbose parsed url   path: 'bower-logger@~0.2.2',
+220 verbose parsed url   href: 'bower-logger@~0.2.2' }
+221 verbose cache add [ 'bower-registry-client@~0.2.0', null ]
+222 verbose cache add name=undefined spec="bower-registry-client@~0.2.0" args=["bower-registry-client@~0.2.0",null]
+223 verbose parsed url { protocol: null,
+223 verbose parsed url   slashes: null,
+223 verbose parsed url   auth: null,
+223 verbose parsed url   host: null,
+223 verbose parsed url   port: null,
+223 verbose parsed url   hostname: null,
+223 verbose parsed url   hash: null,
+223 verbose parsed url   search: null,
+223 verbose parsed url   query: null,
+223 verbose parsed url   pathname: 'bower-registry-client@~0.2.0',
+223 verbose parsed url   path: 'bower-registry-client@~0.2.0',
+223 verbose parsed url   href: 'bower-registry-client@~0.2.0' }
+224 verbose cache add [ 'cardinal@0.4.0', null ]
+225 verbose cache add name=undefined spec="cardinal@0.4.0" args=["cardinal@0.4.0",null]
+226 verbose parsed url { protocol: null,
+226 verbose parsed url   slashes: null,
+226 verbose parsed url   auth: null,
+226 verbose parsed url   host: null,
+226 verbose parsed url   port: null,
+226 verbose parsed url   hostname: null,
+226 verbose parsed url   hash: null,
+226 verbose parsed url   search: null,
+226 verbose parsed url   query: null,
+226 verbose parsed url   pathname: 'cardinal@0.4.0',
+226 verbose parsed url   path: 'cardinal@0.4.0',
+226 verbose parsed url   href: 'cardinal@0.4.0' }
+227 verbose cache add [ 'chalk@0.5.0', null ]
+228 verbose cache add name=undefined spec="chalk@0.5.0" args=["chalk@0.5.0",null]
+229 verbose parsed url { protocol: null,
+229 verbose parsed url   slashes: null,
+229 verbose parsed url   auth: null,
+229 verbose parsed url   host: null,
+229 verbose parsed url   port: null,
+229 verbose parsed url   hostname: null,
+229 verbose parsed url   hash: null,
+229 verbose parsed url   search: null,
+229 verbose parsed url   query: null,
+229 verbose parsed url   pathname: 'chalk@0.5.0',
+229 verbose parsed url   path: 'chalk@0.5.0',
+229 verbose parsed url   href: 'chalk@0.5.0' }
+230 verbose cache add name="archy" spec="0.0.2" args=["archy","0.0.2"]
+231 verbose parsed url { protocol: null,
+231 verbose parsed url   slashes: null,
+231 verbose parsed url   auth: null,
+231 verbose parsed url   host: null,
+231 verbose parsed url   port: null,
+231 verbose parsed url   hostname: null,
+231 verbose parsed url   hash: null,
+231 verbose parsed url   search: null,
+231 verbose parsed url   query: null,
+231 verbose parsed url   pathname: '0.0.2',
+231 verbose parsed url   path: '0.0.2',
+231 verbose parsed url   href: '0.0.2' }
+232 verbose addNamed [ 'archy', '0.0.2' ]
+233 verbose addNamed [ '0.0.2', '0.0.2' ]
+234 silly lockFile c97e9070-archy-0-0-2 archy@0.0.2
+235 verbose lock archy@0.0.2 /Users/biankai/.npm/c97e9070-archy-0-0-2.lock
+236 verbose cache add name="bower-config" spec="~0.5.2" args=["bower-config","~0.5.2"]
+237 verbose parsed url { protocol: null,
+237 verbose parsed url   slashes: null,
+237 verbose parsed url   auth: null,
+237 verbose parsed url   host: null,
+237 verbose parsed url   port: null,
+237 verbose parsed url   hostname: null,
+237 verbose parsed url   hash: null,
+237 verbose parsed url   search: null,
+237 verbose parsed url   query: null,
+237 verbose parsed url   pathname: '~0.5.2',
+237 verbose parsed url   path: '~0.5.2',
+237 verbose parsed url   href: '~0.5.2' }
+238 verbose addNamed [ 'bower-config', '~0.5.2' ]
+239 verbose addNamed [ null, '>=0.5.2-0 <0.6.0-0' ]
+240 silly lockFile 6ec0f64b-bower-config-0-5-2 bower-config@~0.5.2
+241 verbose lock bower-config@~0.5.2 /Users/biankai/.npm/6ec0f64b-bower-config-0-5-2.lock
+242 verbose cache add name="bower-endpoint-parser" spec="~0.2.2" args=["bower-endpoint-parser","~0.2.2"]
+243 verbose parsed url { protocol: null,
+243 verbose parsed url   slashes: null,
+243 verbose parsed url   auth: null,
+243 verbose parsed url   host: null,
+243 verbose parsed url   port: null,
+243 verbose parsed url   hostname: null,
+243 verbose parsed url   hash: null,
+243 verbose parsed url   search: null,
+243 verbose parsed url   query: null,
+243 verbose parsed url   pathname: '~0.2.2',
+243 verbose parsed url   path: '~0.2.2',
+243 verbose parsed url   href: '~0.2.2' }
+244 verbose addNamed [ 'bower-endpoint-parser', '~0.2.2' ]
+245 verbose addNamed [ null, '>=0.2.2-0 <0.3.0-0' ]
+246 silly lockFile c23e4b02-bower-endpoint-parser-0-2-2 bower-endpoint-parser@~0.2.2
+247 verbose lock bower-endpoint-parser@~0.2.2 /Users/biankai/.npm/c23e4b02-bower-endpoint-parser-0-2-2.lock
+248 verbose cache add name="bower-json" spec="~0.4.0" args=["bower-json","~0.4.0"]
+249 verbose parsed url { protocol: null,
+249 verbose parsed url   slashes: null,
+249 verbose parsed url   auth: null,
+249 verbose parsed url   host: null,
+249 verbose parsed url   port: null,
+249 verbose parsed url   hostname: null,
+249 verbose parsed url   hash: null,
+249 verbose parsed url   search: null,
+249 verbose parsed url   query: null,
+249 verbose parsed url   pathname: '~0.4.0',
+249 verbose parsed url   path: '~0.4.0',
+249 verbose parsed url   href: '~0.4.0' }
+250 verbose addNamed [ 'bower-json', '~0.4.0' ]
+251 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+252 silly lockFile ea848668-bower-json-0-4-0 bower-json@~0.4.0
+253 verbose lock bower-json@~0.4.0 /Users/biankai/.npm/ea848668-bower-json-0-4-0.lock
+254 verbose cache add name="bower-logger" spec="~0.2.2" args=["bower-logger","~0.2.2"]
+255 verbose parsed url { protocol: null,
+255 verbose parsed url   slashes: null,
+255 verbose parsed url   auth: null,
+255 verbose parsed url   host: null,
+255 verbose parsed url   port: null,
+255 verbose parsed url   hostname: null,
+255 verbose parsed url   hash: null,
+255 verbose parsed url   search: null,
+255 verbose parsed url   query: null,
+255 verbose parsed url   pathname: '~0.2.2',
+255 verbose parsed url   path: '~0.2.2',
+255 verbose parsed url   href: '~0.2.2' }
+256 verbose addNamed [ 'bower-logger', '~0.2.2' ]
+257 verbose addNamed [ null, '>=0.2.2-0 <0.3.0-0' ]
+258 silly lockFile 4dfc8f43-bower-logger-0-2-2 bower-logger@~0.2.2
+259 verbose lock bower-logger@~0.2.2 /Users/biankai/.npm/4dfc8f43-bower-logger-0-2-2.lock
+260 verbose cache add name="bower-registry-client" spec="~0.2.0" args=["bower-registry-client","~0.2.0"]
+261 verbose parsed url { protocol: null,
+261 verbose parsed url   slashes: null,
+261 verbose parsed url   auth: null,
+261 verbose parsed url   host: null,
+261 verbose parsed url   port: null,
+261 verbose parsed url   hostname: null,
+261 verbose parsed url   hash: null,
+261 verbose parsed url   search: null,
+261 verbose parsed url   query: null,
+261 verbose parsed url   pathname: '~0.2.0',
+261 verbose parsed url   path: '~0.2.0',
+261 verbose parsed url   href: '~0.2.0' }
+262 verbose addNamed [ 'bower-registry-client', '~0.2.0' ]
+263 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+264 silly lockFile f1b922af-bower-registry-client-0-2-0 bower-registry-client@~0.2.0
+265 verbose lock bower-registry-client@~0.2.0 /Users/biankai/.npm/f1b922af-bower-registry-client-0-2-0.lock
+266 verbose cache add name="cardinal" spec="0.4.0" args=["cardinal","0.4.0"]
+267 verbose parsed url { protocol: null,
+267 verbose parsed url   slashes: null,
+267 verbose parsed url   auth: null,
+267 verbose parsed url   host: null,
+267 verbose parsed url   port: null,
+267 verbose parsed url   hostname: null,
+267 verbose parsed url   hash: null,
+267 verbose parsed url   search: null,
+267 verbose parsed url   query: null,
+267 verbose parsed url   pathname: '0.4.0',
+267 verbose parsed url   path: '0.4.0',
+267 verbose parsed url   href: '0.4.0' }
+268 verbose addNamed [ 'cardinal', '0.4.0' ]
+269 verbose addNamed [ '0.4.0', '0.4.0' ]
+270 silly lockFile f5578357-cardinal-0-4-0 cardinal@0.4.0
+271 verbose lock cardinal@0.4.0 /Users/biankai/.npm/f5578357-cardinal-0-4-0.lock
+272 verbose cache add name="chalk" spec="0.5.0" args=["chalk","0.5.0"]
+273 verbose parsed url { protocol: null,
+273 verbose parsed url   slashes: null,
+273 verbose parsed url   auth: null,
+273 verbose parsed url   host: null,
+273 verbose parsed url   port: null,
+273 verbose parsed url   hostname: null,
+273 verbose parsed url   hash: null,
+273 verbose parsed url   search: null,
+273 verbose parsed url   query: null,
+273 verbose parsed url   pathname: '0.5.0',
+273 verbose parsed url   path: '0.5.0',
+273 verbose parsed url   href: '0.5.0' }
+274 verbose addNamed [ 'chalk', '0.5.0' ]
+275 verbose addNamed [ '0.5.0', '0.5.0' ]
+276 silly lockFile b1055cc0-chalk-0-5-0 chalk@0.5.0
+277 verbose lock chalk@0.5.0 /Users/biankai/.npm/b1055cc0-chalk-0-5-0.lock
+278 verbose cache add [ 'chmodr@0.1.0', null ]
+279 verbose cache add name=undefined spec="chmodr@0.1.0" args=["chmodr@0.1.0",null]
+280 verbose parsed url { protocol: null,
+280 verbose parsed url   slashes: null,
+280 verbose parsed url   auth: null,
+280 verbose parsed url   host: null,
+280 verbose parsed url   port: null,
+280 verbose parsed url   hostname: null,
+280 verbose parsed url   hash: null,
+280 verbose parsed url   search: null,
+280 verbose parsed url   query: null,
+280 verbose parsed url   pathname: 'chmodr@0.1.0',
+280 verbose parsed url   path: 'chmodr@0.1.0',
+280 verbose parsed url   href: 'chmodr@0.1.0' }
+281 verbose cache add [ 'decompress-zip@0.0.8', null ]
+282 verbose cache add name=undefined spec="decompress-zip@0.0.8" args=["decompress-zip@0.0.8",null]
+283 verbose parsed url { protocol: null,
+283 verbose parsed url   slashes: null,
+283 verbose parsed url   auth: null,
+283 verbose parsed url   host: null,
+283 verbose parsed url   port: null,
+283 verbose parsed url   hostname: null,
+283 verbose parsed url   hash: null,
+283 verbose parsed url   search: null,
+283 verbose parsed url   query: null,
+283 verbose parsed url   pathname: 'decompress-zip@0.0.8',
+283 verbose parsed url   path: 'decompress-zip@0.0.8',
+283 verbose parsed url   href: 'decompress-zip@0.0.8' }
+284 verbose cache add [ 'fstream@~1.0.2', null ]
+285 verbose cache add name=undefined spec="fstream@~1.0.2" args=["fstream@~1.0.2",null]
+286 verbose parsed url { protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: 'fstream@~1.0.2',
+286 verbose parsed url   path: 'fstream@~1.0.2',
+286 verbose parsed url   href: 'fstream@~1.0.2' }
+287 verbose cache add [ 'fstream-ignore@~1.0.1', null ]
+288 verbose cache add name=undefined spec="fstream-ignore@~1.0.1" args=["fstream-ignore@~1.0.1",null]
+289 verbose parsed url { protocol: null,
+289 verbose parsed url   slashes: null,
+289 verbose parsed url   auth: null,
+289 verbose parsed url   host: null,
+289 verbose parsed url   port: null,
+289 verbose parsed url   hostname: null,
+289 verbose parsed url   hash: null,
+289 verbose parsed url   search: null,
+289 verbose parsed url   query: null,
+289 verbose parsed url   pathname: 'fstream-ignore@~1.0.1',
+289 verbose parsed url   path: 'fstream-ignore@~1.0.1',
+289 verbose parsed url   href: 'fstream-ignore@~1.0.1' }
+290 verbose cache add [ 'glob@~4.0.2', null ]
+291 verbose cache add name=undefined spec="glob@~4.0.2" args=["glob@~4.0.2",null]
+292 verbose parsed url { protocol: null,
+292 verbose parsed url   slashes: null,
+292 verbose parsed url   auth: null,
+292 verbose parsed url   host: null,
+292 verbose parsed url   port: null,
+292 verbose parsed url   hostname: null,
+292 verbose parsed url   hash: null,
+292 verbose parsed url   search: null,
+292 verbose parsed url   query: null,
+292 verbose parsed url   pathname: 'glob@~4.0.2',
+292 verbose parsed url   path: 'glob@~4.0.2',
+292 verbose parsed url   href: 'glob@~4.0.2' }
+293 verbose cache add [ 'graceful-fs@~3.0.1', null ]
+294 verbose cache add name=undefined spec="graceful-fs@~3.0.1" args=["graceful-fs@~3.0.1",null]
+295 verbose parsed url { protocol: null,
+295 verbose parsed url   slashes: null,
+295 verbose parsed url   auth: null,
+295 verbose parsed url   host: null,
+295 verbose parsed url   port: null,
+295 verbose parsed url   hostname: null,
+295 verbose parsed url   hash: null,
+295 verbose parsed url   search: null,
+295 verbose parsed url   query: null,
+295 verbose parsed url   pathname: 'graceful-fs@~3.0.1',
+295 verbose parsed url   path: 'graceful-fs@~3.0.1',
+295 verbose parsed url   href: 'graceful-fs@~3.0.1' }
+296 silly addNameRange { name: 'abbrev', range: '>=1.0.4-0 <1.1.0-0', hasData: false }
+297 verbose cache add name="chmodr" spec="0.1.0" args=["chmodr","0.1.0"]
+298 verbose parsed url { protocol: null,
+298 verbose parsed url   slashes: null,
+298 verbose parsed url   auth: null,
+298 verbose parsed url   host: null,
+298 verbose parsed url   port: null,
+298 verbose parsed url   hostname: null,
+298 verbose parsed url   hash: null,
+298 verbose parsed url   search: null,
+298 verbose parsed url   query: null,
+298 verbose parsed url   pathname: '0.1.0',
+298 verbose parsed url   path: '0.1.0',
+298 verbose parsed url   href: '0.1.0' }
+299 verbose addNamed [ 'chmodr', '0.1.0' ]
+300 verbose addNamed [ '0.1.0', '0.1.0' ]
+301 silly lockFile 3c50e6b3-chmodr-0-1-0 chmodr@0.1.0
+302 verbose lock chmodr@0.1.0 /Users/biankai/.npm/3c50e6b3-chmodr-0-1-0.lock
+303 verbose cache add name="decompress-zip" spec="0.0.8" args=["decompress-zip","0.0.8"]
+304 verbose parsed url { protocol: null,
+304 verbose parsed url   slashes: null,
+304 verbose parsed url   auth: null,
+304 verbose parsed url   host: null,
+304 verbose parsed url   port: null,
+304 verbose parsed url   hostname: null,
+304 verbose parsed url   hash: null,
+304 verbose parsed url   search: null,
+304 verbose parsed url   query: null,
+304 verbose parsed url   pathname: '0.0.8',
+304 verbose parsed url   path: '0.0.8',
+304 verbose parsed url   href: '0.0.8' }
+305 verbose addNamed [ 'decompress-zip', '0.0.8' ]
+306 verbose addNamed [ '0.0.8', '0.0.8' ]
+307 silly lockFile 7a56c733-decompress-zip-0-0-8 decompress-zip@0.0.8
+308 verbose lock decompress-zip@0.0.8 /Users/biankai/.npm/7a56c733-decompress-zip-0-0-8.lock
+309 verbose cache add name="fstream" spec="~1.0.2" args=["fstream","~1.0.2"]
+310 verbose parsed url { protocol: null,
+310 verbose parsed url   slashes: null,
+310 verbose parsed url   auth: null,
+310 verbose parsed url   host: null,
+310 verbose parsed url   port: null,
+310 verbose parsed url   hostname: null,
+310 verbose parsed url   hash: null,
+310 verbose parsed url   search: null,
+310 verbose parsed url   query: null,
+310 verbose parsed url   pathname: '~1.0.2',
+310 verbose parsed url   path: '~1.0.2',
+310 verbose parsed url   href: '~1.0.2' }
+311 verbose addNamed [ 'fstream', '~1.0.2' ]
+312 verbose addNamed [ null, '>=1.0.2-0 <1.1.0-0' ]
+313 silly lockFile bada8ba0-fstream-1-0-2 fstream@~1.0.2
+314 verbose lock fstream@~1.0.2 /Users/biankai/.npm/bada8ba0-fstream-1-0-2.lock
+315 verbose cache add name="fstream-ignore" spec="~1.0.1" args=["fstream-ignore","~1.0.1"]
+316 verbose parsed url { protocol: null,
+316 verbose parsed url   slashes: null,
+316 verbose parsed url   auth: null,
+316 verbose parsed url   host: null,
+316 verbose parsed url   port: null,
+316 verbose parsed url   hostname: null,
+316 verbose parsed url   hash: null,
+316 verbose parsed url   search: null,
+316 verbose parsed url   query: null,
+316 verbose parsed url   pathname: '~1.0.1',
+316 verbose parsed url   path: '~1.0.1',
+316 verbose parsed url   href: '~1.0.1' }
+317 verbose addNamed [ 'fstream-ignore', '~1.0.1' ]
+318 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+319 silly lockFile 4e461ac0-fstream-ignore-1-0-1 fstream-ignore@~1.0.1
+320 verbose lock fstream-ignore@~1.0.1 /Users/biankai/.npm/4e461ac0-fstream-ignore-1-0-1.lock
+321 verbose cache add name="glob" spec="~4.0.2" args=["glob","~4.0.2"]
+322 verbose parsed url { protocol: null,
+322 verbose parsed url   slashes: null,
+322 verbose parsed url   auth: null,
+322 verbose parsed url   host: null,
+322 verbose parsed url   port: null,
+322 verbose parsed url   hostname: null,
+322 verbose parsed url   hash: null,
+322 verbose parsed url   search: null,
+322 verbose parsed url   query: null,
+322 verbose parsed url   pathname: '~4.0.2',
+322 verbose parsed url   path: '~4.0.2',
+322 verbose parsed url   href: '~4.0.2' }
+323 verbose addNamed [ 'glob', '~4.0.2' ]
+324 verbose addNamed [ null, '>=4.0.2-0 <4.1.0-0' ]
+325 silly lockFile 93e00600-glob-4-0-2 glob@~4.0.2
+326 verbose lock glob@~4.0.2 /Users/biankai/.npm/93e00600-glob-4-0-2.lock
+327 verbose cache add [ 'handlebars@~2.0.0', null ]
+328 verbose cache add name=undefined spec="handlebars@~2.0.0" args=["handlebars@~2.0.0",null]
+329 verbose parsed url { protocol: null,
+329 verbose parsed url   slashes: null,
+329 verbose parsed url   auth: null,
+329 verbose parsed url   host: null,
+329 verbose parsed url   port: null,
+329 verbose parsed url   hostname: null,
+329 verbose parsed url   hash: null,
+329 verbose parsed url   search: null,
+329 verbose parsed url   query: null,
+329 verbose parsed url   pathname: 'handlebars@~2.0.0',
+329 verbose parsed url   path: 'handlebars@~2.0.0',
+329 verbose parsed url   href: 'handlebars@~2.0.0' }
+330 verbose cache add [ 'inquirer@0.7.1', null ]
+331 verbose cache add name=undefined spec="inquirer@0.7.1" args=["inquirer@0.7.1",null]
+332 verbose parsed url { protocol: null,
+332 verbose parsed url   slashes: null,
+332 verbose parsed url   auth: null,
+332 verbose parsed url   host: null,
+332 verbose parsed url   port: null,
+332 verbose parsed url   hostname: null,
+332 verbose parsed url   hash: null,
+332 verbose parsed url   search: null,
+332 verbose parsed url   query: null,
+332 verbose parsed url   pathname: 'inquirer@0.7.1',
+332 verbose parsed url   path: 'inquirer@0.7.1',
+332 verbose parsed url   href: 'inquirer@0.7.1' }
+333 verbose cache add [ 'insight@0.4.3', null ]
+334 verbose cache add name=undefined spec="insight@0.4.3" args=["insight@0.4.3",null]
+335 verbose parsed url { protocol: null,
+335 verbose parsed url   slashes: null,
+335 verbose parsed url   auth: null,
+335 verbose parsed url   host: null,
+335 verbose parsed url   port: null,
+335 verbose parsed url   hostname: null,
+335 verbose parsed url   hash: null,
+335 verbose parsed url   search: null,
+335 verbose parsed url   query: null,
+335 verbose parsed url   pathname: 'insight@0.4.3',
+335 verbose parsed url   path: 'insight@0.4.3',
+335 verbose parsed url   href: 'insight@0.4.3' }
+336 verbose cache add [ 'is-root@~1.0.0', null ]
+337 verbose cache add name=undefined spec="is-root@~1.0.0" args=["is-root@~1.0.0",null]
+338 verbose parsed url { protocol: null,
+338 verbose parsed url   slashes: null,
+338 verbose parsed url   auth: null,
+338 verbose parsed url   host: null,
+338 verbose parsed url   port: null,
+338 verbose parsed url   hostname: null,
+338 verbose parsed url   hash: null,
+338 verbose parsed url   search: null,
+338 verbose parsed url   query: null,
+338 verbose parsed url   pathname: 'is-root@~1.0.0',
+338 verbose parsed url   path: 'is-root@~1.0.0',
+338 verbose parsed url   href: 'is-root@~1.0.0' }
+339 verbose cache add [ 'junk@~1.0.0', null ]
+340 verbose cache add name=undefined spec="junk@~1.0.0" args=["junk@~1.0.0",null]
+341 verbose parsed url { protocol: null,
+341 verbose parsed url   slashes: null,
+341 verbose parsed url   auth: null,
+341 verbose parsed url   host: null,
+341 verbose parsed url   port: null,
+341 verbose parsed url   hostname: null,
+341 verbose parsed url   hash: null,
+341 verbose parsed url   search: null,
+341 verbose parsed url   query: null,
+341 verbose parsed url   pathname: 'junk@~1.0.0',
+341 verbose parsed url   path: 'junk@~1.0.0',
+341 verbose parsed url   href: 'junk@~1.0.0' }
+342 verbose cache add [ 'lockfile@~1.0.0', null ]
+343 verbose cache add name=undefined spec="lockfile@~1.0.0" args=["lockfile@~1.0.0",null]
+344 verbose parsed url { protocol: null,
+344 verbose parsed url   slashes: null,
+344 verbose parsed url   auth: null,
+344 verbose parsed url   host: null,
+344 verbose parsed url   port: null,
+344 verbose parsed url   hostname: null,
+344 verbose parsed url   hash: null,
+344 verbose parsed url   search: null,
+344 verbose parsed url   query: null,
+344 verbose parsed url   pathname: 'lockfile@~1.0.0',
+344 verbose parsed url   path: 'lockfile@~1.0.0',
+344 verbose parsed url   href: 'lockfile@~1.0.0' }
+345 verbose cache add [ 'lru-cache@~2.5.0', null ]
+346 verbose cache add name=undefined spec="lru-cache@~2.5.0" args=["lru-cache@~2.5.0",null]
+347 verbose parsed url { protocol: null,
+347 verbose parsed url   slashes: null,
+347 verbose parsed url   auth: null,
+347 verbose parsed url   host: null,
+347 verbose parsed url   port: null,
+347 verbose parsed url   hostname: null,
+347 verbose parsed url   hash: null,
+347 verbose parsed url   search: null,
+347 verbose parsed url   query: null,
+347 verbose parsed url   pathname: 'lru-cache@~2.5.0',
+347 verbose parsed url   path: 'lru-cache@~2.5.0',
+347 verbose parsed url   href: 'lru-cache@~2.5.0' }
+348 verbose cache add [ 'mkdirp@0.5.0', null ]
+349 verbose cache add name=undefined spec="mkdirp@0.5.0" args=["mkdirp@0.5.0",null]
+350 verbose parsed url { protocol: null,
+350 verbose parsed url   slashes: null,
+350 verbose parsed url   auth: null,
+350 verbose parsed url   host: null,
+350 verbose parsed url   port: null,
+350 verbose parsed url   hostname: null,
+350 verbose parsed url   hash: null,
+350 verbose parsed url   search: null,
+350 verbose parsed url   query: null,
+350 verbose parsed url   pathname: 'mkdirp@0.5.0',
+350 verbose parsed url   path: 'mkdirp@0.5.0',
+350 verbose parsed url   href: 'mkdirp@0.5.0' }
+351 verbose cache add [ 'mout@~0.9.0', null ]
+352 verbose cache add name=undefined spec="mout@~0.9.0" args=["mout@~0.9.0",null]
+353 verbose parsed url { protocol: null,
+353 verbose parsed url   slashes: null,
+353 verbose parsed url   auth: null,
+353 verbose parsed url   host: null,
+353 verbose parsed url   port: null,
+353 verbose parsed url   hostname: null,
+353 verbose parsed url   hash: null,
+353 verbose parsed url   search: null,
+353 verbose parsed url   query: null,
+353 verbose parsed url   pathname: 'mout@~0.9.0',
+353 verbose parsed url   path: 'mout@~0.9.0',
+353 verbose parsed url   href: 'mout@~0.9.0' }
+354 verbose cache add [ 'nopt@~3.0.0', null ]
+355 verbose cache add name=undefined spec="nopt@~3.0.0" args=["nopt@~3.0.0",null]
+356 verbose parsed url { protocol: null,
+356 verbose parsed url   slashes: null,
+356 verbose parsed url   auth: null,
+356 verbose parsed url   host: null,
+356 verbose parsed url   port: null,
+356 verbose parsed url   hostname: null,
+356 verbose parsed url   hash: null,
+356 verbose parsed url   search: null,
+356 verbose parsed url   query: null,
+356 verbose parsed url   pathname: 'nopt@~3.0.0',
+356 verbose parsed url   path: 'nopt@~3.0.0',
+356 verbose parsed url   href: 'nopt@~3.0.0' }
+357 verbose cache add [ 'opn@~1.0.0', null ]
+358 verbose cache add name=undefined spec="opn@~1.0.0" args=["opn@~1.0.0",null]
+359 verbose parsed url { protocol: null,
+359 verbose parsed url   slashes: null,
+359 verbose parsed url   auth: null,
+359 verbose parsed url   host: null,
+359 verbose parsed url   port: null,
+359 verbose parsed url   hostname: null,
+359 verbose parsed url   hash: null,
+359 verbose parsed url   search: null,
+359 verbose parsed url   query: null,
+359 verbose parsed url   pathname: 'opn@~1.0.0',
+359 verbose parsed url   path: 'opn@~1.0.0',
+359 verbose parsed url   href: 'opn@~1.0.0' }
+360 verbose cache add [ 'osenv@0.1.0', null ]
+361 verbose cache add name=undefined spec="osenv@0.1.0" args=["osenv@0.1.0",null]
+362 verbose parsed url { protocol: null,
+362 verbose parsed url   slashes: null,
+362 verbose parsed url   auth: null,
+362 verbose parsed url   host: null,
+362 verbose parsed url   port: null,
+362 verbose parsed url   hostname: null,
+362 verbose parsed url   hash: null,
+362 verbose parsed url   search: null,
+362 verbose parsed url   query: null,
+362 verbose parsed url   pathname: 'osenv@0.1.0',
+362 verbose parsed url   path: 'osenv@0.1.0',
+362 verbose parsed url   href: 'osenv@0.1.0' }
+363 verbose cache add name="graceful-fs" spec="~3.0.1" args=["graceful-fs","~3.0.1"]
+364 verbose parsed url { protocol: null,
+364 verbose parsed url   slashes: null,
+364 verbose parsed url   auth: null,
+364 verbose parsed url   host: null,
+364 verbose parsed url   port: null,
+364 verbose parsed url   hostname: null,
+364 verbose parsed url   hash: null,
+364 verbose parsed url   search: null,
+364 verbose parsed url   query: null,
+364 verbose parsed url   pathname: '~3.0.1',
+364 verbose parsed url   path: '~3.0.1',
+364 verbose parsed url   href: '~3.0.1' }
+365 verbose addNamed [ 'graceful-fs', '~3.0.1' ]
+366 verbose addNamed [ null, '>=3.0.1-0 <3.1.0-0' ]
+367 silly lockFile 901920ca-graceful-fs-3-0-1 graceful-fs@~3.0.1
+368 verbose lock graceful-fs@~3.0.1 /Users/biankai/.npm/901920ca-graceful-fs-3-0-1.lock
+369 silly addNameRange { name: 'bower-config',
+369 silly addNameRange   range: '>=0.5.2-0 <0.6.0-0',
+369 silly addNameRange   hasData: false }
+370 silly addNameRange { name: 'bower-endpoint-parser',
+370 silly addNameRange   range: '>=0.2.2-0 <0.3.0-0',
+370 silly addNameRange   hasData: false }
+371 silly addNameRange { name: 'bower-json',
+371 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+371 silly addNameRange   hasData: false }
+372 silly addNameRange { name: 'bower-logger',
+372 silly addNameRange   range: '>=0.2.2-0 <0.3.0-0',
+372 silly addNameRange   hasData: false }
+373 silly addNameRange { name: 'bower-registry-client',
+373 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+373 silly addNameRange   hasData: false }
+374 verbose cache add name="handlebars" spec="~2.0.0" args=["handlebars","~2.0.0"]
+375 verbose parsed url { protocol: null,
+375 verbose parsed url   slashes: null,
+375 verbose parsed url   auth: null,
+375 verbose parsed url   host: null,
+375 verbose parsed url   port: null,
+375 verbose parsed url   hostname: null,
+375 verbose parsed url   hash: null,
+375 verbose parsed url   search: null,
+375 verbose parsed url   query: null,
+375 verbose parsed url   pathname: '~2.0.0',
+375 verbose parsed url   path: '~2.0.0',
+375 verbose parsed url   href: '~2.0.0' }
+376 verbose addNamed [ 'handlebars', '~2.0.0' ]
+377 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+378 silly lockFile 917ab67d-handlebars-2-0-0 handlebars@~2.0.0
+379 verbose lock handlebars@~2.0.0 /Users/biankai/.npm/917ab67d-handlebars-2-0-0.lock
+380 verbose cache add name="inquirer" spec="0.7.1" args=["inquirer","0.7.1"]
+381 verbose parsed url { protocol: null,
+381 verbose parsed url   slashes: null,
+381 verbose parsed url   auth: null,
+381 verbose parsed url   host: null,
+381 verbose parsed url   port: null,
+381 verbose parsed url   hostname: null,
+381 verbose parsed url   hash: null,
+381 verbose parsed url   search: null,
+381 verbose parsed url   query: null,
+381 verbose parsed url   pathname: '0.7.1',
+381 verbose parsed url   path: '0.7.1',
+381 verbose parsed url   href: '0.7.1' }
+382 verbose addNamed [ 'inquirer', '0.7.1' ]
+383 verbose addNamed [ '0.7.1', '0.7.1' ]
+384 silly lockFile 07877a53-inquirer-0-7-1 inquirer@0.7.1
+385 verbose lock inquirer@0.7.1 /Users/biankai/.npm/07877a53-inquirer-0-7-1.lock
+386 verbose cache add name="insight" spec="0.4.3" args=["insight","0.4.3"]
+387 verbose parsed url { protocol: null,
+387 verbose parsed url   slashes: null,
+387 verbose parsed url   auth: null,
+387 verbose parsed url   host: null,
+387 verbose parsed url   port: null,
+387 verbose parsed url   hostname: null,
+387 verbose parsed url   hash: null,
+387 verbose parsed url   search: null,
+387 verbose parsed url   query: null,
+387 verbose parsed url   pathname: '0.4.3',
+387 verbose parsed url   path: '0.4.3',
+387 verbose parsed url   href: '0.4.3' }
+388 verbose addNamed [ 'insight', '0.4.3' ]
+389 verbose addNamed [ '0.4.3', '0.4.3' ]
+390 silly lockFile da4675d5-insight-0-4-3 insight@0.4.3
+391 verbose lock insight@0.4.3 /Users/biankai/.npm/da4675d5-insight-0-4-3.lock
+392 verbose cache add name="is-root" spec="~1.0.0" args=["is-root","~1.0.0"]
+393 verbose parsed url { protocol: null,
+393 verbose parsed url   slashes: null,
+393 verbose parsed url   auth: null,
+393 verbose parsed url   host: null,
+393 verbose parsed url   port: null,
+393 verbose parsed url   hostname: null,
+393 verbose parsed url   hash: null,
+393 verbose parsed url   search: null,
+393 verbose parsed url   query: null,
+393 verbose parsed url   pathname: '~1.0.0',
+393 verbose parsed url   path: '~1.0.0',
+393 verbose parsed url   href: '~1.0.0' }
+394 verbose addNamed [ 'is-root', '~1.0.0' ]
+395 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+396 silly lockFile 53c35513-is-root-1-0-0 is-root@~1.0.0
+397 verbose lock is-root@~1.0.0 /Users/biankai/.npm/53c35513-is-root-1-0-0.lock
+398 verbose cache add name="junk" spec="~1.0.0" args=["junk","~1.0.0"]
+399 verbose parsed url { protocol: null,
+399 verbose parsed url   slashes: null,
+399 verbose parsed url   auth: null,
+399 verbose parsed url   host: null,
+399 verbose parsed url   port: null,
+399 verbose parsed url   hostname: null,
+399 verbose parsed url   hash: null,
+399 verbose parsed url   search: null,
+399 verbose parsed url   query: null,
+399 verbose parsed url   pathname: '~1.0.0',
+399 verbose parsed url   path: '~1.0.0',
+399 verbose parsed url   href: '~1.0.0' }
+400 verbose addNamed [ 'junk', '~1.0.0' ]
+401 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+402 silly lockFile e4e462ce-junk-1-0-0 junk@~1.0.0
+403 verbose lock junk@~1.0.0 /Users/biankai/.npm/e4e462ce-junk-1-0-0.lock
+404 verbose cache add name="lockfile" spec="~1.0.0" args=["lockfile","~1.0.0"]
+405 verbose parsed url { protocol: null,
+405 verbose parsed url   slashes: null,
+405 verbose parsed url   auth: null,
+405 verbose parsed url   host: null,
+405 verbose parsed url   port: null,
+405 verbose parsed url   hostname: null,
+405 verbose parsed url   hash: null,
+405 verbose parsed url   search: null,
+405 verbose parsed url   query: null,
+405 verbose parsed url   pathname: '~1.0.0',
+405 verbose parsed url   path: '~1.0.0',
+405 verbose parsed url   href: '~1.0.0' }
+406 verbose addNamed [ 'lockfile', '~1.0.0' ]
+407 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+408 silly lockFile af6d2126-lockfile-1-0-0 lockfile@~1.0.0
+409 verbose lock lockfile@~1.0.0 /Users/biankai/.npm/af6d2126-lockfile-1-0-0.lock
+410 verbose cache add name="lru-cache" spec="~2.5.0" args=["lru-cache","~2.5.0"]
+411 verbose parsed url { protocol: null,
+411 verbose parsed url   slashes: null,
+411 verbose parsed url   auth: null,
+411 verbose parsed url   host: null,
+411 verbose parsed url   port: null,
+411 verbose parsed url   hostname: null,
+411 verbose parsed url   hash: null,
+411 verbose parsed url   search: null,
+411 verbose parsed url   query: null,
+411 verbose parsed url   pathname: '~2.5.0',
+411 verbose parsed url   path: '~2.5.0',
+411 verbose parsed url   href: '~2.5.0' }
+412 verbose addNamed [ 'lru-cache', '~2.5.0' ]
+413 verbose addNamed [ null, '>=2.5.0-0 <2.6.0-0' ]
+414 silly lockFile d9ec30b5-lru-cache-2-5-0 lru-cache@~2.5.0
+415 verbose lock lru-cache@~2.5.0 /Users/biankai/.npm/d9ec30b5-lru-cache-2-5-0.lock
+416 verbose cache add name="mkdirp" spec="0.5.0" args=["mkdirp","0.5.0"]
+417 verbose parsed url { protocol: null,
+417 verbose parsed url   slashes: null,
+417 verbose parsed url   auth: null,
+417 verbose parsed url   host: null,
+417 verbose parsed url   port: null,
+417 verbose parsed url   hostname: null,
+417 verbose parsed url   hash: null,
+417 verbose parsed url   search: null,
+417 verbose parsed url   query: null,
+417 verbose parsed url   pathname: '0.5.0',
+417 verbose parsed url   path: '0.5.0',
+417 verbose parsed url   href: '0.5.0' }
+418 verbose addNamed [ 'mkdirp', '0.5.0' ]
+419 verbose addNamed [ '0.5.0', '0.5.0' ]
+420 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+421 verbose lock mkdirp@0.5.0 /Users/biankai/.npm/bf9ae38d-mkdirp-0-5-0.lock
+422 verbose cache add name="mout" spec="~0.9.0" args=["mout","~0.9.0"]
+423 verbose parsed url { protocol: null,
+423 verbose parsed url   slashes: null,
+423 verbose parsed url   auth: null,
+423 verbose parsed url   host: null,
+423 verbose parsed url   port: null,
+423 verbose parsed url   hostname: null,
+423 verbose parsed url   hash: null,
+423 verbose parsed url   search: null,
+423 verbose parsed url   query: null,
+423 verbose parsed url   pathname: '~0.9.0',
+423 verbose parsed url   path: '~0.9.0',
+423 verbose parsed url   href: '~0.9.0' }
+424 verbose addNamed [ 'mout', '~0.9.0' ]
+425 verbose addNamed [ null, '>=0.9.0-0 <0.10.0-0' ]
+426 silly lockFile 5ca20e6e-mout-0-9-0 mout@~0.9.0
+427 verbose lock mout@~0.9.0 /Users/biankai/.npm/5ca20e6e-mout-0-9-0.lock
+428 verbose cache add name="nopt" spec="~3.0.0" args=["nopt","~3.0.0"]
+429 verbose parsed url { protocol: null,
+429 verbose parsed url   slashes: null,
+429 verbose parsed url   auth: null,
+429 verbose parsed url   host: null,
+429 verbose parsed url   port: null,
+429 verbose parsed url   hostname: null,
+429 verbose parsed url   hash: null,
+429 verbose parsed url   search: null,
+429 verbose parsed url   query: null,
+429 verbose parsed url   pathname: '~3.0.0',
+429 verbose parsed url   path: '~3.0.0',
+429 verbose parsed url   href: '~3.0.0' }
+430 verbose addNamed [ 'nopt', '~3.0.0' ]
+431 verbose addNamed [ null, '>=3.0.0-0 <3.1.0-0' ]
+432 silly lockFile 9be750cb-nopt-3-0-0 nopt@~3.0.0
+433 verbose lock nopt@~3.0.0 /Users/biankai/.npm/9be750cb-nopt-3-0-0.lock
+434 verbose cache add name="opn" spec="~1.0.0" args=["opn","~1.0.0"]
+435 verbose parsed url { protocol: null,
+435 verbose parsed url   slashes: null,
+435 verbose parsed url   auth: null,
+435 verbose parsed url   host: null,
+435 verbose parsed url   port: null,
+435 verbose parsed url   hostname: null,
+435 verbose parsed url   hash: null,
+435 verbose parsed url   search: null,
+435 verbose parsed url   query: null,
+435 verbose parsed url   pathname: '~1.0.0',
+435 verbose parsed url   path: '~1.0.0',
+435 verbose parsed url   href: '~1.0.0' }
+436 verbose addNamed [ 'opn', '~1.0.0' ]
+437 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+438 silly lockFile 008c9731-opn-1-0-0 opn@~1.0.0
+439 verbose lock opn@~1.0.0 /Users/biankai/.npm/008c9731-opn-1-0-0.lock
+440 verbose cache add [ 'p-throttler@0.1.0', null ]
+441 verbose cache add name=undefined spec="p-throttler@0.1.0" args=["p-throttler@0.1.0",null]
+442 verbose parsed url { protocol: null,
+442 verbose parsed url   slashes: null,
+442 verbose parsed url   auth: null,
+442 verbose parsed url   host: null,
+442 verbose parsed url   port: null,
+442 verbose parsed url   hostname: null,
+442 verbose parsed url   hash: null,
+442 verbose parsed url   search: null,
+442 verbose parsed url   query: null,
+442 verbose parsed url   pathname: 'p-throttler@0.1.0',
+442 verbose parsed url   path: 'p-throttler@0.1.0',
+442 verbose parsed url   href: 'p-throttler@0.1.0' }
+443 verbose cache add [ 'promptly@0.2.0', null ]
+444 verbose cache add name=undefined spec="promptly@0.2.0" args=["promptly@0.2.0",null]
+445 verbose parsed url { protocol: null,
+445 verbose parsed url   slashes: null,
+445 verbose parsed url   auth: null,
+445 verbose parsed url   host: null,
+445 verbose parsed url   port: null,
+445 verbose parsed url   hostname: null,
+445 verbose parsed url   hash: null,
+445 verbose parsed url   search: null,
+445 verbose parsed url   query: null,
+445 verbose parsed url   pathname: 'promptly@0.2.0',
+445 verbose parsed url   path: 'promptly@0.2.0',
+445 verbose parsed url   href: 'promptly@0.2.0' }
+446 verbose cache add [ 'q@~1.0.1', null ]
+447 verbose cache add name=undefined spec="q@~1.0.1" args=["q@~1.0.1",null]
+448 verbose parsed url { protocol: null,
+448 verbose parsed url   slashes: null,
+448 verbose parsed url   auth: null,
+448 verbose parsed url   host: null,
+448 verbose parsed url   port: null,
+448 verbose parsed url   hostname: null,
+448 verbose parsed url   hash: null,
+448 verbose parsed url   search: null,
+448 verbose parsed url   query: null,
+448 verbose parsed url   pathname: 'q@~1.0.1',
+448 verbose parsed url   path: 'q@~1.0.1',
+448 verbose parsed url   href: 'q@~1.0.1' }
+449 verbose cache add [ 'request@~2.42.0', null ]
+450 verbose cache add name=undefined spec="request@~2.42.0" args=["request@~2.42.0",null]
+451 verbose parsed url { protocol: null,
+451 verbose parsed url   slashes: null,
+451 verbose parsed url   auth: null,
+451 verbose parsed url   host: null,
+451 verbose parsed url   port: null,
+451 verbose parsed url   hostname: null,
+451 verbose parsed url   hash: null,
+451 verbose parsed url   search: null,
+451 verbose parsed url   query: null,
+451 verbose parsed url   pathname: 'request@~2.42.0',
+451 verbose parsed url   path: 'request@~2.42.0',
+451 verbose parsed url   href: 'request@~2.42.0' }
+452 verbose cache add [ 'request-progress@0.3.0', null ]
+453 verbose cache add name=undefined spec="request-progress@0.3.0" args=["request-progress@0.3.0",null]
+454 verbose parsed url { protocol: null,
+454 verbose parsed url   slashes: null,
+454 verbose parsed url   auth: null,
+454 verbose parsed url   host: null,
+454 verbose parsed url   port: null,
+454 verbose parsed url   hostname: null,
+454 verbose parsed url   hash: null,
+454 verbose parsed url   search: null,
+454 verbose parsed url   query: null,
+454 verbose parsed url   pathname: 'request-progress@0.3.0',
+454 verbose parsed url   path: 'request-progress@0.3.0',
+454 verbose parsed url   href: 'request-progress@0.3.0' }
+455 verbose cache add [ 'retry@0.6.0', null ]
+456 verbose cache add name=undefined spec="retry@0.6.0" args=["retry@0.6.0",null]
+457 verbose parsed url { protocol: null,
+457 verbose parsed url   slashes: null,
+457 verbose parsed url   auth: null,
+457 verbose parsed url   host: null,
+457 verbose parsed url   port: null,
+457 verbose parsed url   hostname: null,
+457 verbose parsed url   hash: null,
+457 verbose parsed url   search: null,
+457 verbose parsed url   query: null,
+457 verbose parsed url   pathname: 'retry@0.6.0',
+457 verbose parsed url   path: 'retry@0.6.0',
+457 verbose parsed url   href: 'retry@0.6.0' }
+458 verbose cache add [ 'rimraf@~2.2.0', null ]
+459 verbose cache add name=undefined spec="rimraf@~2.2.0" args=["rimraf@~2.2.0",null]
+460 verbose parsed url { protocol: null,
+460 verbose parsed url   slashes: null,
+460 verbose parsed url   auth: null,
+460 verbose parsed url   host: null,
+460 verbose parsed url   port: null,
+460 verbose parsed url   hostname: null,
+460 verbose parsed url   hash: null,
+460 verbose parsed url   search: null,
+460 verbose parsed url   query: null,
+460 verbose parsed url   pathname: 'rimraf@~2.2.0',
+460 verbose parsed url   path: 'rimraf@~2.2.0',
+460 verbose parsed url   href: 'rimraf@~2.2.0' }
+461 verbose cache add [ 'semver@~2.3.0', null ]
+462 verbose cache add name=undefined spec="semver@~2.3.0" args=["semver@~2.3.0",null]
+463 verbose parsed url { protocol: null,
+463 verbose parsed url   slashes: null,
+463 verbose parsed url   auth: null,
+463 verbose parsed url   host: null,
+463 verbose parsed url   port: null,
+463 verbose parsed url   hostname: null,
+463 verbose parsed url   hash: null,
+463 verbose parsed url   search: null,
+463 verbose parsed url   query: null,
+463 verbose parsed url   pathname: 'semver@~2.3.0',
+463 verbose parsed url   path: 'semver@~2.3.0',
+463 verbose parsed url   href: 'semver@~2.3.0' }
+464 verbose cache add [ 'shell-quote@~1.4.1', null ]
+465 verbose cache add name=undefined spec="shell-quote@~1.4.1" args=["shell-quote@~1.4.1",null]
+466 verbose parsed url { protocol: null,
+466 verbose parsed url   slashes: null,
+466 verbose parsed url   auth: null,
+466 verbose parsed url   host: null,
+466 verbose parsed url   port: null,
+466 verbose parsed url   hostname: null,
+466 verbose parsed url   hash: null,
+466 verbose parsed url   search: null,
+466 verbose parsed url   query: null,
+466 verbose parsed url   pathname: 'shell-quote@~1.4.1',
+466 verbose parsed url   path: 'shell-quote@~1.4.1',
+466 verbose parsed url   href: 'shell-quote@~1.4.1' }
+467 verbose cache add [ 'stringify-object@~1.0.0', null ]
+468 verbose cache add name=undefined spec="stringify-object@~1.0.0" args=["stringify-object@~1.0.0",null]
+469 verbose parsed url { protocol: null,
+469 verbose parsed url   slashes: null,
+469 verbose parsed url   auth: null,
+469 verbose parsed url   host: null,
+469 verbose parsed url   port: null,
+469 verbose parsed url   hostname: null,
+469 verbose parsed url   hash: null,
+469 verbose parsed url   search: null,
+469 verbose parsed url   query: null,
+469 verbose parsed url   pathname: 'stringify-object@~1.0.0',
+469 verbose parsed url   path: 'stringify-object@~1.0.0',
+469 verbose parsed url   href: 'stringify-object@~1.0.0' }
+470 verbose cache add name="osenv" spec="0.1.0" args=["osenv","0.1.0"]
+471 verbose parsed url { protocol: null,
+471 verbose parsed url   slashes: null,
+471 verbose parsed url   auth: null,
+471 verbose parsed url   host: null,
+471 verbose parsed url   port: null,
+471 verbose parsed url   hostname: null,
+471 verbose parsed url   hash: null,
+471 verbose parsed url   search: null,
+471 verbose parsed url   query: null,
+471 verbose parsed url   pathname: '0.1.0',
+471 verbose parsed url   path: '0.1.0',
+471 verbose parsed url   href: '0.1.0' }
+472 verbose addNamed [ 'osenv', '0.1.0' ]
+473 verbose addNamed [ '0.1.0', '0.1.0' ]
+474 silly lockFile 8f25476a-osenv-0-1-0 osenv@0.1.0
+475 verbose lock osenv@0.1.0 /Users/biankai/.npm/8f25476a-osenv-0-1-0.lock
+476 verbose request where is /bower-config
+477 verbose request registry http://r.cnpmjs.org/
+478 verbose url raw /bower-config
+479 verbose url resolving [ 'http://r.cnpmjs.org/', './bower-config' ]
+480 verbose url resolved http://r.cnpmjs.org/bower-config
+481 verbose request where is http://r.cnpmjs.org/bower-config
+482 info trying registry request attempt 1 at 20:50:21
+483 http GET http://r.cnpmjs.org/bower-config
+484 verbose request where is /bower-endpoint-parser
+485 verbose request registry http://r.cnpmjs.org/
+486 verbose url raw /bower-endpoint-parser
+487 verbose url resolving [ 'http://r.cnpmjs.org/', './bower-endpoint-parser' ]
+488 verbose url resolved http://r.cnpmjs.org/bower-endpoint-parser
+489 verbose request where is http://r.cnpmjs.org/bower-endpoint-parser
+490 info trying registry request attempt 1 at 20:50:21
+491 http GET http://r.cnpmjs.org/bower-endpoint-parser
+492 verbose request where is /bower-json
+493 verbose request registry http://r.cnpmjs.org/
+494 verbose url raw /bower-json
+495 verbose url resolving [ 'http://r.cnpmjs.org/', './bower-json' ]
+496 verbose url resolved http://r.cnpmjs.org/bower-json
+497 verbose request where is http://r.cnpmjs.org/bower-json
+498 info trying registry request attempt 1 at 20:50:21
+499 http GET http://r.cnpmjs.org/bower-json
+500 verbose request where is /bower-logger
+501 verbose request registry http://r.cnpmjs.org/
+502 verbose url raw /bower-logger
+503 verbose url resolving [ 'http://r.cnpmjs.org/', './bower-logger' ]
+504 verbose url resolved http://r.cnpmjs.org/bower-logger
+505 verbose request where is http://r.cnpmjs.org/bower-logger
+506 info trying registry request attempt 1 at 20:50:21
+507 http GET http://r.cnpmjs.org/bower-logger
+508 verbose request where is /bower-registry-client
+509 verbose request registry http://r.cnpmjs.org/
+510 verbose url raw /bower-registry-client
+511 verbose url resolving [ 'http://r.cnpmjs.org/', './bower-registry-client' ]
+512 verbose url resolved http://r.cnpmjs.org/bower-registry-client
+513 verbose request where is http://r.cnpmjs.org/bower-registry-client
+514 info trying registry request attempt 1 at 20:50:21
+515 http GET http://r.cnpmjs.org/bower-registry-client
+516 silly addNameRange { name: 'fstream-ignore',
+516 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+516 silly addNameRange   hasData: false }
+517 silly addNameRange { name: 'fstream', range: '>=1.0.2-0 <1.1.0-0', hasData: false }
+518 silly addNameRange { name: 'glob', range: '>=4.0.2-0 <4.1.0-0', hasData: false }
+519 verbose cache add name="p-throttler" spec="0.1.0" args=["p-throttler","0.1.0"]
+520 verbose parsed url { protocol: null,
+520 verbose parsed url   slashes: null,
+520 verbose parsed url   auth: null,
+520 verbose parsed url   host: null,
+520 verbose parsed url   port: null,
+520 verbose parsed url   hostname: null,
+520 verbose parsed url   hash: null,
+520 verbose parsed url   search: null,
+520 verbose parsed url   query: null,
+520 verbose parsed url   pathname: '0.1.0',
+520 verbose parsed url   path: '0.1.0',
+520 verbose parsed url   href: '0.1.0' }
+521 verbose addNamed [ 'p-throttler', '0.1.0' ]
+522 verbose addNamed [ '0.1.0', '0.1.0' ]
+523 silly lockFile aea1ccf7-p-throttler-0-1-0 p-throttler@0.1.0
+524 verbose lock p-throttler@0.1.0 /Users/biankai/.npm/aea1ccf7-p-throttler-0-1-0.lock
+525 verbose cache add name="promptly" spec="0.2.0" args=["promptly","0.2.0"]
+526 verbose parsed url { protocol: null,
+526 verbose parsed url   slashes: null,
+526 verbose parsed url   auth: null,
+526 verbose parsed url   host: null,
+526 verbose parsed url   port: null,
+526 verbose parsed url   hostname: null,
+526 verbose parsed url   hash: null,
+526 verbose parsed url   search: null,
+526 verbose parsed url   query: null,
+526 verbose parsed url   pathname: '0.2.0',
+526 verbose parsed url   path: '0.2.0',
+526 verbose parsed url   href: '0.2.0' }
+527 verbose addNamed [ 'promptly', '0.2.0' ]
+528 verbose addNamed [ '0.2.0', '0.2.0' ]
+529 silly lockFile c940dc36-promptly-0-2-0 promptly@0.2.0
+530 verbose lock promptly@0.2.0 /Users/biankai/.npm/c940dc36-promptly-0-2-0.lock
+531 verbose cache add name="q" spec="~1.0.1" args=["q","~1.0.1"]
+532 verbose parsed url { protocol: null,
+532 verbose parsed url   slashes: null,
+532 verbose parsed url   auth: null,
+532 verbose parsed url   host: null,
+532 verbose parsed url   port: null,
+532 verbose parsed url   hostname: null,
+532 verbose parsed url   hash: null,
+532 verbose parsed url   search: null,
+532 verbose parsed url   query: null,
+532 verbose parsed url   pathname: '~1.0.1',
+532 verbose parsed url   path: '~1.0.1',
+532 verbose parsed url   href: '~1.0.1' }
+533 verbose addNamed [ 'q', '~1.0.1' ]
+534 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+535 silly lockFile bfcfee2e-q-1-0-1 q@~1.0.1
+536 verbose lock q@~1.0.1 /Users/biankai/.npm/bfcfee2e-q-1-0-1.lock
+537 verbose cache add name="request" spec="~2.42.0" args=["request","~2.42.0"]
+538 verbose parsed url { protocol: null,
+538 verbose parsed url   slashes: null,
+538 verbose parsed url   auth: null,
+538 verbose parsed url   host: null,
+538 verbose parsed url   port: null,
+538 verbose parsed url   hostname: null,
+538 verbose parsed url   hash: null,
+538 verbose parsed url   search: null,
+538 verbose parsed url   query: null,
+538 verbose parsed url   pathname: '~2.42.0',
+538 verbose parsed url   path: '~2.42.0',
+538 verbose parsed url   href: '~2.42.0' }
+539 verbose addNamed [ 'request', '~2.42.0' ]
+540 verbose addNamed [ null, '>=2.42.0-0 <2.43.0-0' ]
+541 silly lockFile 8adb197d-request-2-42-0 request@~2.42.0
+542 verbose lock request@~2.42.0 /Users/biankai/.npm/8adb197d-request-2-42-0.lock
+543 verbose cache add name="request-progress" spec="0.3.0" args=["request-progress","0.3.0"]
+544 verbose parsed url { protocol: null,
+544 verbose parsed url   slashes: null,
+544 verbose parsed url   auth: null,
+544 verbose parsed url   host: null,
+544 verbose parsed url   port: null,
+544 verbose parsed url   hostname: null,
+544 verbose parsed url   hash: null,
+544 verbose parsed url   search: null,
+544 verbose parsed url   query: null,
+544 verbose parsed url   pathname: '0.3.0',
+544 verbose parsed url   path: '0.3.0',
+544 verbose parsed url   href: '0.3.0' }
+545 verbose addNamed [ 'request-progress', '0.3.0' ]
+546 verbose addNamed [ '0.3.0', '0.3.0' ]
+547 silly lockFile caf2758e-request-progress-0-3-0 request-progress@0.3.0
+548 verbose lock request-progress@0.3.0 /Users/biankai/.npm/caf2758e-request-progress-0-3-0.lock
+549 verbose cache add name="retry" spec="0.6.0" args=["retry","0.6.0"]
+550 verbose parsed url { protocol: null,
+550 verbose parsed url   slashes: null,
+550 verbose parsed url   auth: null,
+550 verbose parsed url   host: null,
+550 verbose parsed url   port: null,
+550 verbose parsed url   hostname: null,
+550 verbose parsed url   hash: null,
+550 verbose parsed url   search: null,
+550 verbose parsed url   query: null,
+550 verbose parsed url   pathname: '0.6.0',
+550 verbose parsed url   path: '0.6.0',
+550 verbose parsed url   href: '0.6.0' }
+551 verbose addNamed [ 'retry', '0.6.0' ]
+552 verbose addNamed [ '0.6.0', '0.6.0' ]
+553 silly lockFile 874cb068-retry-0-6-0 retry@0.6.0
+554 verbose lock retry@0.6.0 /Users/biankai/.npm/874cb068-retry-0-6-0.lock
+555 verbose cache add name="rimraf" spec="~2.2.0" args=["rimraf","~2.2.0"]
+556 verbose parsed url { protocol: null,
+556 verbose parsed url   slashes: null,
+556 verbose parsed url   auth: null,
+556 verbose parsed url   host: null,
+556 verbose parsed url   port: null,
+556 verbose parsed url   hostname: null,
+556 verbose parsed url   hash: null,
+556 verbose parsed url   search: null,
+556 verbose parsed url   query: null,
+556 verbose parsed url   pathname: '~2.2.0',
+556 verbose parsed url   path: '~2.2.0',
+556 verbose parsed url   href: '~2.2.0' }
+557 verbose addNamed [ 'rimraf', '~2.2.0' ]
+558 verbose addNamed [ null, '>=2.2.0-0 <2.3.0-0' ]
+559 silly lockFile 69dbd68f-rimraf-2-2-0 rimraf@~2.2.0
+560 verbose lock rimraf@~2.2.0 /Users/biankai/.npm/69dbd68f-rimraf-2-2-0.lock
+561 verbose cache add name="semver" spec="~2.3.0" args=["semver","~2.3.0"]
+562 verbose parsed url { protocol: null,
+562 verbose parsed url   slashes: null,
+562 verbose parsed url   auth: null,
+562 verbose parsed url   host: null,
+562 verbose parsed url   port: null,
+562 verbose parsed url   hostname: null,
+562 verbose parsed url   hash: null,
+562 verbose parsed url   search: null,
+562 verbose parsed url   query: null,
+562 verbose parsed url   pathname: '~2.3.0',
+562 verbose parsed url   path: '~2.3.0',
+562 verbose parsed url   href: '~2.3.0' }
+563 verbose addNamed [ 'semver', '~2.3.0' ]
+564 verbose addNamed [ null, '>=2.3.0-0 <2.4.0-0' ]
+565 silly lockFile 1576312f-semver-2-3-0 semver@~2.3.0
+566 verbose lock semver@~2.3.0 /Users/biankai/.npm/1576312f-semver-2-3-0.lock
+567 verbose cache add name="shell-quote" spec="~1.4.1" args=["shell-quote","~1.4.1"]
+568 verbose parsed url { protocol: null,
+568 verbose parsed url   slashes: null,
+568 verbose parsed url   auth: null,
+568 verbose parsed url   host: null,
+568 verbose parsed url   port: null,
+568 verbose parsed url   hostname: null,
+568 verbose parsed url   hash: null,
+568 verbose parsed url   search: null,
+568 verbose parsed url   query: null,
+568 verbose parsed url   pathname: '~1.4.1',
+568 verbose parsed url   path: '~1.4.1',
+568 verbose parsed url   href: '~1.4.1' }
+569 verbose addNamed [ 'shell-quote', '~1.4.1' ]
+570 verbose addNamed [ null, '>=1.4.1-0 <1.5.0-0' ]
+571 silly lockFile cfbfb4a3-shell-quote-1-4-1 shell-quote@~1.4.1
+572 verbose lock shell-quote@~1.4.1 /Users/biankai/.npm/cfbfb4a3-shell-quote-1-4-1.lock
+573 verbose cache add [ 'tar-fs@0.5.2', null ]
+574 verbose cache add name=undefined spec="tar-fs@0.5.2" args=["tar-fs@0.5.2",null]
+575 verbose parsed url { protocol: null,
+575 verbose parsed url   slashes: null,
+575 verbose parsed url   auth: null,
+575 verbose parsed url   host: null,
+575 verbose parsed url   port: null,
+575 verbose parsed url   hostname: null,
+575 verbose parsed url   hash: null,
+575 verbose parsed url   search: null,
+575 verbose parsed url   query: null,
+575 verbose parsed url   pathname: 'tar-fs@0.5.2',
+575 verbose parsed url   path: 'tar-fs@0.5.2',
+575 verbose parsed url   href: 'tar-fs@0.5.2' }
+576 verbose cache add [ 'tmp@0.0.23', null ]
+577 verbose cache add name=undefined spec="tmp@0.0.23" args=["tmp@0.0.23",null]
+578 verbose parsed url { protocol: null,
+578 verbose parsed url   slashes: null,
+578 verbose parsed url   auth: null,
+578 verbose parsed url   host: null,
+578 verbose parsed url   port: null,
+578 verbose parsed url   hostname: null,
+578 verbose parsed url   hash: null,
+578 verbose parsed url   search: null,
+578 verbose parsed url   query: null,
+578 verbose parsed url   pathname: 'tmp@0.0.23',
+578 verbose parsed url   path: 'tmp@0.0.23',
+578 verbose parsed url   href: 'tmp@0.0.23' }
+579 verbose cache add [ 'update-notifier@0.2.0', null ]
+580 verbose cache add name=undefined spec="update-notifier@0.2.0" args=["update-notifier@0.2.0",null]
+581 verbose parsed url { protocol: null,
+581 verbose parsed url   slashes: null,
+581 verbose parsed url   auth: null,
+581 verbose parsed url   host: null,
+581 verbose parsed url   port: null,
+581 verbose parsed url   hostname: null,
+581 verbose parsed url   hash: null,
+581 verbose parsed url   search: null,
+581 verbose parsed url   query: null,
+581 verbose parsed url   pathname: 'update-notifier@0.2.0',
+581 verbose parsed url   path: 'update-notifier@0.2.0',
+581 verbose parsed url   href: 'update-notifier@0.2.0' }
+582 verbose cache add [ 'which@~1.0.5', null ]
+583 verbose cache add name=undefined spec="which@~1.0.5" args=["which@~1.0.5",null]
+584 verbose parsed url { protocol: null,
+584 verbose parsed url   slashes: null,
+584 verbose parsed url   auth: null,
+584 verbose parsed url   host: null,
+584 verbose parsed url   port: null,
+584 verbose parsed url   hostname: null,
+584 verbose parsed url   hash: null,
+584 verbose parsed url   search: null,
+584 verbose parsed url   query: null,
+584 verbose parsed url   pathname: 'which@~1.0.5',
+584 verbose parsed url   path: 'which@~1.0.5',
+584 verbose parsed url   href: 'which@~1.0.5' }
+585 verbose cache add name="stringify-object" spec="~1.0.0" args=["stringify-object","~1.0.0"]
+586 verbose parsed url { protocol: null,
+586 verbose parsed url   slashes: null,
+586 verbose parsed url   auth: null,
+586 verbose parsed url   host: null,
+586 verbose parsed url   port: null,
+586 verbose parsed url   hostname: null,
+586 verbose parsed url   hash: null,
+586 verbose parsed url   search: null,
+586 verbose parsed url   query: null,
+586 verbose parsed url   pathname: '~1.0.0',
+586 verbose parsed url   path: '~1.0.0',
+586 verbose parsed url   href: '~1.0.0' }
+587 verbose addNamed [ 'stringify-object', '~1.0.0' ]
+588 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+589 silly lockFile 9f0958e2-stringify-object-1-0-0 stringify-object@~1.0.0
+590 verbose lock stringify-object@~1.0.0 /Users/biankai/.npm/9f0958e2-stringify-object-1-0-0.lock
+591 silly addNameRange { name: 'graceful-fs',
+591 silly addNameRange   range: '>=3.0.1-0 <3.1.0-0',
+591 silly addNameRange   hasData: false }
+592 verbose request where is /chmodr
+593 verbose request registry http://r.cnpmjs.org/
+594 verbose url raw /chmodr
+595 verbose url resolving [ 'http://r.cnpmjs.org/', './chmodr' ]
+596 verbose url resolved http://r.cnpmjs.org/chmodr
+597 verbose request where is http://r.cnpmjs.org/chmodr
+598 info trying registry request attempt 1 at 20:50:22
+599 http GET http://r.cnpmjs.org/chmodr
+600 verbose request where is /fstream-ignore
+601 verbose request registry http://r.cnpmjs.org/
+602 verbose url raw /fstream-ignore
+603 verbose url resolving [ 'http://r.cnpmjs.org/', './fstream-ignore' ]
+604 verbose url resolved http://r.cnpmjs.org/fstream-ignore
+605 verbose request where is http://r.cnpmjs.org/fstream-ignore
+606 info trying registry request attempt 1 at 20:50:22
+607 http GET http://r.cnpmjs.org/fstream-ignore
+608 verbose request where is /decompress-zip
+609 verbose request registry http://r.cnpmjs.org/
+610 verbose url raw /decompress-zip
+611 verbose url resolving [ 'http://r.cnpmjs.org/', './decompress-zip' ]
+612 verbose url resolved http://r.cnpmjs.org/decompress-zip
+613 verbose request where is http://r.cnpmjs.org/decompress-zip
+614 info trying registry request attempt 1 at 20:50:22
+615 http GET http://r.cnpmjs.org/decompress-zip
+616 silly addNameRange { name: 'handlebars',
+616 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+616 silly addNameRange   hasData: false }
+617 silly addNameRange { name: 'is-root', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+618 silly addNameRange { name: 'junk', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+619 silly addNameRange { name: 'lockfile', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+620 silly addNameRange { name: 'lru-cache',
+620 silly addNameRange   range: '>=2.5.0-0 <2.6.0-0',
+620 silly addNameRange   hasData: false }
+621 silly addNameRange { name: 'mout', range: '>=0.9.0-0 <0.10.0-0', hasData: false }
+622 silly addNameRange { name: 'nopt', range: '>=3.0.0-0 <3.1.0-0', hasData: false }
+623 silly addNameRange { name: 'opn', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+624 verbose cache add name="tar-fs" spec="0.5.2" args=["tar-fs","0.5.2"]
+625 verbose parsed url { protocol: null,
+625 verbose parsed url   slashes: null,
+625 verbose parsed url   auth: null,
+625 verbose parsed url   host: null,
+625 verbose parsed url   port: null,
+625 verbose parsed url   hostname: null,
+625 verbose parsed url   hash: null,
+625 verbose parsed url   search: null,
+625 verbose parsed url   query: null,
+625 verbose parsed url   pathname: '0.5.2',
+625 verbose parsed url   path: '0.5.2',
+625 verbose parsed url   href: '0.5.2' }
+626 verbose addNamed [ 'tar-fs', '0.5.2' ]
+627 verbose addNamed [ '0.5.2', '0.5.2' ]
+628 silly lockFile 197bacf4-tar-fs-0-5-2 tar-fs@0.5.2
+629 verbose lock tar-fs@0.5.2 /Users/biankai/.npm/197bacf4-tar-fs-0-5-2.lock
+630 verbose cache add name="tmp" spec="0.0.23" args=["tmp","0.0.23"]
+631 verbose parsed url { protocol: null,
+631 verbose parsed url   slashes: null,
+631 verbose parsed url   auth: null,
+631 verbose parsed url   host: null,
+631 verbose parsed url   port: null,
+631 verbose parsed url   hostname: null,
+631 verbose parsed url   hash: null,
+631 verbose parsed url   search: null,
+631 verbose parsed url   query: null,
+631 verbose parsed url   pathname: '0.0.23',
+631 verbose parsed url   path: '0.0.23',
+631 verbose parsed url   href: '0.0.23' }
+632 verbose addNamed [ 'tmp', '0.0.23' ]
+633 verbose addNamed [ '0.0.23', '0.0.23' ]
+634 silly lockFile f7638ceb-tmp-0-0-23 tmp@0.0.23
+635 verbose lock tmp@0.0.23 /Users/biankai/.npm/f7638ceb-tmp-0-0-23.lock
+636 verbose cache add name="update-notifier" spec="0.2.0" args=["update-notifier","0.2.0"]
+637 verbose parsed url { protocol: null,
+637 verbose parsed url   slashes: null,
+637 verbose parsed url   auth: null,
+637 verbose parsed url   host: null,
+637 verbose parsed url   port: null,
+637 verbose parsed url   hostname: null,
+637 verbose parsed url   hash: null,
+637 verbose parsed url   search: null,
+637 verbose parsed url   query: null,
+637 verbose parsed url   pathname: '0.2.0',
+637 verbose parsed url   path: '0.2.0',
+637 verbose parsed url   href: '0.2.0' }
+638 verbose addNamed [ 'update-notifier', '0.2.0' ]
+639 verbose addNamed [ '0.2.0', '0.2.0' ]
+640 silly lockFile 8e5d91fe-update-notifier-0-2-0 update-notifier@0.2.0
+641 verbose lock update-notifier@0.2.0 /Users/biankai/.npm/8e5d91fe-update-notifier-0-2-0.lock
+642 verbose cache add name="which" spec="~1.0.5" args=["which","~1.0.5"]
+643 verbose parsed url { protocol: null,
+643 verbose parsed url   slashes: null,
+643 verbose parsed url   auth: null,
+643 verbose parsed url   host: null,
+643 verbose parsed url   port: null,
+643 verbose parsed url   hostname: null,
+643 verbose parsed url   hash: null,
+643 verbose parsed url   search: null,
+643 verbose parsed url   query: null,
+643 verbose parsed url   pathname: '~1.0.5',
+643 verbose parsed url   path: '~1.0.5',
+643 verbose parsed url   href: '~1.0.5' }
+644 verbose addNamed [ 'which', '~1.0.5' ]
+645 verbose addNamed [ null, '>=1.0.5-0 <1.1.0-0' ]
+646 silly lockFile d158d65e-which-1-0-5 which@~1.0.5
+647 verbose lock which@~1.0.5 /Users/biankai/.npm/d158d65e-which-1-0-5.lock
+648 verbose request where is /handlebars
+649 verbose request registry http://r.cnpmjs.org/
+650 verbose url raw /handlebars
+651 verbose url resolving [ 'http://r.cnpmjs.org/', './handlebars' ]
+652 verbose url resolved http://r.cnpmjs.org/handlebars
+653 verbose request where is http://r.cnpmjs.org/handlebars
+654 info trying registry request attempt 1 at 20:50:22
+655 http GET http://r.cnpmjs.org/handlebars
+656 verbose request where is /inquirer
+657 verbose request registry http://r.cnpmjs.org/
+658 verbose url raw /inquirer
+659 verbose url resolving [ 'http://r.cnpmjs.org/', './inquirer' ]
+660 verbose url resolved http://r.cnpmjs.org/inquirer
+661 verbose request where is http://r.cnpmjs.org/inquirer
+662 info trying registry request attempt 1 at 20:50:22
+663 http GET http://r.cnpmjs.org/inquirer
+664 verbose request where is /insight
+665 verbose request registry http://r.cnpmjs.org/
+666 verbose url raw /insight
+667 verbose url resolving [ 'http://r.cnpmjs.org/', './insight' ]
+668 verbose url resolved http://r.cnpmjs.org/insight
+669 verbose request where is http://r.cnpmjs.org/insight
+670 info trying registry request attempt 1 at 20:50:22
+671 http GET http://r.cnpmjs.org/insight
+672 verbose request where is /is-root
+673 verbose request registry http://r.cnpmjs.org/
+674 verbose url raw /is-root
+675 verbose url resolving [ 'http://r.cnpmjs.org/', './is-root' ]
+676 verbose url resolved http://r.cnpmjs.org/is-root
+677 verbose request where is http://r.cnpmjs.org/is-root
+678 info trying registry request attempt 1 at 20:50:22
+679 http GET http://r.cnpmjs.org/is-root
+680 verbose request where is /junk
+681 verbose request registry http://r.cnpmjs.org/
+682 verbose url raw /junk
+683 verbose url resolving [ 'http://r.cnpmjs.org/', './junk' ]
+684 verbose url resolved http://r.cnpmjs.org/junk
+685 verbose request where is http://r.cnpmjs.org/junk
+686 info trying registry request attempt 1 at 20:50:22
+687 http GET http://r.cnpmjs.org/junk
+688 verbose request where is /lockfile
+689 verbose request registry http://r.cnpmjs.org/
+690 verbose url raw /lockfile
+691 verbose url resolving [ 'http://r.cnpmjs.org/', './lockfile' ]
+692 verbose url resolved http://r.cnpmjs.org/lockfile
+693 verbose request where is http://r.cnpmjs.org/lockfile
+694 info trying registry request attempt 1 at 20:50:22
+695 http GET http://r.cnpmjs.org/lockfile
+696 verbose request where is /mout
+697 verbose request registry http://r.cnpmjs.org/
+698 verbose url raw /mout
+699 verbose url resolving [ 'http://r.cnpmjs.org/', './mout' ]
+700 verbose url resolved http://r.cnpmjs.org/mout
+701 verbose request where is http://r.cnpmjs.org/mout
+702 info trying registry request attempt 1 at 20:50:22
+703 http GET http://r.cnpmjs.org/mout
+704 silly addNameRange { name: 'q', range: '>=1.0.1-0 <1.1.0-0', hasData: false }
+705 silly addNameRange { name: 'request',
+705 silly addNameRange   range: '>=2.42.0-0 <2.43.0-0',
+705 silly addNameRange   hasData: false }
+706 verbose request where is /opn
+707 verbose request registry http://r.cnpmjs.org/
+708 verbose url raw /opn
+709 verbose url resolving [ 'http://r.cnpmjs.org/', './opn' ]
+710 verbose url resolved http://r.cnpmjs.org/opn
+711 verbose request where is http://r.cnpmjs.org/opn
+712 info trying registry request attempt 1 at 20:50:22
+713 http GET http://r.cnpmjs.org/opn
+714 silly addNameRange { name: 'rimraf', range: '>=2.2.0-0 <2.3.0-0', hasData: false }
+715 silly addNameRange { name: 'semver', range: '>=2.3.0-0 <2.4.0-0', hasData: false }
+716 silly addNameRange { name: 'shell-quote',
+716 silly addNameRange   range: '>=1.4.1-0 <1.5.0-0',
+716 silly addNameRange   hasData: false }
+717 silly addNameRange { name: 'stringify-object',
+717 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+717 silly addNameRange   hasData: false }
+718 verbose request where is /abbrev
+719 verbose request registry http://r.cnpmjs.org/
+720 verbose url raw /abbrev
+721 verbose url resolving [ 'http://r.cnpmjs.org/', './abbrev' ]
+722 verbose url resolved http://r.cnpmjs.org/abbrev
+723 verbose request where is http://r.cnpmjs.org/abbrev
+724 info trying registry request attempt 1 at 20:50:22
+725 verbose etag "1401055983000"
+726 http GET http://r.cnpmjs.org/abbrev
+727 verbose request where is /promptly
+728 verbose request registry http://r.cnpmjs.org/
+729 verbose url raw /promptly
+730 verbose url resolving [ 'http://r.cnpmjs.org/', './promptly' ]
+731 verbose url resolved http://r.cnpmjs.org/promptly
+732 verbose request where is http://r.cnpmjs.org/promptly
+733 info trying registry request attempt 1 at 20:50:22
+734 http GET http://r.cnpmjs.org/promptly
+735 verbose request where is /request-progress
+736 verbose request registry http://r.cnpmjs.org/
+737 verbose url raw /request-progress
+738 verbose url resolving [ 'http://r.cnpmjs.org/', './request-progress' ]
+739 verbose url resolved http://r.cnpmjs.org/request-progress
+740 verbose request where is http://r.cnpmjs.org/request-progress
+741 info trying registry request attempt 1 at 20:50:22
+742 http GET http://r.cnpmjs.org/request-progress
+743 verbose request where is /p-throttler
+744 verbose request registry http://r.cnpmjs.org/
+745 verbose url raw /p-throttler
+746 verbose url resolving [ 'http://r.cnpmjs.org/', './p-throttler' ]
+747 verbose url resolved http://r.cnpmjs.org/p-throttler
+748 verbose request where is http://r.cnpmjs.org/p-throttler
+749 info trying registry request attempt 1 at 20:50:22
+750 http GET http://r.cnpmjs.org/p-throttler
+751 silly addNameRange { name: 'which', range: '>=1.0.5-0 <1.1.0-0', hasData: false }
+752 verbose request where is /stringify-object
+753 verbose request registry http://r.cnpmjs.org/
+754 verbose url raw /stringify-object
+755 verbose url resolving [ 'http://r.cnpmjs.org/', './stringify-object' ]
+756 verbose url resolved http://r.cnpmjs.org/stringify-object
+757 verbose request where is http://r.cnpmjs.org/stringify-object
+758 info trying registry request attempt 1 at 20:50:22
+759 http GET http://r.cnpmjs.org/stringify-object
+760 verbose request where is /archy
+761 verbose request registry http://r.cnpmjs.org/
+762 verbose url raw /archy
+763 verbose url resolving [ 'http://r.cnpmjs.org/', './archy' ]
+764 verbose url resolved http://r.cnpmjs.org/archy
+765 verbose request where is http://r.cnpmjs.org/archy
+766 info trying registry request attempt 1 at 20:50:22
+767 verbose etag "1410667778000"
+768 http GET http://r.cnpmjs.org/archy
+769 verbose request where is /cardinal
+770 verbose request registry http://r.cnpmjs.org/
+771 verbose url raw /cardinal
+772 verbose url resolving [ 'http://r.cnpmjs.org/', './cardinal' ]
+773 verbose url resolved http://r.cnpmjs.org/cardinal
+774 verbose request where is http://r.cnpmjs.org/cardinal
+775 info trying registry request attempt 1 at 20:50:22
+776 verbose etag "1389167031000"
+777 http GET http://r.cnpmjs.org/cardinal
+778 verbose request where is /chalk
+779 verbose request registry http://r.cnpmjs.org/
+780 verbose url raw /chalk
+781 verbose url resolving [ 'http://r.cnpmjs.org/', './chalk' ]
+782 verbose url resolved http://r.cnpmjs.org/chalk
+783 verbose request where is http://r.cnpmjs.org/chalk
+784 info trying registry request attempt 1 at 20:50:22
+785 verbose etag "1404923579000"
+786 http GET http://r.cnpmjs.org/chalk
+787 verbose request where is /tar-fs
+788 verbose request registry http://r.cnpmjs.org/
+789 verbose url raw /tar-fs
+790 verbose url resolving [ 'http://r.cnpmjs.org/', './tar-fs' ]
+791 verbose url resolved http://r.cnpmjs.org/tar-fs
+792 verbose request where is http://r.cnpmjs.org/tar-fs
+793 info trying registry request attempt 1 at 20:50:22
+794 http GET http://r.cnpmjs.org/tar-fs
+795 verbose request where is /tmp
+796 verbose request registry http://r.cnpmjs.org/
+797 verbose url raw /tmp
+798 verbose url resolving [ 'http://r.cnpmjs.org/', './tmp' ]
+799 verbose url resolved http://r.cnpmjs.org/tmp
+800 verbose request where is http://r.cnpmjs.org/tmp
+801 info trying registry request attempt 1 at 20:50:22
+802 http GET http://r.cnpmjs.org/tmp
+803 verbose request where is /fstream
+804 verbose request registry http://r.cnpmjs.org/
+805 verbose url raw /fstream
+806 verbose url resolving [ 'http://r.cnpmjs.org/', './fstream' ]
+807 verbose url resolved http://r.cnpmjs.org/fstream
+808 verbose request where is http://r.cnpmjs.org/fstream
+809 info trying registry request attempt 1 at 20:50:22
+810 http GET http://r.cnpmjs.org/fstream
+811 verbose request where is /glob
+812 verbose request registry http://r.cnpmjs.org/
+813 verbose url raw /glob
+814 verbose url resolving [ 'http://r.cnpmjs.org/', './glob' ]
+815 verbose url resolved http://r.cnpmjs.org/glob
+816 verbose request where is http://r.cnpmjs.org/glob
+817 info trying registry request attempt 1 at 20:50:22
+818 verbose etag "1418955075000"
+819 http GET http://r.cnpmjs.org/glob
+820 verbose request where is /graceful-fs
+821 verbose request registry http://r.cnpmjs.org/
+822 verbose url raw /graceful-fs
+823 verbose url resolving [ 'http://r.cnpmjs.org/', './graceful-fs' ]
+824 verbose url resolved http://r.cnpmjs.org/graceful-fs
+825 verbose request where is http://r.cnpmjs.org/graceful-fs
+826 info trying registry request attempt 1 at 20:50:22
+827 verbose etag "1417370272000"
+828 http GET http://r.cnpmjs.org/graceful-fs
+829 verbose request where is /mkdirp
+830 verbose request registry http://r.cnpmjs.org/
+831 verbose url raw /mkdirp
+832 verbose url resolving [ 'http://r.cnpmjs.org/', './mkdirp' ]
+833 verbose url resolved http://r.cnpmjs.org/mkdirp
+834 verbose request where is http://r.cnpmjs.org/mkdirp
+835 info trying registry request attempt 1 at 20:50:22
+836 verbose etag "1399329399000"
+837 http GET http://r.cnpmjs.org/mkdirp
+838 verbose request where is /lru-cache
+839 verbose request registry http://r.cnpmjs.org/
+840 verbose url raw /lru-cache
+841 verbose url resolving [ 'http://r.cnpmjs.org/', './lru-cache' ]
+842 verbose url resolved http://r.cnpmjs.org/lru-cache
+843 verbose request where is http://r.cnpmjs.org/lru-cache
+844 info trying registry request attempt 1 at 20:50:22
+845 verbose etag "1386785939000"
+846 http GET http://r.cnpmjs.org/lru-cache
+847 verbose request where is /nopt
+848 verbose request registry http://r.cnpmjs.org/
+849 verbose url raw /nopt
+850 verbose url resolving [ 'http://r.cnpmjs.org/', './nopt' ]
+851 verbose url resolved http://r.cnpmjs.org/nopt
+852 verbose request where is http://r.cnpmjs.org/nopt
+853 info trying registry request attempt 1 at 20:50:22
+854 verbose etag "1404220951000"
+855 http GET http://r.cnpmjs.org/nopt
+856 verbose request where is /osenv
+857 verbose request registry http://r.cnpmjs.org/
+858 verbose url raw /osenv
+859 verbose url resolving [ 'http://r.cnpmjs.org/', './osenv' ]
+860 verbose url resolved http://r.cnpmjs.org/osenv
+861 verbose request where is http://r.cnpmjs.org/osenv
+862 info trying registry request attempt 1 at 20:50:22
+863 verbose etag "1401113336000"
+864 http GET http://r.cnpmjs.org/osenv
+865 verbose request where is /q
+866 verbose request registry http://r.cnpmjs.org/
+867 verbose url raw /q
+868 verbose url resolving [ 'http://r.cnpmjs.org/', './q' ]
+869 verbose url resolved http://r.cnpmjs.org/q
+870 verbose request where is http://r.cnpmjs.org/q
+871 info trying registry request attempt 1 at 20:50:22
+872 verbose etag "1416700632000"
+873 http GET http://r.cnpmjs.org/q
+874 verbose request where is /retry
+875 verbose request registry http://r.cnpmjs.org/
+876 verbose url raw /retry
+877 verbose url resolving [ 'http://r.cnpmjs.org/', './retry' ]
+878 verbose url resolved http://r.cnpmjs.org/retry
+879 verbose request where is http://r.cnpmjs.org/retry
+880 info trying registry request attempt 1 at 20:50:22
+881 http GET http://r.cnpmjs.org/retry
+882 verbose request where is /request
+883 verbose request registry http://r.cnpmjs.org/
+884 verbose url raw /request
+885 verbose url resolving [ 'http://r.cnpmjs.org/', './request' ]
+886 verbose url resolved http://r.cnpmjs.org/request
+887 verbose request where is http://r.cnpmjs.org/request
+888 info trying registry request attempt 1 at 20:50:22
+889 verbose etag "1418228626000"
+890 http GET http://r.cnpmjs.org/request
+891 verbose request where is /semver
+892 verbose request registry http://r.cnpmjs.org/
+893 verbose url raw /semver
+894 verbose url resolving [ 'http://r.cnpmjs.org/', './semver' ]
+895 verbose url resolved http://r.cnpmjs.org/semver
+896 verbose request where is http://r.cnpmjs.org/semver
+897 info trying registry request attempt 1 at 20:50:22
+898 verbose etag "1419328347000"
+899 http GET http://r.cnpmjs.org/semver
+900 verbose request where is /rimraf
+901 verbose request registry http://r.cnpmjs.org/
+902 verbose url raw /rimraf
+903 verbose url resolving [ 'http://r.cnpmjs.org/', './rimraf' ]
+904 verbose url resolved http://r.cnpmjs.org/rimraf
+905 verbose request where is http://r.cnpmjs.org/rimraf
+906 info trying registry request attempt 1 at 20:50:22
+907 verbose etag "1399378168000"
+908 http GET http://r.cnpmjs.org/rimraf
+909 verbose request where is /shell-quote
+910 verbose request registry http://r.cnpmjs.org/
+911 verbose url raw /shell-quote
+912 verbose url resolving [ 'http://r.cnpmjs.org/', './shell-quote' ]
+913 verbose url resolved http://r.cnpmjs.org/shell-quote
+914 verbose request where is http://r.cnpmjs.org/shell-quote
+915 info trying registry request attempt 1 at 20:50:22
+916 verbose etag "1405877410000"
+917 http GET http://r.cnpmjs.org/shell-quote
+918 verbose request where is /which
+919 verbose request registry http://r.cnpmjs.org/
+920 verbose url raw /which
+921 verbose url resolving [ 'http://r.cnpmjs.org/', './which' ]
+922 verbose url resolved http://r.cnpmjs.org/which
+923 verbose request where is http://r.cnpmjs.org/which
+924 info trying registry request attempt 1 at 20:50:22
+925 verbose etag "1417854072000"
+926 http GET http://r.cnpmjs.org/which
+927 verbose request where is /update-notifier
+928 verbose request registry http://r.cnpmjs.org/
+929 verbose url raw /update-notifier
+930 verbose url resolving [ 'http://r.cnpmjs.org/', './update-notifier' ]
+931 verbose url resolved http://r.cnpmjs.org/update-notifier
+932 verbose request where is http://r.cnpmjs.org/update-notifier
+933 info trying registry request attempt 1 at 20:50:22
+934 verbose etag "1412002004000"
+935 http GET http://r.cnpmjs.org/update-notifier
+936 http 200 http://r.cnpmjs.org/bower-logger
+937 silly registry.get cb [ 200,
+937 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+937 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+937 silly registry.get     'content-type': 'application/json; charset=utf-8',
+937 silly registry.get     'content-length': '9685',
+937 silly registry.get     connection: 'keep-alive',
+937 silly registry.get     'x-powered-by': 'koa',
+937 silly registry.get     etag: '"1389737795000"',
+937 silly registry.get     'x-readtime': '58' } ]
+938 silly addNameRange number 2 { name: 'bower-logger',
+938 silly addNameRange   range: '>=0.2.2-0 <0.3.0-0',
+938 silly addNameRange   hasData: true }
+939 silly addNameRange versions [ 'bower-logger',
+939 silly addNameRange   [ '0.2.2', '0.2.1', '0.2.0', '0.1.0', '0.1.0-rc.1' ] ]
+940 verbose addNamed [ 'bower-logger', '0.2.2' ]
+941 verbose addNamed [ '0.2.2', '0.2.2' ]
+942 silly lockFile 4a38f198-bower-logger-0-2-2 bower-logger@0.2.2
+943 verbose lock bower-logger@0.2.2 /Users/biankai/.npm/4a38f198-bower-logger-0-2-2.lock
+944 silly lockFile 216e6b03--download-bower-logger-0-2-2-tgz http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+945 verbose lock http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz /Users/biankai/.npm/216e6b03--download-bower-logger-0-2-2-tgz.lock
+946 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz',
+946 verbose addRemoteTarball   '39be07e979b2fc8e03a94634205ed9422373d381' ]
+947 info retry fetch attempt 1 at 20:50:22
+948 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+949 http GET http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+950 http 200 http://r.cnpmjs.org/bower-json
+951 silly registry.get cb [ 200,
+951 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+951 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+951 silly registry.get     'content-type': 'application/json; charset=utf-8',
+951 silly registry.get     'content-length': '9986',
+951 silly registry.get     connection: 'keep-alive',
+951 silly registry.get     'x-powered-by': 'koa',
+951 silly registry.get     etag: '"1386785757000"',
+951 silly registry.get     'x-readtime': '38' } ]
+952 silly addNameRange number 2 { name: 'bower-json',
+952 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+952 silly addNameRange   hasData: true }
+953 silly addNameRange versions [ 'bower-json', [ '0.4.0', '0.3.0', '0.2.0', '0.1.0-rc.1' ] ]
+954 verbose addNamed [ 'bower-json', '0.4.0' ]
+955 verbose addNamed [ '0.4.0', '0.4.0' ]
+956 silly lockFile d39b341c-bower-json-0-4-0 bower-json@0.4.0
+957 verbose lock bower-json@0.4.0 /Users/biankai/.npm/d39b341c-bower-json-0-4-0.lock
+958 silly lockFile 76c7a9a0-on-download-bower-json-0-4-0-tgz http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+959 verbose lock http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz /Users/biankai/.npm/76c7a9a0-on-download-bower-json-0-4-0-tgz.lock
+960 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz',
+960 verbose addRemoteTarball   'a99c3ccf416ef0590ed0ded252c760f1c6d93766' ]
+961 info retry fetch attempt 1 at 20:50:22
+962 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+963 http GET http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+964 http 200 http://r.cnpmjs.org/bower-config
+965 silly registry.get cb [ 200,
+965 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+965 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+965 silly registry.get     'content-type': 'application/json; charset=utf-8',
+965 silly registry.get     'content-length': '30626',
+965 silly registry.get     connection: 'keep-alive',
+965 silly registry.get     'x-powered-by': 'koa',
+965 silly registry.get     etag: '"1403587345000"',
+965 silly registry.get     'x-readtime': '61' } ]
+966 silly addNameRange number 2 { name: 'bower-config',
+966 silly addNameRange   range: '>=0.5.2-0 <0.6.0-0',
+966 silly addNameRange   hasData: true }
+967 silly addNameRange versions [ 'bower-config',
+967 silly addNameRange   [ '0.5.2',
+967 silly addNameRange     '0.5.1',
+967 silly addNameRange     '0.5.0',
+967 silly addNameRange     '0.4.5',
+967 silly addNameRange     '0.4.4',
+967 silly addNameRange     '0.4.3',
+967 silly addNameRange     '0.4.2',
+967 silly addNameRange     '0.4.1',
+967 silly addNameRange     '0.4.0',
+967 silly addNameRange     '0.3.5',
+967 silly addNameRange     '0.3.4',
+967 silly addNameRange     '0.3.3',
+967 silly addNameRange     '0.3.1',
+967 silly addNameRange     '0.3.0',
+967 silly addNameRange     '0.2.0-rc.2',
+967 silly addNameRange     '0.2.0-rc.1',
+967 silly addNameRange     '0.1.0-rc.5',
+967 silly addNameRange     '0.1.0-rc.4',
+967 silly addNameRange     '0.1.0-rc.3',
+967 silly addNameRange     '0.1.0-rc.2',
+967 silly addNameRange     '0.1.0-rc.1' ] ]
+968 verbose addNamed [ 'bower-config', '0.5.2' ]
+969 verbose addNamed [ '0.5.2', '0.5.2' ]
+970 silly lockFile c7a59e04-bower-config-0-5-2 bower-config@0.5.2
+971 verbose lock bower-config@0.5.2 /Users/biankai/.npm/c7a59e04-bower-config-0-5-2.lock
+972 silly lockFile 07c89064--download-bower-config-0-5-2-tgz http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+973 verbose lock http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz /Users/biankai/.npm/07c89064--download-bower-config-0-5-2-tgz.lock
+974 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz',
+974 verbose addRemoteTarball   '1f7d2e899e99b70c29a613e70d4c64590414b22e' ]
+975 info retry fetch attempt 1 at 20:50:22
+976 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+977 http GET http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+978 http 200 http://r.cnpmjs.org/chmodr
+979 silly registry.get cb [ 200,
+979 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+979 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+979 silly registry.get     'content-type': 'application/json; charset=utf-8',
+979 silly registry.get     'content-length': '2132',
+979 silly registry.get     connection: 'keep-alive',
+979 silly registry.get     'x-powered-by': 'koa',
+979 silly registry.get     etag: '"1386785784000"',
+979 silly registry.get     'x-readtime': '13' } ]
+980 silly lockFile defbf2e4-chmodr-download-chmodr-0-1-0-tgz http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+981 verbose lock http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz /Users/biankai/.npm/defbf2e4-chmodr-download-chmodr-0-1-0-tgz.lock
+982 verbose addRemoteTarball [ 'http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz',
+982 verbose addRemoteTarball   'e09215a1d51542db2a2576969765bcf6125583eb' ]
+983 info retry fetch attempt 1 at 20:50:22
+984 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+985 http GET http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+986 http 200 http://r.cnpmjs.org/bower-endpoint-parser
+987 silly registry.get cb [ 200,
+987 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+987 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+987 silly registry.get     'content-type': 'application/json; charset=utf-8',
+987 silly registry.get     'content-length': '10910',
+987 silly registry.get     connection: 'keep-alive',
+987 silly registry.get     'x-powered-by': 'koa',
+987 silly registry.get     etag: '"1403587346000"',
+987 silly registry.get     'x-readtime': '60' } ]
+988 silly addNameRange number 2 { name: 'bower-endpoint-parser',
+988 silly addNameRange   range: '>=0.2.2-0 <0.3.0-0',
+988 silly addNameRange   hasData: true }
+989 silly addNameRange versions [ 'bower-endpoint-parser',
+989 silly addNameRange   [ '0.2.2', '0.2.1', '0.2.0', '0.1.0', '0.1.0-rc.1' ] ]
+990 verbose addNamed [ 'bower-endpoint-parser', '0.2.2' ]
+991 verbose addNamed [ '0.2.2', '0.2.2' ]
+992 silly lockFile b3d72336-bower-endpoint-parser-0-2-2 bower-endpoint-parser@0.2.2
+993 verbose lock bower-endpoint-parser@0.2.2 /Users/biankai/.npm/b3d72336-bower-endpoint-parser-0-2-2.lock
+994 silly lockFile 22409dde--bower-endpoint-parser-0-2-2-tgz http://r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz
+995 verbose lock http://r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz /Users/biankai/.npm/22409dde--bower-endpoint-parser-0-2-2-tgz.lock
+996 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz',
+996 verbose addRemoteTarball   '00b565adbfab6f2d35addde977e97962acbcb3f6' ]
+997 info retry fetch attempt 1 at 20:50:22
+998 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz
+999 http GET http://r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz
+1000 http 200 http://r.cnpmjs.org/fstream-ignore
+1001 silly registry.get cb [ 200,
+1001 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1001 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1001 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1001 silly registry.get     'content-length': '15343',
+1001 silly registry.get     connection: 'keep-alive',
+1001 silly registry.get     'x-powered-by': 'koa',
+1001 silly registry.get     etag: '"1417594304000"',
+1001 silly registry.get     'x-readtime': '20' } ]
+1002 silly addNameRange number 2 { name: 'fstream-ignore',
+1002 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+1002 silly addNameRange   hasData: true }
+1003 silly addNameRange versions [ 'fstream-ignore',
+1003 silly addNameRange   [ '1.0.2',
+1003 silly addNameRange     '1.0.1',
+1003 silly addNameRange     '1.0.0',
+1003 silly addNameRange     '0.0.10',
+1003 silly addNameRange     '0.0.9',
+1003 silly addNameRange     '0.0.8',
+1003 silly addNameRange     '0.0.7',
+1003 silly addNameRange     '0.0.6',
+1003 silly addNameRange     '0.0.5',
+1003 silly addNameRange     '0.0.4',
+1003 silly addNameRange     '0.0.3',
+1003 silly addNameRange     '0.0.2',
+1003 silly addNameRange     '0.0.1' ] ]
+1004 verbose addNamed [ 'fstream-ignore', '1.0.2' ]
+1005 verbose addNamed [ '1.0.2', '1.0.2' ]
+1006 silly lockFile 58191f1e-fstream-ignore-1-0-2 fstream-ignore@1.0.2
+1007 verbose lock fstream-ignore@1.0.2 /Users/biankai/.npm/58191f1e-fstream-ignore-1-0-2.lock
+1008 silly lockFile 822a451c-ownload-fstream-ignore-1-0-2-tgz http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1009 verbose lock http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz /Users/biankai/.npm/822a451c-ownload-fstream-ignore-1-0-2-tgz.lock
+1010 verbose addRemoteTarball [ 'http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz',
+1010 verbose addRemoteTarball   '18c891db01b782a74a7bff936a0f24997741c7ab' ]
+1011 info retry fetch attempt 1 at 20:50:22
+1012 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1013 http GET http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1014 http 200 http://r.cnpmjs.org/decompress-zip
+1015 silly registry.get cb [ 200,
+1015 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1015 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1015 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1015 silly registry.get     'content-length': '18776',
+1015 silly registry.get     connection: 'keep-alive',
+1015 silly registry.get     'x-powered-by': 'koa',
+1015 silly registry.get     etag: '"1420388588000"',
+1015 silly registry.get     'x-readtime': '36' } ]
+1016 silly lockFile 96ab8599-ownload-decompress-zip-0-0-8-tgz http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1017 verbose lock http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz /Users/biankai/.npm/96ab8599-ownload-decompress-zip-0-0-8-tgz.lock
+1018 verbose addRemoteTarball [ 'http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz',
+1018 verbose addRemoteTarball   '4a265b22c7b209d7b24fa66f2b2dfbced59044f3' ]
+1019 info retry fetch attempt 1 at 20:50:22
+1020 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1021 http GET http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1022 http 200 http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+1023 silly lockFile 76c7a9a0-on-download-bower-json-0-4-0-tgz http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+1024 silly lockFile 76c7a9a0-on-download-bower-json-0-4-0-tgz http://r.cnpmjs.org/bower-json/download/bower-json-0.4.0.tgz
+1025 silly lockFile d39b341c-bower-json-0-4-0 bower-json@0.4.0
+1026 silly lockFile d39b341c-bower-json-0-4-0 bower-json@0.4.0
+1027 silly lockFile ea848668-bower-json-0-4-0 bower-json@~0.4.0
+1028 silly lockFile ea848668-bower-json-0-4-0 bower-json@~0.4.0
+1029 http 200 http://r.cnpmjs.org/is-root
+1030 silly registry.get cb [ 200,
+1030 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1030 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1030 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1030 silly registry.get     'content-length': '3452',
+1030 silly registry.get     connection: 'keep-alive',
+1030 silly registry.get     'x-powered-by': 'koa',
+1030 silly registry.get     etag: '"1407935664000"',
+1030 silly registry.get     'x-readtime': '16' } ]
+1031 silly addNameRange number 2 { name: 'is-root', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+1032 silly addNameRange versions [ 'is-root', [ '1.0.0', '0.1.0' ] ]
+1033 verbose addNamed [ 'is-root', '1.0.0' ]
+1034 verbose addNamed [ '1.0.0', '1.0.0' ]
+1035 silly lockFile 569ba987-is-root-1-0-0 is-root@1.0.0
+1036 verbose lock is-root@1.0.0 /Users/biankai/.npm/569ba987-is-root-1-0-0.lock
+1037 silly lockFile 397376ef--root-download-is-root-1-0-0-tgz http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1038 verbose lock http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz /Users/biankai/.npm/397376ef--root-download-is-root-1-0-0-tgz.lock
+1039 verbose addRemoteTarball [ 'http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz',
+1039 verbose addRemoteTarball   '07b6c233bc394cd9d02ba15c966bd6660d6342d5' ]
+1040 info retry fetch attempt 1 at 20:50:22
+1041 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1042 http GET http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1043 http 200 http://r.cnpmjs.org/bower-registry-client
+1044 silly registry.get cb [ 200,
+1044 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1044 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1044 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1044 silly registry.get     'content-length': '29831',
+1044 silly registry.get     connection: 'keep-alive',
+1044 silly registry.get     'x-powered-by': 'koa',
+1044 silly registry.get     etag: '"1420419714000"',
+1044 silly registry.get     'x-readtime': '47' } ]
+1045 silly addNameRange number 2 { name: 'bower-registry-client',
+1045 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+1045 silly addNameRange   hasData: true }
+1046 silly addNameRange versions [ 'bower-registry-client',
+1046 silly addNameRange   [ '0.2.2',
+1046 silly addNameRange     '0.2.1',
+1046 silly addNameRange     '0.2.0',
+1046 silly addNameRange     '0.1.6',
+1046 silly addNameRange     '0.1.5',
+1046 silly addNameRange     '0.1.4',
+1046 silly addNameRange     '0.1.3',
+1046 silly addNameRange     '0.1.2',
+1046 silly addNameRange     '0.1.1',
+1046 silly addNameRange     '0.1.0',
+1046 silly addNameRange     '0.1.0-rc.5',
+1046 silly addNameRange     '0.1.0-rc.4',
+1046 silly addNameRange     '0.1.0-rc.3',
+1046 silly addNameRange     '0.1.0-rc.2',
+1046 silly addNameRange     '0.1.0-rc.1' ] ]
+1047 verbose addNamed [ 'bower-registry-client', '0.2.2' ]
+1048 verbose addNamed [ '0.2.2', '0.2.2' ]
+1049 silly lockFile 2250dc69-bower-registry-client-0-2-2 bower-registry-client@0.2.2
+1050 verbose lock bower-registry-client@0.2.2 /Users/biankai/.npm/2250dc69-bower-registry-client-0-2-2.lock
+1051 silly lockFile 2bc24c01--bower-registry-client-0-2-2-tgz http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1052 verbose lock http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz /Users/biankai/.npm/2bc24c01--bower-registry-client-0-2-2-tgz.lock
+1053 verbose addRemoteTarball [ 'http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz',
+1053 verbose addRemoteTarball   '461bf4c6e88bdc216408752b913b85ea097cd12c' ]
+1054 info retry fetch attempt 1 at 20:50:22
+1055 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1056 http GET http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1057 http 200 http://r.cnpmjs.org/insight
+1058 silly registry.get cb [ 200,
+1058 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1058 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1058 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1058 silly registry.get     'content-length': '23699',
+1058 silly registry.get     connection: 'keep-alive',
+1058 silly registry.get     'x-powered-by': 'koa',
+1058 silly registry.get     etag: '"1408138449000"',
+1058 silly registry.get     'x-readtime': '32' } ]
+1059 silly lockFile 7c93a18f-sight-download-insight-0-4-3-tgz http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1060 verbose lock http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz /Users/biankai/.npm/7c93a18f-sight-download-insight-0-4-3-tgz.lock
+1061 verbose addRemoteTarball [ 'http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz',
+1061 verbose addRemoteTarball   '76d653c5c0d8048b03cdba6385a6948f74614af0' ]
+1062 info retry fetch attempt 1 at 20:50:22
+1063 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1064 http GET http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1065 http 200 http://r.cnpmjs.org/junk
+1066 silly registry.get cb [ 200,
+1066 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1066 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1066 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1066 silly registry.get     'content-length': '8337',
+1066 silly registry.get     connection: 'keep-alive',
+1066 silly registry.get     'x-powered-by': 'koa',
+1066 silly registry.get     etag: '"1407610445000"',
+1066 silly registry.get     'x-readtime': '15' } ]
+1067 silly addNameRange number 2 { name: 'junk', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+1068 silly addNameRange versions [ 'junk',
+1068 silly addNameRange   [ '1.0.0', '0.3.0', '0.2.2', '0.2.1', '0.2.0', '0.1.0' ] ]
+1069 verbose addNamed [ 'junk', '1.0.0' ]
+1070 verbose addNamed [ '1.0.0', '1.0.0' ]
+1071 silly lockFile a9135e61-junk-1-0-0 junk@1.0.0
+1072 verbose lock junk@1.0.0 /Users/biankai/.npm/a9135e61-junk-1-0-0.lock
+1073 silly lockFile d4f03d66-org-junk-download-junk-1-0-0-tgz http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1074 verbose lock http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz /Users/biankai/.npm/d4f03d66-org-junk-download-junk-1-0-0-tgz.lock
+1075 verbose addRemoteTarball [ 'http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz',
+1075 verbose addRemoteTarball   '22b05ee710f40c44f82fb260602ffecd489223b8' ]
+1076 info retry fetch attempt 1 at 20:50:23
+1077 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1078 http 200 http://r.cnpmjs.org/handlebars
+1079 silly registry.get cb [ 200,
+1079 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1079 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1079 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1079 silly registry.get     'content-length': '51308',
+1079 silly registry.get     connection: 'keep-alive',
+1079 silly registry.get     'x-powered-by': 'koa',
+1079 silly registry.get     etag: '"1409611156000"',
+1079 silly registry.get     'x-readtime': '55' } ]
+1080 http GET http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1081 silly addNameRange number 2 { name: 'handlebars',
+1081 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+1081 silly addNameRange   hasData: true }
+1082 silly addNameRange versions [ 'handlebars',
+1082 silly addNameRange   [ '2.0.0',
+1082 silly addNameRange     '2.0.0-beta.1',
+1082 silly addNameRange     '2.0.0-alpha.4',
+1082 silly addNameRange     '2.0.0-alpha.3',
+1082 silly addNameRange     '2.0.0-alpha.2',
+1082 silly addNameRange     '2.0.0-alpha.1',
+1082 silly addNameRange     '1.3.0',
+1082 silly addNameRange     '1.2.1',
+1082 silly addNameRange     '1.2.0',
+1082 silly addNameRange     '1.1.2',
+1082 silly addNameRange     '1.1.1',
+1082 silly addNameRange     '1.1.0',
+1082 silly addNameRange     '1.0.12',
+1082 silly addNameRange     '1.0.11',
+1082 silly addNameRange     '1.0.10',
+1082 silly addNameRange     '1.0.9',
+1082 silly addNameRange     '1.0.8',
+1082 silly addNameRange     '1.0.7',
+1082 silly addNameRange     '1.0.6-2',
+1082 silly addNameRange     '1.0.6',
+1082 silly addNameRange     '1.0.5-beta',
+1082 silly addNameRange     '1.0.4-beta',
+1082 silly addNameRange     '1.0.2-beta' ] ]
+1083 verbose addNamed [ 'handlebars', '2.0.0' ]
+1084 verbose addNamed [ '2.0.0', '2.0.0' ]
+1085 silly lockFile a1e153af-handlebars-2-0-0 handlebars@2.0.0
+1086 verbose lock handlebars@2.0.0 /Users/biankai/.npm/a1e153af-handlebars-2-0-0.lock
+1087 silly lockFile 07d77c61-rs-download-handlebars-2-0-0-tgz http://r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz
+1088 verbose lock http://r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz /Users/biankai/.npm/07d77c61-rs-download-handlebars-2-0-0-tgz.lock
+1089 verbose addRemoteTarball [ 'http://r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz',
+1089 verbose addRemoteTarball   '6e9d7f8514a3467fa5e9f82cc158ecfc1d5ac76f' ]
+1090 info retry fetch attempt 1 at 20:50:23
+1091 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz
+1092 http GET http://r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz
+1093 http 200 http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+1094 silly lockFile 07c89064--download-bower-config-0-5-2-tgz http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+1095 silly lockFile 07c89064--download-bower-config-0-5-2-tgz http://r.cnpmjs.org/bower-config/download/bower-config-0.5.2.tgz
+1096 silly lockFile c7a59e04-bower-config-0-5-2 bower-config@0.5.2
+1097 silly lockFile c7a59e04-bower-config-0-5-2 bower-config@0.5.2
+1098 silly lockFile 6ec0f64b-bower-config-0-5-2 bower-config@~0.5.2
+1099 silly lockFile 6ec0f64b-bower-config-0-5-2 bower-config@~0.5.2
+1100 http 200 http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1101 silly lockFile 822a451c-ownload-fstream-ignore-1-0-2-tgz http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1102 silly lockFile 822a451c-ownload-fstream-ignore-1-0-2-tgz http://r.cnpmjs.org/fstream-ignore/download/fstream-ignore-1.0.2.tgz
+1103 silly lockFile 58191f1e-fstream-ignore-1-0-2 fstream-ignore@1.0.2
+1104 silly lockFile 58191f1e-fstream-ignore-1-0-2 fstream-ignore@1.0.2
+1105 silly lockFile 4e461ac0-fstream-ignore-1-0-1 fstream-ignore@~1.0.1
+1106 silly lockFile 4e461ac0-fstream-ignore-1-0-1 fstream-ignore@~1.0.1
+1107 http 200 http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+1108 silly lockFile defbf2e4-chmodr-download-chmodr-0-1-0-tgz http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+1109 silly lockFile defbf2e4-chmodr-download-chmodr-0-1-0-tgz http://r.cnpmjs.org/chmodr/download/chmodr-0.1.0.tgz
+1110 silly lockFile 3c50e6b3-chmodr-0-1-0 chmodr@0.1.0
+1111 silly lockFile 3c50e6b3-chmodr-0-1-0 chmodr@0.1.0
+1112 http 200 http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1113 http 304 http://r.cnpmjs.org/abbrev
+1114 silly registry.get cb [ 304,
+1114 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1114 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1114 silly registry.get     connection: 'keep-alive',
+1114 silly registry.get     'x-powered-by': 'koa',
+1114 silly registry.get     etag: '"1401055983000"',
+1114 silly registry.get     'x-readtime': '9' } ]
+1115 verbose etag http://r.cnpmjs.org/abbrev from cache
+1116 http 200 http://r.cnpmjs.org/opn
+1117 silly registry.get cb [ 200,
+1117 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1117 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1117 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1117 silly registry.get     'content-length': '8564',
+1117 silly registry.get     connection: 'keep-alive',
+1117 silly registry.get     'x-powered-by': 'koa',
+1117 silly registry.get     etag: '"1419516306000"',
+1117 silly registry.get     'x-readtime': '36' } ]
+1118 silly addNameRange number 2 { name: 'abbrev', range: '>=1.0.4-0 <1.1.0-0', hasData: true }
+1119 silly addNameRange versions [ 'abbrev', [ '1.0.5', '1.0.4', '1.0.3' ] ]
+1120 verbose addNamed [ 'abbrev', '1.0.5' ]
+1121 verbose addNamed [ '1.0.5', '1.0.5' ]
+1122 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+1123 verbose lock abbrev@1.0.5 /Users/biankai/.npm/55d90b2f-abbrev-1-0-5.lock
+1124 silly addNameRange number 2 { name: 'opn', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+1125 silly addNameRange versions [ 'opn', [ '1.0.1', '1.0.0', '0.1.2', '0.1.1', '0.1.0' ] ]
+1126 verbose addNamed [ 'opn', '1.0.1' ]
+1127 verbose addNamed [ '1.0.1', '1.0.1' ]
+1128 silly lockFile 92e27783-opn-1-0-1 opn@1.0.1
+1129 verbose lock opn@1.0.1 /Users/biankai/.npm/92e27783-opn-1-0-1.lock
+1130 silly lockFile 96ab8599-ownload-decompress-zip-0-0-8-tgz http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1131 silly lockFile 96ab8599-ownload-decompress-zip-0-0-8-tgz http://r.cnpmjs.org/decompress-zip/download/decompress-zip-0.0.8.tgz
+1132 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+1133 silly lockFile 55d90b2f-abbrev-1-0-5 abbrev@1.0.5
+1134 silly lockFile 7a56c733-decompress-zip-0-0-8 decompress-zip@0.0.8
+1135 silly lockFile 7a56c733-decompress-zip-0-0-8 decompress-zip@0.0.8
+1136 silly lockFile efa0e9e0-abbrev-1-0-4 abbrev@~1.0.4
+1137 silly lockFile efa0e9e0-abbrev-1-0-4 abbrev@~1.0.4
+1138 silly lockFile f511e519-s-org-opn-download-opn-1-0-1-tgz http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1139 verbose lock http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz /Users/biankai/.npm/f511e519-s-org-opn-download-opn-1-0-1-tgz.lock
+1140 verbose addRemoteTarball [ 'http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz',
+1140 verbose addRemoteTarball   'c2dce2a5c41ab9589a7486aaff4d8de002d041ca' ]
+1141 info retry fetch attempt 1 at 20:50:23
+1142 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1143 http GET http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1144 http 200 http://r.cnpmjs.org/mout
+1145 silly registry.get cb [ 200,
+1145 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1145 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1145 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1145 silly registry.get     'content-length': '29116',
+1145 silly registry.get     connection: 'keep-alive',
+1145 silly registry.get     'x-powered-by': 'koa',
+1145 silly registry.get     etag: '"1416258756000"',
+1145 silly registry.get     'x-readtime': '20' } ]
+1146 silly addNameRange number 2 { name: 'mout', range: '>=0.9.0-0 <0.10.0-0', hasData: true }
+1147 silly addNameRange versions [ 'mout',
+1147 silly addNameRange   [ '0.11.0',
+1147 silly addNameRange     '0.10.0',
+1147 silly addNameRange     '0.9.1',
+1147 silly addNameRange     '0.9.0',
+1147 silly addNameRange     '0.8.0',
+1147 silly addNameRange     '0.7.1',
+1147 silly addNameRange     '0.7.0',
+1147 silly addNameRange     '0.6.0',
+1147 silly addNameRange     '0.5.0',
+1147 silly addNameRange     '0.4.0',
+1147 silly addNameRange     '0.3.0',
+1147 silly addNameRange     '0.2.0',
+1147 silly addNameRange     '0.1.0' ] ]
+1148 verbose addNamed [ 'mout', '0.9.1' ]
+1149 verbose addNamed [ '0.9.1', '0.9.1' ]
+1150 silly lockFile 87454de7-mout-0-9-1 mout@0.9.1
+1151 verbose lock mout@0.9.1 /Users/biankai/.npm/87454de7-mout-0-9-1.lock
+1152 silly lockFile 48707bf9-org-mout-download-mout-0-9-1-tgz http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1153 verbose lock http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz /Users/biankai/.npm/48707bf9-org-mout-download-mout-0-9-1-tgz.lock
+1154 verbose addRemoteTarball [ 'http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz',
+1154 verbose addRemoteTarball   '84f0f3fd6acc7317f63de2affdcc0cee009b0477' ]
+1155 info retry fetch attempt 1 at 20:50:23
+1156 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1157 http GET http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1158 http 200 http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1159 silly lockFile 7c93a18f-sight-download-insight-0-4-3-tgz http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1160 silly lockFile 7c93a18f-sight-download-insight-0-4-3-tgz http://r.cnpmjs.org/insight/download/insight-0.4.3.tgz
+1161 silly lockFile da4675d5-insight-0-4-3 insight@0.4.3
+1162 silly lockFile da4675d5-insight-0-4-3 insight@0.4.3
+1163 http 200 http://r.cnpmjs.org/promptly
+1164 silly registry.get cb [ 200,
+1164 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1164 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1164 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1164 silly registry.get     'content-length': '9048',
+1164 silly registry.get     connection: 'keep-alive',
+1164 silly registry.get     'x-powered-by': 'koa',
+1164 silly registry.get     etag: '"1386785699000"',
+1164 silly registry.get     'x-readtime': '23' } ]
+1165 http 200 http://r.cnpmjs.org/request-progress
+1166 silly registry.get cb [ 200,
+1166 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1166 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1166 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1166 silly registry.get     'content-length': '11550',
+1166 silly registry.get     connection: 'keep-alive',
+1166 silly registry.get     'x-powered-by': 'koa',
+1166 silly registry.get     etag: '"1386785961000"',
+1166 silly registry.get     'x-readtime': '21' } ]
+1167 silly lockFile fdb71295-ptly-download-promptly-0-2-0-tgz http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1168 verbose lock http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz /Users/biankai/.npm/fdb71295-ptly-download-promptly-0-2-0-tgz.lock
+1169 silly lockFile e3cbbe0f-nload-request-progress-0-3-0-tgz http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1170 verbose lock http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz /Users/biankai/.npm/e3cbbe0f-nload-request-progress-0-3-0-tgz.lock
+1171 verbose addRemoteTarball [ 'http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz',
+1171 verbose addRemoteTarball   '73ef200fa8329d5d3a8df41798950b8646ca46d9' ]
+1172 verbose addRemoteTarball [ 'http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz',
+1172 verbose addRemoteTarball   'bdf2062bfc197c5d492500d44cb3aff7865b492e' ]
+1173 info retry fetch attempt 1 at 20:50:23
+1174 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1175 info retry fetch attempt 1 at 20:50:23
+1176 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1177 http GET http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1178 http GET http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1179 http 200 http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1180 http 200 http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1181 silly lockFile 2bc24c01--bower-registry-client-0-2-2-tgz http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1182 silly lockFile 2bc24c01--bower-registry-client-0-2-2-tgz http://r.cnpmjs.org/bower-registry-client/download/bower-registry-client-0.2.2.tgz
+1183 silly lockFile 2250dc69-bower-registry-client-0-2-2 bower-registry-client@0.2.2
+1184 silly lockFile 2250dc69-bower-registry-client-0-2-2 bower-registry-client@0.2.2
+1185 silly lockFile f1b922af-bower-registry-client-0-2-0 bower-registry-client@~0.2.0
+1186 silly lockFile f1b922af-bower-registry-client-0-2-0 bower-registry-client@~0.2.0
+1187 silly lockFile 397376ef--root-download-is-root-1-0-0-tgz http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1188 silly lockFile 397376ef--root-download-is-root-1-0-0-tgz http://r.cnpmjs.org/is-root/download/is-root-1.0.0.tgz
+1189 silly lockFile 569ba987-is-root-1-0-0 is-root@1.0.0
+1190 silly lockFile 569ba987-is-root-1-0-0 is-root@1.0.0
+1191 silly lockFile 53c35513-is-root-1-0-0 is-root@~1.0.0
+1192 silly lockFile 53c35513-is-root-1-0-0 is-root@~1.0.0
+1193 http 200 http://r.cnpmjs.org/p-throttler
+1194 silly registry.get cb [ 200,
+1194 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1194 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1194 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1194 silly registry.get     'content-length': '6706',
+1194 silly registry.get     connection: 'keep-alive',
+1194 silly registry.get     'x-powered-by': 'koa',
+1194 silly registry.get     etag: '"1410121944000"',
+1194 silly registry.get     'x-readtime': '15' } ]
+1195 silly lockFile 5f82d1ae-r-download-p-throttler-0-1-0-tgz http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1196 verbose lock http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz /Users/biankai/.npm/5f82d1ae-r-download-p-throttler-0-1-0-tgz.lock
+1197 verbose addRemoteTarball [ 'http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz',
+1197 verbose addRemoteTarball   '1b16907942c333e6f1ddeabcb3479204b8c417c4' ]
+1198 info retry fetch attempt 1 at 20:50:23
+1199 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1200 http GET http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1201 http 200 http://r.cnpmjs.org/lockfile
+1202 silly registry.get cb [ 200,
+1202 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1202 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1202 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1202 silly registry.get     'content-length': '18980',
+1202 silly registry.get     connection: 'keep-alive',
+1202 silly registry.get     'x-powered-by': 'koa',
+1202 silly registry.get     etag: '"1408546156000"',
+1202 silly registry.get     'x-readtime': '22' } ]
+1203 silly addNameRange number 2 { name: 'lockfile', range: '>=1.0.0-0 <1.1.0-0', hasData: true }
+1204 silly addNameRange versions [ 'lockfile',
+1204 silly addNameRange   [ '1.0.0',
+1204 silly addNameRange     '0.4.3',
+1204 silly addNameRange     '0.4.2',
+1204 silly addNameRange     '0.4.1',
+1204 silly addNameRange     '0.4.0',
+1204 silly addNameRange     '0.3.4',
+1204 silly addNameRange     '0.3.3',
+1204 silly addNameRange     '0.3.2',
+1204 silly addNameRange     '0.3.1',
+1204 silly addNameRange     '0.3.0',
+1204 silly addNameRange     '0.2.2',
+1204 silly addNameRange     '0.2.1',
+1204 silly addNameRange     '0.2.0',
+1204 silly addNameRange     '0.1.1',
+1204 silly addNameRange     '0.1.0' ] ]
+1205 verbose addNamed [ 'lockfile', '1.0.0' ]
+1206 verbose addNamed [ '1.0.0', '1.0.0' ]
+1207 silly lockFile e19f7586-lockfile-1-0-0 lockfile@1.0.0
+1208 verbose lock lockfile@1.0.0 /Users/biankai/.npm/e19f7586-lockfile-1-0-0.lock
+1209 silly lockFile 2d2114a2-file-download-lockfile-1-0-0-tgz http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1210 verbose lock http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz /Users/biankai/.npm/2d2114a2-file-download-lockfile-1-0-0-tgz.lock
+1211 verbose addRemoteTarball [ 'http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz',
+1211 verbose addRemoteTarball   'b3a7609dda6012060083bacb0ab0ecbca58e9203' ]
+1212 info retry fetch attempt 1 at 20:50:23
+1213 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1214 http GET http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1215 http 200 http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1216 silly lockFile d4f03d66-org-junk-download-junk-1-0-0-tgz http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1217 silly lockFile d4f03d66-org-junk-download-junk-1-0-0-tgz http://r.cnpmjs.org/junk/download/junk-1.0.0.tgz
+1218 silly lockFile a9135e61-junk-1-0-0 junk@1.0.0
+1219 silly lockFile a9135e61-junk-1-0-0 junk@1.0.0
+1220 silly lockFile e4e462ce-junk-1-0-0 junk@~1.0.0
+1221 silly lockFile e4e462ce-junk-1-0-0 junk@~1.0.0
+1222 http 200 http://r.cnpmjs.org/handlebars/download/handlebars-2.0.0.tgz
+1223 http 304 http://r.cnpmjs.org/archy
+1224 silly registry.get cb [ 304,
+1224 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1224 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1224 silly registry.get     connection: 'keep-alive',
+1224 silly registry.get     'x-powered-by': 'koa',
+1224 silly registry.get     etag: '"1410667778000"',
+1224 silly registry.get     'x-readtime': '10' } ]
+1225 verbose etag http://r.cnpmjs.org/archy from cache
+1226 silly lockFile c97e9070-archy-0-0-2 archy@0.0.2
+1227 silly lockFile c97e9070-archy-0-0-2 archy@0.0.2
+1228 http 200 http://r.cnpmjs.org/stringify-object
+1229 silly registry.get cb [ 200,
+1229 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1229 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1229 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1229 silly registry.get     'content-length': '20780',
+1229 silly registry.get     connection: 'keep-alive',
+1229 silly registry.get     'x-powered-by': 'koa',
+1229 silly registry.get     etag: '"1407996249000"',
+1229 silly registry.get     'x-readtime': '21' } ]
+1230 silly addNameRange number 2 { name: 'stringify-object',
+1230 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+1230 silly addNameRange   hasData: true }
+1231 silly addNameRange versions [ 'stringify-object',
+1231 silly addNameRange   [ '1.0.0',
+1231 silly addNameRange     '0.2.1',
+1231 silly addNameRange     '0.2.0',
+1231 silly addNameRange     '0.1.8',
+1231 silly addNameRange     '0.1.7',
+1231 silly addNameRange     '0.1.6',
+1231 silly addNameRange     '0.1.5',
+1231 silly addNameRange     '0.1.4',
+1231 silly addNameRange     '0.1.3',
+1231 silly addNameRange     '0.1.2',
+1231 silly addNameRange     '0.1.1',
+1231 silly addNameRange     '0.1.0' ] ]
+1232 verbose addNamed [ 'stringify-object', '1.0.0' ]
+1233 verbose addNamed [ '1.0.0', '1.0.0' ]
+1234 silly lockFile f57d5fd8-stringify-object-1-0-0 stringify-object@1.0.0
+1235 verbose lock stringify-object@1.0.0 /Users/biankai/.npm/f57d5fd8-stringify-object-1-0-0.lock
+1236 silly lockFile 1da659f8-nload-stringify-object-1-0-0-tgz http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1237 verbose lock http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz /Users/biankai/.npm/1da659f8-nload-stringify-object-1-0-0-tgz.lock
+1238 verbose addRemoteTarball [ 'http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz',
+1238 verbose addRemoteTarball   '333875ef8fd210f696d70b374146be84646bc346' ]
+1239 info retry fetch attempt 1 at 20:50:23
+1240 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1241 http GET http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1242 http 304 http://r.cnpmjs.org/cardinal
+1243 silly registry.get cb [ 304,
+1243 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1243 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1243 silly registry.get     connection: 'keep-alive',
+1243 silly registry.get     'x-powered-by': 'koa',
+1243 silly registry.get     etag: '"1389167031000"',
+1243 silly registry.get     'x-readtime': '10' } ]
+1244 verbose etag http://r.cnpmjs.org/cardinal from cache
+1245 http 200 http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1246 silly lockFile 6fa3e8c9-inal-download-cardinal-0-4-0-tgz http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1247 verbose lock http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz /Users/biankai/.npm/6fa3e8c9-inal-download-cardinal-0-4-0-tgz.lock
+1248 verbose addRemoteTarball [ 'http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz',
+1248 verbose addRemoteTarball   '7d10aafb20837bde043c45e43a0c8c28cdaae45e' ]
+1249 info retry fetch attempt 1 at 20:50:23
+1250 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1251 http GET http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1252 http 200 http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1253 http 200 http://r.cnpmjs.org/inquirer
+1254 silly registry.get cb [ 200,
+1254 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1254 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:22 GMT',
+1254 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1254 silly registry.get     'content-length': '54854',
+1254 silly registry.get     connection: 'keep-alive',
+1254 silly registry.get     'x-powered-by': 'koa',
+1254 silly registry.get     etag: '"1411603331000"',
+1254 silly registry.get     'x-readtime': '74' } ]
+1255 silly lockFile fcc93e33-irer-download-inquirer-0-7-1-tgz http://r.cnpmjs.org/inquirer/download/inquirer-0.7.1.tgz
+1256 verbose lock http://r.cnpmjs.org/inquirer/download/inquirer-0.7.1.tgz /Users/biankai/.npm/fcc93e33-irer-download-inquirer-0-7-1-tgz.lock
+1257 verbose addRemoteTarball [ 'http://r.cnpmjs.org/inquirer/download/inquirer-0.7.1.tgz',
+1257 verbose addRemoteTarball   'b8acf140165bd581862ed1198fb6d26430091fac' ]
+1258 info retry fetch attempt 1 at 20:50:23
+1259 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/inquirer/download/inquirer-0.7.1.tgz
+1260 http GET http://r.cnpmjs.org/inquirer/download/inquirer-0.7.1.tgz
+1261 http 200 http://r.cnpmjs.org/tmp
+1262 silly registry.get cb [ 200,
+1262 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1262 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1262 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1262 silly registry.get     'content-length': '31905',
+1262 silly registry.get     connection: 'keep-alive',
+1262 silly registry.get     'x-powered-by': 'koa',
+1262 silly registry.get     etag: '"1405081213000"',
+1262 silly registry.get     'x-readtime': '28' } ]
+1263 http 200 http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1264 silly lockFile 89e23990--org-tmp-download-tmp-0-0-23-tgz http://r.cnpmjs.org/tmp/download/tmp-0.0.23.tgz
+1265 verbose lock http://r.cnpmjs.org/tmp/download/tmp-0.0.23.tgz /Users/biankai/.npm/89e23990--org-tmp-download-tmp-0-0-23-tgz.lock
+1266 verbose addRemoteTarball [ 'http://r.cnpmjs.org/tmp/download/tmp-0.0.23.tgz',
+1266 verbose addRemoteTarball   'de874aa5e974a85f0a32cdfdbd74663cb3bd9c74' ]
+1267 info retry fetch attempt 1 at 20:50:23
+1268 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/tmp/download/tmp-0.0.23.tgz
+1269 http GET http://r.cnpmjs.org/tmp/download/tmp-0.0.23.tgz
+1270 silly lockFile 48707bf9-org-mout-download-mout-0-9-1-tgz http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1271 silly lockFile 48707bf9-org-mout-download-mout-0-9-1-tgz http://r.cnpmjs.org/mout/download/mout-0.9.1.tgz
+1272 silly lockFile 87454de7-mout-0-9-1 mout@0.9.1
+1273 silly lockFile 87454de7-mout-0-9-1 mout@0.9.1
+1274 silly lockFile 5ca20e6e-mout-0-9-0 mout@~0.9.0
+1275 silly lockFile 5ca20e6e-mout-0-9-0 mout@~0.9.0
+1276 silly lockFile e3cbbe0f-nload-request-progress-0-3-0-tgz http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1277 silly lockFile e3cbbe0f-nload-request-progress-0-3-0-tgz http://r.cnpmjs.org/request-progress/download/request-progress-0.3.0.tgz
+1278 silly lockFile caf2758e-request-progress-0-3-0 request-progress@0.3.0
+1279 silly lockFile caf2758e-request-progress-0-3-0 request-progress@0.3.0
+1280 silly lockFile f511e519-s-org-opn-download-opn-1-0-1-tgz http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1281 silly lockFile f511e519-s-org-opn-download-opn-1-0-1-tgz http://r.cnpmjs.org/opn/download/opn-1.0.1.tgz
+1282 silly lockFile 92e27783-opn-1-0-1 opn@1.0.1
+1283 silly lockFile 92e27783-opn-1-0-1 opn@1.0.1
+1284 silly lockFile 008c9731-opn-1-0-0 opn@~1.0.0
+1285 silly lockFile 008c9731-opn-1-0-0 opn@~1.0.0
+1286 http 200 http://r.cnpmjs.org/tar-fs
+1287 silly registry.get cb [ 200,
+1287 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1287 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1287 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1287 silly registry.get     'content-length': '33360',
+1287 silly registry.get     connection: 'keep-alive',
+1287 silly registry.get     'x-powered-by': 'koa',
+1287 silly registry.get     etag: '"1420622745000"',
+1287 silly registry.get     'x-readtime': '49' } ]
+1288 http 304 http://r.cnpmjs.org/graceful-fs
+1289 silly registry.get cb [ 304,
+1289 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1289 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:24 GMT',
+1289 silly registry.get     connection: 'keep-alive',
+1289 silly registry.get     'x-powered-by': 'koa',
+1289 silly registry.get     etag: '"1417370272000"',
+1289 silly registry.get     'x-readtime': '5' } ]
+1290 verbose etag http://r.cnpmjs.org/graceful-fs from cache
+1291 silly addNameRange number 2 { name: 'graceful-fs',
+1291 silly addNameRange   range: '>=3.0.1-0 <3.1.0-0',
+1291 silly addNameRange   hasData: true }
+1292 silly addNameRange versions [ 'graceful-fs',
+1292 silly addNameRange   [ '3.0.5',
+1292 silly addNameRange     '3.0.4',
+1292 silly addNameRange     '3.0.3',
+1292 silly addNameRange     '3.0.2',
+1292 silly addNameRange     '3.0.1',
+1292 silly addNameRange     '3.0.0',
+1292 silly addNameRange     '2.0.3',
+1292 silly addNameRange     '2.0.2',
+1292 silly addNameRange     '2.0.1',
+1292 silly addNameRange     '2.0.0',
+1292 silly addNameRange     '1.2.3',
+1292 silly addNameRange     '1.2.2',
+1292 silly addNameRange     '1.2.1',
+1292 silly addNameRange     '1.2.0',
+1292 silly addNameRange     '1.1.14',
+1292 silly addNameRange     '1.1.13',
+1292 silly addNameRange     '1.1.12',
+1292 silly addNameRange     '1.1.11',
+1292 silly addNameRange     '1.1.10',
+1292 silly addNameRange     '1.1.9',
+1292 silly addNameRange     '1.1.8',
+1292 silly addNameRange     '1.1.7',
+1292 silly addNameRange     '1.1.6',
+1292 silly addNameRange     '1.1.5',
+1292 silly addNameRange     '1.1.4',
+1292 silly addNameRange     '1.1.3',
+1292 silly addNameRange     '1.1.2',
+1292 silly addNameRange     '1.1.1',
+1292 silly addNameRange     '1.1.0',
+1292 silly addNameRange     '1.0.2',
+1292 silly addNameRange     '1.0.1',
+1292 silly addNameRange     '1.0.0' ] ]
+1293 verbose addNamed [ 'graceful-fs', '3.0.5' ]
+1294 verbose addNamed [ '3.0.5', '3.0.5' ]
+1295 silly lockFile cf3f6b1e-graceful-fs-3-0-5 graceful-fs@3.0.5
+1296 verbose lock graceful-fs@3.0.5 /Users/biankai/.npm/cf3f6b1e-graceful-fs-3-0-5.lock
+1297 silly lockFile b9a41c5e-tar-fs-download-tar-fs-0-5-2-tgz http://r.cnpmjs.org/tar-fs/download/tar-fs-0.5.2.tgz
+1298 verbose lock http://r.cnpmjs.org/tar-fs/download/tar-fs-0.5.2.tgz /Users/biankai/.npm/b9a41c5e-tar-fs-download-tar-fs-0-5-2-tgz.lock
+1299 verbose addRemoteTarball [ 'http://r.cnpmjs.org/tar-fs/download/tar-fs-0.5.2.tgz',
+1299 verbose addRemoteTarball   '0f59424be7eeee45232316e302f66d3f6ea6db3e' ]
+1300 info retry fetch attempt 1 at 20:50:24
+1301 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/tar-fs/download/tar-fs-0.5.2.tgz
+1302 http GET http://r.cnpmjs.org/tar-fs/download/tar-fs-0.5.2.tgz
+1303 silly lockFile cf3f6b1e-graceful-fs-3-0-5 graceful-fs@3.0.5
+1304 silly lockFile cf3f6b1e-graceful-fs-3-0-5 graceful-fs@3.0.5
+1305 silly lockFile 901920ca-graceful-fs-3-0-1 graceful-fs@~3.0.1
+1306 silly lockFile 901920ca-graceful-fs-3-0-1 graceful-fs@~3.0.1
+1307 http 200 http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+1308 silly lockFile 216e6b03--download-bower-logger-0-2-2-tgz http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+1309 silly lockFile 216e6b03--download-bower-logger-0-2-2-tgz http://r.cnpmjs.org/bower-logger/download/bower-logger-0.2.2.tgz
+1310 silly lockFile 4a38f198-bower-logger-0-2-2 bower-logger@0.2.2
+1311 silly lockFile 4a38f198-bower-logger-0-2-2 bower-logger@0.2.2
+1312 silly lockFile 4dfc8f43-bower-logger-0-2-2 bower-logger@~0.2.2
+1313 silly lockFile 4dfc8f43-bower-logger-0-2-2 bower-logger@~0.2.2
+1314 http 200 http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1315 silly lockFile 5f82d1ae-r-download-p-throttler-0-1-0-tgz http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1316 silly lockFile 5f82d1ae-r-download-p-throttler-0-1-0-tgz http://r.cnpmjs.org/p-throttler/download/p-throttler-0.1.0.tgz
+1317 silly lockFile aea1ccf7-p-throttler-0-1-0 p-throttler@0.1.0
+1318 silly lockFile aea1ccf7-p-throttler-0-1-0 p-throttler@0.1.0
+1319 http 200 http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1320 silly lockFile fdb71295-ptly-download-promptly-0-2-0-tgz http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1321 silly lockFile fdb71295-ptly-download-promptly-0-2-0-tgz http://r.cnpmjs.org/promptly/download/promptly-0.2.0.tgz
+1322 silly lockFile c940dc36-promptly-0-2-0 promptly@0.2.0
+1323 silly lockFile c940dc36-promptly-0-2-0 promptly@0.2.0
+1324 http 200 http://r.cnpmjs.org/fstream
+1325 silly registry.get cb [ 200,
+1325 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1325 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1325 silly registry.get     'content-type': 'application/json; charset=utf-8',
+1325 silly registry.get     'content-length': '42643',
+1325 silly registry.get     connection: 'keep-alive',
+1325 silly registry.get     'x-powered-by': 'koa',
+1325 silly registry.get     etag: '"1417139302000"',
+1325 silly registry.get     'x-readtime': '36' } ]
+1326 silly addNameRange number 2 { name: 'fstream', range: '>=1.0.2-0 <1.1.0-0', hasData: true }
+1327 silly addNameRange versions [ 'fstream',
+1327 silly addNameRange   [ '1.0.3',
+1327 silly addNameRange     '1.0.2',
+1327 silly addNameRange     '0.1.31',
+1327 silly addNameRange     '1.0.1',
+1327 silly addNameRange     '1.0.0',
+1327 silly addNameRange     '0.1.30',
+1327 silly addNameRange     '0.1.29',
+1327 silly addNameRange     '0.1.28',
+1327 silly addNameRange     '0.1.27',
+1327 silly addNameRange     '0.1.26',
+1327 silly addNameRange     '0.1.25',
+1327 silly addNameRange     '0.1.24',
+1327 silly addNameRange     '0.1.23',
+1327 silly addNameRange     '0.1.22',
+1327 silly addNameRange     '0.1.21',
+1327 silly addNameRange     '0.1.20',
+1327 silly addNameRange     '0.1.19',
+1327 silly addNameRange     '0.1.18',
+1327 silly addNameRange     '0.1.17',
+1327 silly addNameRange     '0.1.16',
+1327 silly addNameRange     '0.1.15',
+1327 silly addNameRange     '0.1.14',
+1327 silly addNameRange     '0.1.13',
+1327 silly addNameRange     '0.1.12',
+1327 silly addNameRange     '0.1.11',
+1327 silly addNameRange     '0.1.10',
+1327 silly addNameRange     '0.1.9',
+1327 silly addNameRange     '0.1.8',
+1327 silly addNameRange     '0.1.7',
+1327 silly addNameRange     '0.1.6',
+1327 silly addNameRange     '0.1.5',
+1327 silly addNameRange     '0.1.3',
+1327 silly addNameRange     '0.1.2',
+1327 silly addNameRange     '0.1.1',
+1327 silly addNameRange     '0.1.0',
+1327 silly addNameRange     '0.0.1',
+1327 silly addNameRange     '0.0.0' ] ]
+1328 verbose addNamed [ 'fstream', '1.0.3' ]
+1329 verbose addNamed [ '1.0.3', '1.0.3' ]
+1330 silly lockFile 7e127238-fstream-1-0-3 fstream@1.0.3
+1331 verbose lock fstream@1.0.3 /Users/biankai/.npm/7e127238-fstream-1-0-3.lock
+1332 silly lockFile c211dae9-tream-download-fstream-1-0-3-tgz http://r.cnpmjs.org/fstream/download/fstream-1.0.3.tgz
+1333 verbose lock http://r.cnpmjs.org/fstream/download/fstream-1.0.3.tgz /Users/biankai/.npm/c211dae9-tream-download-fstream-1-0-3-tgz.lock
+1334 verbose addRemoteTarball [ 'http://r.cnpmjs.org/fstream/download/fstream-1.0.3.tgz',
+1334 verbose addRemoteTarball   '5ce69767710d7a39c8cd9232470d9426790195da' ]
+1335 info retry fetch attempt 1 at 20:50:24
+1336 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/fstream/download/fstream-1.0.3.tgz
+1337 http GET http://r.cnpmjs.org/fstream/download/fstream-1.0.3.tgz
+1338 http 304 http://r.cnpmjs.org/chalk
+1339 silly registry.get cb [ 304,
+1339 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1339 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:23 GMT',
+1339 silly registry.get     connection: 'keep-alive',
+1339 silly registry.get     'x-powered-by': 'koa',
+1339 silly registry.get     etag: '"1404923579000"',
+1339 silly registry.get     'x-readtime': '4' } ]
+1340 verbose etag http://r.cnpmjs.org/chalk from cache
+1341 silly lockFile b913723a-g-chalk-download-chalk-0-5-0-tgz http://r.cnpmjs.org/chalk/download/chalk-0.5.0.tgz
+1342 verbose lock http://r.cnpmjs.org/chalk/download/chalk-0.5.0.tgz /Users/biankai/.npm/b913723a-g-chalk-download-chalk-0-5-0-tgz.lock
+1343 verbose addRemoteTarball [ 'http://r.cnpmjs.org/chalk/download/chalk-0.5.0.tgz',
+1343 verbose addRemoteTarball   '375dfccbc21c0a60a8b61bc5b78f3dc2a55c212f' ]
+1344 info retry fetch attempt 1 at 20:50:24
+1345 verbose fetch to= /var/folders/wn/9hkv03496h11rfcpq1l1f4h40000gn/T/npm-4364-IPLx9WU_/r.cnpmjs.org/chalk/download/chalk-0.5.0.tgz
+1346 http GET http://r.cnpmjs.org/chalk/download/chalk-0.5.0.tgz
+1347 http 304 http://r.cnpmjs.org/mkdirp
+1348 silly registry.get cb [ 304,
+1348 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1348 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:24 GMT',
+1348 silly registry.get     connection: 'keep-alive',
+1348 silly registry.get     'x-powered-by': 'koa',
+1348 silly registry.get     etag: '"1399329399000"',
+1348 silly registry.get     'x-readtime': '23' } ]
+1349 verbose etag http://r.cnpmjs.org/mkdirp from cache
+1350 http 304 http://r.cnpmjs.org/lru-cache
+1351 silly registry.get cb [ 304,
+1351 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+1351 silly registry.get     date: 'Thu, 08 Jan 2015 12:50:24 GMT',
+1351 silly registry.get     connection: 'keep-alive',
+1351 silly registry.get     'x-powered-by': 'koa',
+1351 silly registry.get     etag: '"1386785939000"',
+1351 silly registry.get     'x-readtime': '7' } ]
+1352 verbose etag http://r.cnpmjs.org/lru-cache from cache
+1353 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.5.0-0 <2.6.0-0', hasData: true }
+1354 silly addNameRange versions [ 'lru-cache',
+1354 silly addNameRange   [ '2.5.0',
+1354 silly addNameRange     '2.3.1',
+1354 silly addNameRange     '2.3.0',
+1354 silly addNameRange     '2.2.4',
+1354 silly addNameRange     '2.2.2',
+1354 silly addNameRange     '2.2.1',
+1354 silly addNameRange     '2.2.0',
+1354 silly addNameRange     '2.1.0',
+1354 silly addNameRange     '2.0.4',
+1354 silly addNameRange     '2.0.3',
+1354 silly addNameRange     '2.0.2',
+1354 silly addNameRange     '2.0.1',
+1354 silly addNameRange     '2.0.0',
+1354 silly addNameRange     '1.1.1',
+1354 silly addNameRange     '1.1.0',
+1354 silly addNameRange     '1.0.6',
+1354 silly addNameRange     '1.0.5',
+1354 silly addNameRange     '1.0.4',
+1354 silly addNameRange     '1.0.2',
+1354 silly addNameRange     '1.0.3',
+1354 silly addNameRange     '1.0.1' ] ]
+1355 verbose addNamed [ 'lru-cache', '2.5.0' ]
+1356 verbose addNamed [ '2.5.0', '2.5.0' ]
+1357 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1358 verbose lock lru-cache@2.5.0 /Users/biankai/.npm/30aa630e-lru-cache-2-5-0.lock
+1359 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+1360 silly lockFile bf9ae38d-mkdirp-0-5-0 mkdirp@0.5.0
+1361 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1362 silly lockFile 30aa630e-lru-cache-2-5-0 lru-cache@2.5.0
+1363 silly lockFile d9ec30b5-lru-cache-2-5-0 lru-cache@~2.5.0
+1364 silly lockFile d9ec30b5-lru-cache-2-5-0 lru-cache@~2.5.0
+1365 http 200 http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1366 silly lockFile 2d2114a2-file-download-lockfile-1-0-0-tgz http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1367 silly lockFile 2d2114a2-file-download-lockfile-1-0-0-tgz http://r.cnpmjs.org/lockfile/download/lockfile-1.0.0.tgz
+1368 silly lockFile e19f7586-lockfile-1-0-0 lockfile@1.0.0
+1369 silly lockFile e19f7586-lockfile-1-0-0 lockfile@1.0.0
+1370 silly lockFile af6d2126-lockfile-1-0-0 lockfile@~1.0.0
+1371 silly lockFile af6d2126-lockfile-1-0-0 lockfile@~1.0.0
+1372 http 200 http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1373 http 200 http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1374 silly lockFile 6fa3e8c9-inal-download-cardinal-0-4-0-tgz http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1375 silly lockFile 6fa3e8c9-inal-download-cardinal-0-4-0-tgz http://r.cnpmjs.org/cardinal/download/cardinal-0.4.0.tgz
+1376 silly lockFile f5578357-cardinal-0-4-0 cardinal@0.4.0
+1377 silly lockFile f5578357-cardinal-0-4-0 cardinal@0.4.0
+1378 verbose about to build /usr/local/lib/node_modules/bower
+1379 verbose lib/node_modules/bower unbuild
+1380 info preuninstall bower@1.3.12
+1381 http 200 http://r.cnpmjs.org/bower-endpoint-parser/download/bower-endpoint-parser-0.2.2.tgz
+1382 info uninstall bower@1.3.12
+1383 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bower@1.3.12
+1384 verbose /usr/local/bin,[object Object] binRoot
+1385 info postuninstall bower@1.3.12
+1386 silly lockFile 1da659f8-nload-stringify-object-1-0-0-tgz http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1387 silly lockFile 1da659f8-nload-stringify-object-1-0-0-tgz http://r.cnpmjs.org/stringify-object/download/stringify-object-1.0.0.tgz
+1388 silly lockFile f57d5fd8-stringify-object-1-0-0 stringify-object@1.0.0
+1389 silly lockFile f57d5fd8-stringify-object-1-0-0 stringify-object@1.0.0
+1390 silly lockFile 9f0958e2-stringify-object-1-0-0 stringify-object@~1.0.0
+1391 silly lockFile 9f0958e2-stringify-object-1-0-0 stringify-object@~1.0.0
+1392 error Error: EACCES, mkdir '/Users/biankai/.npm/cardinal/0.4.0'
+1392 error  { [Error: EACCES, mkdir '/Users/biankai/.npm/cardinal/0.4.0']
+1392 error   errno: 3,
+1392 error   code: 'EACCES',
+1392 error   path: '/Users/biankai/.npm/cardinal/0.4.0',
+1392 error   parent: 'bower' }
+1393 error Please try running this command again as root/Administrator.
+1394 error System Darwin 14.0.0
+1395 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bower"
+1396 error cwd /Users/biankai/project/github_bk
+1397 error node -v v0.10.30
+1398 error npm -v 1.4.21
+1399 error path /Users/biankai/.npm/cardinal/0.4.0
+1400 error code EACCES
+1401 error errno 3
+1402 error stack Error: EACCES, mkdir '/Users/biankai/.npm/cardinal/0.4.0'
+1403 verbose exit [ 3, true ]

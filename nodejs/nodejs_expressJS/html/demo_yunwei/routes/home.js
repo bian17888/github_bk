@@ -13,7 +13,7 @@ var db = require('./../db.js');
 
 /* 首页路由 */
 exports.index = function(req, res){
-    res.render('home', {title : "监控详情页", caseInfo : db.listCaseInfo()})
+    res.render('home', {title : "首页", caseInfo : db.listCaseInfo()})
 }
 
 /* 首页form请求数据 */
@@ -43,6 +43,8 @@ exports.sendIdIp = function(req, res){
 //        console.log('STATUS: ' + resPost.statusCode);
 //        console.log('HEADERS: ' + JSON.stringify(resPost.headers));
         resPost.on('data', function(chunk){
+            console.log('=========')
+            console.log(chunk)
             str += chunk;
         });
         resPost.on('end', function(){

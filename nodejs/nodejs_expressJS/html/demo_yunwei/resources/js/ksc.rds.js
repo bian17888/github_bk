@@ -25,8 +25,6 @@ void (function () {
 			data: data,
             dataType : 'json',
 			success: function(data){
-                console.log('===============');
-                console.log(data.data);
 				if(callback !== undefined && typeof(callback) === 'function' ){
 					callback(data);
 				}
