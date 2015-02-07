@@ -353,7 +353,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423318696161</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branches 'master' and 'rebase' of github.com:bian17888/github_bk&#10;&#10;Conflicts:&#10;&#9;vcs/git/cherry_picking.txt&#10;">
+      <created>1423318708483</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1423318708483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
