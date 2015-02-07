@@ -6,7 +6,8 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 
 gulp.task('default', function(){
-	// console.log('default');
+
+
 
 	return gulp.src("./js/**/*.js")
 		.pipe(jshint())
