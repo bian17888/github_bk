@@ -4,7 +4,6 @@
  */
 
 window.onload = function () {
-
 	/*
 	 * Demo01 : 基本模型
 	 * */
