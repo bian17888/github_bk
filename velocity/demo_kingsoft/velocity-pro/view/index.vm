@@ -22,6 +22,17 @@ Comments 注解
 
 *#
 
+
+
+
+#*
+Questions :
+	1 velocity是否支持 break	？
+*#
+
+
+
+
 ## 设置变量
 #set( $title = "ksc-fe" )
 
@@ -33,7 +44,7 @@ ${page}
 $!{page}
 
 
-## 条件语句
+## 条件语句	
 #set( $var = "" )
 #if ($var == "cdn")
 	i'm cdn 
@@ -52,6 +63,7 @@ $!{page}
   ${item.name}	<br>
 #end
 
+#*
 默认的循环次数的引用变量名为 $velocityCount
 
 在配置文件velocity.properties中做如下修改成你想要的:
@@ -63,39 +75,14 @@ directive.foreach.counter.name = velocityCount
 # counter variable reference.
 directive.foreach.counter.initial.value = 1
 
+*#
 
-velocity是否支持
-break	？
 
 
 <p>循环加index</p>
 #foreach($item in ${data.users})
 	#set($index = ${velocityCount} +1)
   ${index} ${item.id}	${item.name}	<br>
-#end
-
-
-#*
- #foreach($var in $arrays ) // 集合包含下面三种Vector, a Hashtable or an Array
-#end
-*#
-
-#set($$allProducts = ${data.backups})
-
-#foreach( $product in $allProducts )
-<li>$product</li>
-#end
-
-## 通过下面的方法，可以取到key值，然后再通过key值获取相应的value
-## 类似 php 的 foreach($arr as $key => $value)
-#foreach( $key in $allProducts.keySet() )
-<li>Key: $key -> Value: $allProducts.get($key)</li>
-#end
-
-#set($ $customerList = [])
-
-#foreach( $customer in $customerList )
-<tr><td>$velocityCount</td><td>$customer.Name</td></tr>
 #end
 
 
@@ -117,14 +104,3 @@ after include index: ${all}
 ## 获取在预加载过程中定义的宏
 #parse( "velocity/macro_var.vm" )
 ${STATIC_ROOT}
-
-
-block demo
-
-#@xxx
-
-
-date
-
-number
-
