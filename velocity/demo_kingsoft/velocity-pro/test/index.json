@@ -1,0 +1,128 @@
+{
+	"data": {
+		"users": [
+			{
+				"id": 1,
+				"name": "cychai"
+			},
+			{
+				"id": 2,
+				"name": "bobo"
+			}
+		],
+		"backups": {
+			"beijing": [
+			    {
+			        "backupId": "bj184b3155-cf77-4270-8638-a6316aad6c74",
+			        "backupName": "backup_bj_test04",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "100",
+			            "iops": "600",
+			            "maxConn": "200",
+			            "ram": "12",
+			            "vcpus": "2"
+			        },
+			        "rdsId": "bj5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 1.2
+			    },
+			    {
+			        "backupId": "bj1ca6b381-1382-4d8b-b578-6484702913ae",
+			        "backupName": "backup_bj_test03",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "200",
+			            "iops": "800",
+			            "maxConn": "300",
+			            "ram": "7",
+			            "vcpus": "1"
+			        },
+			        "rdsId": "bj5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 3.5
+			    }
+
+			],
+
+			"shanghai":[
+			    {
+			        "backupId": "sh184b3155-cf77-4270-8638-a6316aad6c74",
+			        "backupName": "backup_sh_test04",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "5",
+			            "iops": "600",
+			            "maxConn": "200",
+			            "ram": "5",
+			            "vcpus": "1"
+			        },
+			        "rdsId": "5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 1.2
+			    },
+			    {
+			        "backupId": "sh1ca6b381-1382-4d8b-b578-6484702913ae",
+			        "backupName": "backup_sh_test03",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "200",
+			            "iops": "800",
+			            "maxConn": "300",
+			            "ram": "6",
+			            "vcpus": "1"
+			        },
+			        "rdsId": "5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 3.5
+			    }
+			],
+
+
+			"beijing1":[
+			    {
+			        "backupId": "sh184b3155-cf77-4270-8638-a6316aad6c74",
+			        "backupName": "backup_bj1_test01",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "5",
+			            "iops": "600",
+			            "maxConn": "200",
+			            "ram": "5",
+			            "vcpus": "1"
+			        },
+			        "rdsId": "5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 1.2
+			    },
+			    {
+			        "backupId": "sh1ca6b381-1382-4d8b-b578-6484702913ae",
+			        "backupName": "backup_bj1_test02",
+			        "backupType": "snapshot",
+			        "createTime": 1411315200000,
+			        "dbType": "",
+			        "description": "des_test",
+			        "flavor": {
+			            "disk": "200",
+			            "iops": "800",
+			            "maxConn": "300",
+			            "ram": "6",
+			            "vcpus": "1"
+			        },
+			        "rdsId": "5a97bcd1-b04c-442a-8a5c-573ae9347043",
+			        "size": 3.5
+			    }
+			]
+		}
+	}
+}
