@@ -21,7 +21,8 @@ window.onload = function () {
 	var factory1 = factory('bian17888', 27, 'Front-End');
 	factory1.sayName();
 
-	console.log('========== 分割线 ==========');
+	console.log('========== 分割线11123 ==========');
+
 
 
 	/**
@@ -36,6 +37,7 @@ window.onload = function () {
 		this.age = age;
 		this.job = job;
 		this.sayName = function () {
+			console.log(this.name);
 			console.log(this.name);
 		}
 	}

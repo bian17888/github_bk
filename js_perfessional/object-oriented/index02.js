@@ -12,27 +12,26 @@ window.onload = function () {
 	 *
 	 * @constructor
 	 */
-	//function SuperType() {
-	//	this.property = true;
-	//};
-	//SuperType.prototype.getSuperValue = function () {
-	//	return this.property;
-	//}
-	//function SubType () {
-	//	this.subProperty = false;
-	//}
-	////SubType.prototype.getSubValue = function () {
-	////	return this.subProperty;
-	////}
-	//SubType.prototype = new SuperType();
-	//SubType.prototype.getSubValue = function () {
-	//	return this.subProperty;
-	//}
-	//
-	//var instance = new SubType();
-	//console.log(instance.getSuperValue());
-	//console.log('========== 分割线 ==========');
+	function SuperType() {
+		this.property = true;
+	};
+	SuperType.prototype.getSuperValue = function () {
+		return this.property;
+	}
+	function SubType () {
+		this.subProperty = false;
+	}
 
+	SubType.prototype = new SuperType();
+
+	SubType.prototype.getSubValue = function () {
+		return this.subProperty;
+	}
+
+	var instance = new SubType();
+	console.log(instance.getSuperValue());
+	console.log(instance.getSubValue());
+	console.log('========== 分割线 ==========');
 
 
 	/**
@@ -40,7 +39,7 @@ window.onload = function () {
 	 * @constructor
 	 */
 	//function SuperType2() {
-	//	this.colors = ['red', 'yellow'];
+	//	this.colors = ['red∞', 'yellow'];
 	//};
 	//function SubType2 () {
 	//
@@ -52,6 +51,33 @@ window.onload = function () {
 	//
 	//var instance22 = new SubType2();
 	//console.log(instance21.colors);
+	//console.log('========== 分割线 ==========');
+
+
+	/**
+	 * 继承 : 原型链
+	 * 描述 :
+	 * @constructor
+	 */
+	//function Parent(name) {
+	//	this.name = name || 'parent';
+	//};
+	//Parent.prototype.getParentName = function () {
+	//	return this.name;
+	//}
+	//function Child () { }
+	//
+	//// 继承的魔力在这里发生
+	//inherit(Child, Parent);
+	//
+	//// 自定义继承函数
+	//function inherit (Child, Parent) {
+	//	Child.prototype = new Parent();
+	//}
+	//
+	//// Notice : 不能将参数传递到子构造函数中 -> 见书<js 模式> P122
+	//var kid = new Child('child');
+	//console.log(kid.getParentName());
 	//console.log('========== 分割线 ==========');
 
 
@@ -80,24 +106,24 @@ window.onload = function () {
 	 * 继承 : 构造函数 - 传递参数
 	 * @constructor
 	 */
-	function SuperType4(name) {
-		this.name = name;
-	};
-	function SubType4 () {
-		// 继承 SuperType4
-		SuperType4.call(this, 'bian17888');
-		this.age = 27;
-	}
-
-	var instance41 = new SubType4();
-
-	// 注意: 父类原型定义的方法, 子类也无法复用
-	SuperType4.prototype.sayName = function () {
-		console.log(this.name);
-	}
-	console.log(instance41.name);
-	//console.log(instance41.sayName());
-	console.log('========== 分割线 ==========');
+	//function SuperType4(name) {
+	//	this.name = name;
+	//};
+	//function SubType4 () {
+	//	// 继承 SuperType4
+	//	SuperType4.call(this, 'bian17888');
+	//	this.age = 27;
+	//}
+	//// 注意: 父类原型定义的方法, 子类也无法复用
+	//SuperType4.prototype.sayName = function () {
+	//	console.log(this.name);
+	//}
+	//
+	//var instance41 = new SubType4();
+	//
+	//console.log(instance41.name);
+	////console.log(instance41.sayName());
+	//console.log('========== 分割线 ==========');
 
 
 
