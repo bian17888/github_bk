@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ch4-公共方法</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    /**
+     * 向 Function 原型添加 method 方法
+     * @param name
+     * @param func
+     * @returns {Function}
+     */
+    Function.prototype.method = function (name, func) {
+        // 类库混用时, 先判断下该方法是否存在
+        if (!this.prototype[name]) {
+            this.prototype[name] = func;
+        }
+        return this;
+    };
+
+    /**
+     * 对String 添加'trim'去首尾空格方法
+     */
+    String.method('trim', function () {
+        return this.replace(/^\s+|\s+$/g, '');
+    });
+
+    /**
+     * 闭包基础实例
+     * @returns {{getValue: Function}}
+     */
+    var myObject = function () {
+        var value = 1;
+        return {
+            getValue: function () {
+                return value;
+            }
+        }
+    }
+
+    /**
+     * Demo02 : setTimeout 闭包
+     * @param node
+     */
+    fade = function (node) {
+
+        var level = 1,
+                color = 'ffff';
+
+        var step = function () {
+            var hex = level.toString(16);
+            node.style.backgroundColor = '#ffff' + hex + hex;
+            if (level < 16) {
+                level += 1;
+                setTimeout(step, 100);
+            }
+        }
+        setTimeout(step, 100);
+
+    }
+    fade(document.body);
+
+    /**
+     * 模块 Module
+     */
+    String.method('deentityify', function () {
+
+        // 字符实体表
+        var entity = {
+            quot: '"',
+            lt  : '<',
+            gt  : '>'
+        };
+
+        var reg = /&([^&;]+);/g;
+
+        return function () {
+            // replace 用法
+            return this.replace(reg, function (a, b) {
+                var r = entity[b];
+                return typeof r === 'string' ? r : a;
+            })
+        }
+
+    }())
+
+    document.writeln('&lt;&quot;&gt; &123'.deentityify());
+
+    /**
+     * 基于原型的继承
+     * @type {{name: string, get_name: Function, says: Function}}
+     */
+    //    var mammal = {
+    //        name : 'name',
+    //        get_name : function () {
+    //            return this.name;
+    //        },
+    //        says : function () {
+    //            return this.saying || '';
+    //        }
+    //    }
+    //
+    //    // 实现差异化继承
+    //    var myCat = Object.create(mammal)
+    //    myCat.name = 'blacky';
+    //    myCat.saying = 'wang! wang!';
+    //    myCat.skill = 'jump!';
+
+    /**
+     * 基于原型的继承 : 升级版, 可增加私有变量
+     * @param spec
+     * @param my
+     * @returns {{}}
+     */
+    var mammal = function (spec, my) {
+
+        var that = {};
+        that.get_name = function () {
+            return spec.name;
+        };
+        that.says = function () {
+            return spec.saying || '';
+        };
+        return that;
+
+    };
+
+    var myMammal = mammal({name: 'name'});
+
+    var cat = function (spec, my) {
+
+        var that = mammal(spec);
+        spec.saying = ' wang! ';
+        that.skill = 'jump!';
+        that.get_name = function () {
+            return that.says() + spec.name + that.says();
+        }
+        return that;
+
+    }
+
+    var myCat = cat({name: 'blacky'});
+
+    // 扩展 : 提供处理父类的方法
+    Object.method('superior', function (name) {
+
+        var that = this,
+                method = that[name];
+        return function () {
+            return method.apply(that, arguments);
+        }
+
+    })
+
+    var coolCat = function (spec, my) {
+
+        var that = cat(spec),
+                super_get_name = that.superior('get_name');
+        that.get_name = function () {
+            return 'like' + super_get_name() + that.says();
+        }
+        return that;
+    }
+
+    var myCoolCat = coolCat({name: 'bian17888'});
+
+
+    /**
+     * 判断是否为数组
+     * @param value
+     * @returns {boolean}
+     */
+    var is_array = function (value) {
+        return Object.prototype.toString.apply(value) === '[object Array]';
+    }
+
+
+    /**
+     * 为数组设置默认值
+     * @param length
+     * @param defaultValue
+     * @returns {Array}
+     */
+    var dim = function (length, defaultValue) {
+
+        var i = 0,
+                arr = [];
+        for (i; i < length; i++) {
+            arr[i] = defaultValue;
+        }
+        return arr;
+
+    }
+    
+
+
+</script>
+</body>
+</html>

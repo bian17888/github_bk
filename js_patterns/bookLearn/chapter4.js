@@ -291,4 +291,112 @@ function configuration() {
 	createDiv({'background-color': '#ddd', 'width': '200px', 'height': '200px', 'margin': '20px 0'});
 
 }
-configuration();
+//configuration();
+
+
+/**
+ * Curry : Curry 化 + 函数应用
+ *
+ * @namespace CHAPTER4
+ * @class Curry
+ */
+/**
+ * 1.1 函数应用
+ *
+ * @method applyFn
+ */
+function applyFn() {
+	var sayHi = function (who) {
+		var result = "Hello , " + (who ? who : '') + '!';
+		console.log(result);
+	}
+
+	// 调用函数
+	sayHi('bian17888');
+	// 应用函数 -> 函数式变成
+	sayHi.apply(null, ['kai17888']);
+	// *** apply()方法的语法糖 , 效率更高, 节省一个数组
+	sayHi.call(null, 'bk');
+}
+//applyFn();
+
+
+/**
+ * 1.2 Curry 原生代码
+ *
+ * @method curryBase 单个参数或单步 curry 化
+ */
+function curryBase() {
+
+	// 将一个函数 curry 化, 得到一个新函数
+	var newAdd = schonfinkelize(add, 5);
+	newAdd(4);  // 输出9
+
+	// 另一种选择, 直接调用新函数
+	//schonfinkelize(add , 5)(4);     //输出9
+
+
+	// 被应用 curry 化的函数
+	function add(x, y) {
+		return x + y;
+	}
+
+	/*
+	 * 通用的 Curry 示例
+	 */
+	function schonfinkelize(fn) {
+
+		var slice = Array.prototype.slice,
+			stored_args = slice.call(arguments, 1);
+
+		return function () {
+			var new_args = slice.call(arguments),
+				args = stored_args.concat(new_args);
+
+			return fn.apply(null, args);
+		}
+	}
+
+}
+//curryBase();
+
+
+/**
+ * 1.3 Curry 原生代码
+ *
+ * @method curryPro 任意参数或两步 curry 化
+ */
+function curryPro() {
+
+	// 执行任意数量的参数
+	schonfinkelize(add, 1, 2, 3)(4, 5);              //输出 15
+
+	// 两步 curry 化
+	var addOne = schonfinkelize(add, 1);
+	addOne(2,3,4,5);                                // 输出15
+	var addSix = schonfinkelize(addOne,2,3);
+	addSix(4,5);                                    // 输出15
+
+	// 被应用 curry 化的函数
+	function add(a, b, c, d, e) {
+		return a + b + c + d + e;
+	}
+
+	/*
+	 * 通用的 Curry 示例
+	 */
+	function schonfinkelize(fn) {
+
+		var slice = Array.prototype.slice,
+			stored_args = slice.call(arguments, 1);
+
+		return function () {
+			var new_args = slice.call(arguments),
+				args = stored_args.concat(new_args);
+
+			return fn.apply(null, args);
+		}
+	}
+
+}
+curryPro();
