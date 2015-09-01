@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="../libs/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="chapter6_practice_inherit_my.js"></script>
+    <script type="text/javascript">
+    $(function() {
+
+        $('#text li').each(function(){
+            new MY.method.PlaceFieldEditor($(this));    
+        });
+
+        $('#area li').each(function(){
+            new MY.method.PlaceAreaEditor($(this));    
+        })
+        
+
+
+    });
+    </script>
+    <style type="text/css">
+    body {
+        font-size: 12px;
+        color: #333;
+        ;
+    }
+    
+    ul li {
+        line-height: 30px;
+    }
+    </style>
+</head>
+
+<body>
+    <ul id="text">
+        <li id="1">张三：</li>
+        <li id="2">李四：</li>
+        <li id="3">王二：</li>
+    </ul>
+    <ul id="area">
+        <li id="1">张三：</li>
+        <li id="2">李四：</li>
+        <li id="3">王二：</li>
+    </ul>
+</body>
+
+</html>
