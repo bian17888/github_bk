@@ -9,6 +9,12 @@
     <script type="text/javascript">
     $(function() {
 
+        function extend (P) {
+            function F(){}
+            F.prototype = P;
+            return new F();
+        }
+
         $('#text li').each(function(){
             new MY.method.PlaceFieldEditor($(this));    
         });

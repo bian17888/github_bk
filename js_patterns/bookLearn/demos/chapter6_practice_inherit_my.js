@@ -13,7 +13,7 @@ MY.method = (function() {
      * 公共方法 : 类式继承
      */
     var extend = (function () {
-        console.log(123);
+        
         var F = function() {};
 
         return function(C, P){
