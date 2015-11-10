@@ -1,0 +1,21 @@
+{
+  "name": "ch3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "expect.js": "^0.2.0",
+    "mocha": "^1.16.2",
+    "mocha-lcov-reporter": "^1.0.0",
+    "superagent": "^0.15.7",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
