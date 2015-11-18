@@ -4,6 +4,9 @@
 var http = require('http');
 var parse = require('url').parse;
 var qs = require('querystring');
+var util = require('util');
+var formidable = require('formidable');
+var fs = require('fs');
 
 
 var lists = [];
@@ -64,17 +67,56 @@ function badRequest(res) {
  */
 function upload(req, res) {
 
-	var body = '';
+	if(!isFormData(req)){
+		res.statusCode = 400;
+		res.end('Bad Request : expecting multipart/form-data');
+		return ;
+	}
 
-	req.setEncoding('utf8');
-	req.on('data',function(chunk){
-		body += chunk;
+	var form = new formidable.IncomingForm();
+	form.encoding = 'utf-8';
+	form.keepExtensions = true;     // 上传后文件带扩展名
+	form.multiples = true;  // 多选上传
+	form.hash = false;      // If you want checksums calculated for incoming files, set this to either 'sha1' or 'md5'
+	form.uploadDir = __dirname + '/tmp';
+	form.parse(req, function(err, fields, files){
+		console.log(fields);
+		console.log(files);
+		res.writeHead(200, {'content-type': 'text/plain'});
+		res.write('received upload:\n\n');
+		res.end(util.inspect({fields: fields, files: files}));
 	});
-	req.on('end',function(){
-		var obj = qs.parse(body);
-		lists.push(obj.list);
-		showLists(res);
-	});
+
+	form
+		.on('progress', function (bytesReceived, bytesExpected) {
+			var percent = Math.floor(bytesReceived / bytesExpected * 100);
+			console.log(percent + '%');
+		})
+		/* 两种重命名方式 : fileBegin + file-> fs.rename */
+		/* this is where the renaming happens */
+		.on ('fileBegin', function(name, file){
+			//rename the incoming file to the file's name
+			file.path = form.uploadDir + "/" + file.name;
+		})
+		//.on('file', function(field, file) {
+		//	//rename the incoming file to the file's name
+		//	fs.rename(file.path, form.uploadDir + "/" + file.name);
+		//})
+		.on('error', function(err) {
+			console.log("an error has occured with form upload");
+			console.log(err);
+			req.resume();
+		})
+
+
+
+
+	function isFormData(req) {
+		var type = req.headers['content-type'] || '';
+		return 0 == type.indexOf('multipart/form-data');
+	}
+
+	return;
 
 }
 
@@ -82,11 +124,7 @@ function upload(req, res) {
  * showLists
  */
 function showLists(res) {
-	var html = '<!DOCTYPE html>\n<html lang="en">\n<head>\n\t<meta charset="UTF-8">\n\t<title>Restful</title>\n</head>\n<body>\n<h2>To do list</h2>\n<form action="/" method="post" enctype="application/x-www-form-urlencoded">\n\t<p><label for="">输入list : </label><input type="text" name="list" placeholder="输入..."/> </p>\n\t<p><button type="submit">submit</button></p>\n</form>\n<div class="box">\n\t<ul>\n\t'
-		+ lists.map(function(item){
-			return '<li>' + item +'</li>'
-		}).join('')
-		+'\n\t</ul>\n</div>\n</body>\n</html>';
+	var html = '<!DOCTYPE html>\n<html lang="en">\n<head>\n\t<meta charset="UTF-8">\n\t<title>Restful</title>\n</head>\n<body>\n<h2>To do list</h2>\n<form action="/" method="post" enctype="multipart/form-data" >\n\t<p><input type="text" name="name"/></p>\n\t<p><input type="file" name="file" multiple="multiple" /></p>\n\t<p><button type="submit">upload</button></p>\n</form>\n<div class="box"></div>\n</body>\n</html>';
 	res.statusCode = 200;
 	res.setHeader('Content-Type','text/html');
 	res.setHeader('Content-Length',Buffer.byteLength(html));
