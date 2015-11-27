@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io
 
+### Github 忽略各 xx/source/源代码, 只保留.zip 压缩文件 ###
+libs/requireJs/1_Pluralsight_requireJs/source/*
+!libs/requireJs/1_Pluralsight_requireJs/source/*.zip
+
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
