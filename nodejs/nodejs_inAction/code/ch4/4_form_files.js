@@ -2,14 +2,10 @@
  * Created by bian17888 on 15/11/18.
  */
 var http = require('http');
-var parse = require('url').parse;
-var qs = require('querystring');
 var util = require('util');
 var formidable = require('formidable');
 var fs = require('fs');
 
-
-var lists = [];
 
 var server = http.createServer(function (req, res) {
 
