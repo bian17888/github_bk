@@ -3,6 +3,7 @@
 ### 自定义 : Github 忽略各 xx/source/*, 只保留.zip 压缩文件 ###
 **/source/*
 !**/source/*.zip
+.DS_Store
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
