@@ -1,237 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="924074f5-a2f8-4224-9f63-d2951c6077a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/size.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/grunt/bs-raw-files-generator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/theme.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/grunt/bs-lessdoc-parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/progress-bar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/img/carousel-cheese.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/dist/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/input-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/text-overflow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleTypeScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/background-variant.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/responsive-visibility.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/tab-focus.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/wells.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/sizzle/dist/sizzle.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/img/carousel-pizza.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleCoffeeScript.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/var/getStyles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/opacity.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/nav-vertical-align.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/css/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/grid-framework.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/dist/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleCoffeeScript.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/animal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/image.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/text-emphasis.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/nav-divider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/gradients.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/panels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/resize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/grunt/bs-glyphicons-data-generator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleTypeScript.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/clearfix.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/grunt/sauce_browsers.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/img/carousel-tomatoes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/img/carousel-salad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleTypeScript.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/vendor-prefixes.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/reset-filter.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/sampleCoffeeScript.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/print.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/hide-text.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/responsive-embed.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/labels.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/sizzle/dist/sizzle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/center-block.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/glyphicons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/border-radius.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/mixins/table-row.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/jumbotron.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/bootstrap/less/dropdowns.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/sizzle/dist/sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/3_gulp_demo/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/dist/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/3_gulp_demo/js/a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/css/1.5_first_project.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/js/animal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/var/getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/event/ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/3_gulp_demo/gulpFile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/1.5_first_project.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/3_gulp_demo/a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/sizzle/dist/sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/js/1.5_main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/dist/jquery.min.map" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/traversing/var/rneedsContext.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core/init.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/data.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/hiddenVisibleSelectors.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/dimensions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/strundefined.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/strundefined.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/defaultDisplay.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/defaultDisplay.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/manipulation/_evalUrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/dist/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/parseXML.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/indexOf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/deprecated.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/jsonp.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes/val.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/offset.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/offset.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/queue/delay.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/data/Data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/manipulation/var/rcheckableType.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/manipulation/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor/webstorm/Source/6-webstorm-exercise-files/after/PizzaShop" afterPath="$PROJECT_DIR$/Editor/webstorm/Source/6-webstorm-exercise-files/after/PizzaShop" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/bower.json" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/data/accepts.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/data/accepts.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/var/isHidden.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/var/isHidden.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/wrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/exports/global.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/concat.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/effects.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/effects.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/toString.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core/ready.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/selector-sizzle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/sizzle/dist/sizzle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/selector-native.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/var/cssExpand.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/xhr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/event/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/event/alias.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/rnotwhite.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/var/rquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/selector.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/selector.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/.bower.json" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/data/var/data_priv.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/data/var/data_priv.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core/parseHTML.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/pnum.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/var/nonce.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/data/var/data_user.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/data/var/data_user.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/var/rmargin.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/outro.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/outro.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes/prop.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/push.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/traversing/findFilter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes/classes.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/exports/amd.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/addGetHookIf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core/var/rsingleTag.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/MIT-LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/event.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/event.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/slice.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/intro.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/intro.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/traversing.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/core/access.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/swap.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/swap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/hasOwn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/manipulation.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/deferred.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/curCSS.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/class2type.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/effects/Tween.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/parseJSON.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/parseJSON.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css/var/rnumnonpx.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/effects/animatedSelector.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/attributes/attr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/queue.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/queue.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/css.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/var/arr.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/serialize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Editor/webstorm/Code/1_base_demo/libs/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/lib/jquery/src/ajax/load.js" />
-    </list>
+    <list default="true" id="924074f5-a2f8-4224-9f63-d2951c6077a2" name="Default" comment="" />
     <ignored path="github_bk.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -254,7 +24,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18218085">
+            <state vertical-scroll-proportion="0.16452992">
               <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
@@ -314,9 +84,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="x" value="-186" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -366,6 +137,58 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="github_bk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Stylesheets">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="github_bk">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -399,74 +222,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github_bk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github_bk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-webstorm-exercise-files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="before" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github_bk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github_bk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Editor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3-webstorm-exercise-files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="after" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PizzaShop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,58 +291,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Problems">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="github_bk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Stylesheets">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="github_bk">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Changed Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Default">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,7 +328,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="950" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -675,12 +378,6 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -760,30 +457,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="-186" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2213467" sideWeight="0.5825864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37591776" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16504854" sideWeight="0.49842766" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2238806" sideWeight="0.5825864" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19660194" sideWeight="0.3789308" order="1" side_tool="false" content_ui="tabs" x="-63" y="-666" width="429" height="311" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39544514" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16504854" sideWeight="0.49842766" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37591776" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19660194" sideWeight="0.3789308" order="1" side_tool="false" content_ui="tabs" x="-63" y="-666" width="429" height="311" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3240469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.32928804" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" x="100" y="123" width="1080" height="573" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21848138" sideWeight="0.41741356" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3240469" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32952183" sideWeight="0.5" order="9" side_tool="true" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39647576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21848138" sideWeight="0.41741356" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -822,6 +521,14 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -895,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Editor/webstorm/Code/ch3_javascript/PizzaShop/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18218085">
+        <state vertical-scroll-proportion="0.16452992">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
