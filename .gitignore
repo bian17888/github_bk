@@ -4,6 +4,7 @@
 **/source/*
 !**/source/*.zip
 .DS_Store
+.idea/**/*.*
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
