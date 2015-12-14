@@ -1,0 +1,14 @@
+{
+  "name": "co_learning",
+  "version": "1.0.0",
+  "description": "co 源码学习",
+  "main": "co.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bian17888",
+  "license": "ISC",
+  "devDependencies": {
+    "co": "^4.6.0"
+  }
+}
