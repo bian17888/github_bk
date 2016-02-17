@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>show</title>
+	<style type="text/css">
+		.error {
+			background-color: #f00;
+		}
+
+		.warning {
+			background-color: #ff0;
+		}
+
+		tr.active { background-color: #ff0000;}
+	</style>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="ngclassController.js"></script>
+</head>
+<body>
+<section ng-controller="NgclassController">
+	<h2>ng-class练习 : 更换类名 </h2>
+	<button ng-click="errorTip()">error</button>
+	<button ng-click="warningTip()">warning</button>
+	<div ng-class="{error : isError, warning : isWarning}">{{ messageText }}</div>
+
+	<div>
+		<h2>ng-class练习 : tr 点击变色 </h2>
+		<table>
+			<tbody>
+			<tr ng-repeat="item in directory" ng-click="trActive($index)" ng-class="{active : $index % 2 == 1 }">
+				<td>{{ item.name }}</td>
+				<td>{{ item.cuisine }}</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</section>
+</body>
+</html>

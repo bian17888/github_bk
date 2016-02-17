@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="orderController.js"></script>
+</head>
+<body >
+<div ng-controller="orderController">
+	<h1>Your Shopping Cart </h1>
+	<ul>
+		<li ng-repeat="item in items">
+			<label for="">{{ item.title }}</label>
+			<input type="text" ng-model="item.quantity" />
+			<span>{{ item.price | currency }}</span>
+			<span>{{ item.price * item.quantity | currency }}</span>
+			<button ng-click="remove($index)">remove</button>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

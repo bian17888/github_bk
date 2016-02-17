@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>show</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="showController.js"></script>
+</head>
+<body>
+	<section ng-controller="ShowController">
+		<div>
+			<h2>ng-show demo {{ text }}</h2>
+			<button ng-click="toogleMenu()">toggle button</button>
+			<p ng-show="menuStatus.show">测试文字</p>
+		</div>
+	</section>
+</body>
+</html>
