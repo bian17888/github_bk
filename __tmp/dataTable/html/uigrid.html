@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular-touch/angular-touch.min.js"></script>
+	<script src="lib/angular-animate/angular-animate.min.js"></script>
+	<script src="lib/angular-ui-grid/ui-grid.min.js"></script>
+	<link rel="stylesheet" href="lib/angular-ui-grid/ui-grid.min.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+
+<div ng-controller="MainCtrl">
+	<button type="button" class="btn btn-success" ng-click="getCurrentFocus()">Get Current focused cell</button>  <span ng-bind="currentFocused"></span>
+	<br>
+	<strong>Last Cell Edited:</strong> {{msg.lastCellEdited}}
+	<br>
+	<div ui-grid="gridOptions" ui-grid-edit ui-grid-cellnav class="grid"></div>
+</div>
+
+
+<script src="js/uigrid.js"></script>
+</body>
+</html>

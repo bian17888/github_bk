@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="lib/ng-table.min.css">
+	<link rel="stylesheet" href="lib/bootstrap.min.css">
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-resource.min.js"></script>
+	<script src="lib/ng-table.min.js"></script>
+	<script src="lib/lodash.min.js"></script>
+	<script src="js/hello_table.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp">
+	<div ng-controller="helloController as vm">
+		<table ng-table="vm.tableParams" class="table" show-filter="true">
+			<tr ng-repeat="user in $data">
+				<td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+					{{user.name}}</td>
+				<td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+					{{user.age}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

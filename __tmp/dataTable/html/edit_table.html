@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="lib/ng-table.min.css">
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-resource.min.js"></script>
+	<script src="lib/ng-table.min.js"></script>
+	<script src="lib/lodash.min.js"></script>
+	<script src="js/edit_table.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp">
+	<div ng-controller="demoController as demo">
+		<table ng-table="demo.tableParams" class="table table-condensed table-bordered table-striped">
+			<tr ng-repeat="row in $data">
+				<td data-title="'Title'" filter="{title: 'text'}" sortable="'title'">{{row.title}}</td>
+				<td data-title="'Number'" filter="{number: 'number'}" sortable="'number'">{{row.number}}</td>
+				<td data-title="'State'" filter="{state: 'text'}" sortable="'state'">{{row.state}}</td>
+				<td data-title="'Create_at'" filter="{created_at: 'text'}" sortable="'created_at'">{{row.created_at}}</td>
+				<td data-title="'Updated_at'" filter="{updated_at: 'text'}" sortable="'updated_at'">{{row.updated_at}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
