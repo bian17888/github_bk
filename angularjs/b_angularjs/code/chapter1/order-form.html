@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="appOrder">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -7,15 +7,15 @@
 	<script src="orderController.js"></script>
 </head>
 <body >
-<div ng-controller="orderController">
+<div ng-controller="orderController as order">
 	<h1>Your Shopping Cart </h1>
 	<ul>
-		<li ng-repeat="item in items">
+		<li ng-repeat="item in order.items">
 			<label for="">{{ item.title }}</label>
 			<input type="text" ng-model="item.quantity" />
 			<span>{{ item.price | currency }}</span>
 			<span>{{ item.price * item.quantity | currency }}</span>
-			<button ng-click="remove($index)">remove</button>
+			<button ng-click="order.remove($index)">remove</button>
 		</li>
 	</ul>
 </div>

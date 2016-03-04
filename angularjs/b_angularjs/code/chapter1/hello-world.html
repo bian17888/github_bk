@@ -1,1 +1,16 @@
+<!doctype html>
+<html ng-app="hellpApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="helloController.js"></script>
+</head>
+<body >
+<div ng-controller="helloController as hello">
+	<p> hello, {{ hello.greeting.text }} !</p>
+</div>
 
+
+</body>
+</html>

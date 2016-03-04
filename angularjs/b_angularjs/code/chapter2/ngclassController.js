@@ -3,31 +3,36 @@
  * @author bian17888 16/2/17 16:59
  */
 
-function NgclassController($scope) {
-	$scope.messageText = "默认状态";
-	$scope.isError = false;
-	$scope.isWarning = false;
+angular.module('ngclassApp', [])
+	.controller('NgclassController', function () {
 
-	$scope.errorTip = function(){
-		$scope.messageText = "error状态";
-		$scope.isError = true;
-		$scope.isWarning = false;
-	};
+		var self = this;
 
-	$scope.warningTip = function(){
-		$scope.messageText = "warning状态";
-		$scope.isError = false;
-		$scope.isWarning = true;
-	};
+		self.messageText = "默认状态";
+		self.isError = false;
+		self.isWarning = false;
+
+		self.errorTip = function(){
+			self.messageText = "error状态";
+			self.isError = true;
+			self.isWarning = false;
+		};
+
+		self.warningTip = function(){
+			self.messageText = "warning状态";
+			self.isError = false;
+			self.isWarning = true;
+		};
 
 
-	$scope.directory = [
-		{"name" : "xx01", "cuisine" : "BBQ"},
-		{"name" : "xx02", "cuisine" : "BBQ2"},
-		{"name" : "xx03", "cuisine" : "BBQ3"},
-		{"name" : "xx04", "cuisine" : "BBQ4"},
-	]
-	$scope.trActive = function (index) {
-		$scope.num = index;
-	}
-}
+		self.directory = [
+			{"name" : "xx01", "cuisine" : "BBQ"},
+			{"name" : "xx02", "cuisine" : "BBQ2"},
+			{"name" : "xx03", "cuisine" : "BBQ3"},
+			{"name" : "xx04", "cuisine" : "BBQ4"},
+		]
+		self.trActive = function (index) {
+			self.num = index;
+		}
+
+	});

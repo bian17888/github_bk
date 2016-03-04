@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html ng-app="ngclassApp">
 <head>
 	<meta charset="UTF-8">
 	<title>show</title>
@@ -13,22 +13,24 @@
 		}
 
 		tr.active { background-color: #ff0000;}
+
+		tr.click { background-color: #ffff00;}
 	</style>
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="ngclassController.js"></script>
 </head>
 <body>
-<section ng-controller="NgclassController">
+<section ng-controller="NgclassController as ngclass">
 	<h2>ng-class练习 : 更换类名 </h2>
-	<button ng-click="errorTip()">error</button>
-	<button ng-click="warningTip()">warning</button>
-	<div ng-class="{error : isError, warning : isWarning}">{{ messageText }}</div>
+	<button ng-click="ngclass.errorTip()">error</button>
+	<button ng-click="ngclass.warningTip()">warning</button>
+	<div ng-class="{error : ngclass.isError, warning : ngclass.isWarning}">{{ ngclass.messageText }}</div>
 
 	<div>
-		<h2>ng-class练习 : tr 点击变色 </h2>
+		<h2>ng-class练习 : 隔行变色 || tr点击变黄色 </h2>
 		<table>
 			<tbody>
-			<tr ng-repeat="item in directory" ng-click="trActive($index)" ng-class="{active : $index % 2 == 1 }">
+			<tr ng-repeat="item in ngclass.directory" ng-click="ngclass.trActive($index)" ng-class="{active : $index % 2 == 1, click : $index == ngclass.num }">
 				<td>{{ item.name }}</td>
 				<td>{{ item.cuisine }}</td>
 			</tr>

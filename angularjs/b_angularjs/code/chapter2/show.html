@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html ng-app="showApp">
 <head>
 	<meta charset="UTF-8">
 	<title>show</title>
@@ -7,11 +7,11 @@
 	<script src="showController.js"></script>
 </head>
 <body>
-	<section ng-controller="ShowController">
+	<section ng-controller="ShowController as show">
 		<div>
-			<h2>ng-show demo {{ text }}</h2>
-			<button ng-click="toogleMenu()">toggle button</button>
-			<p ng-show="menuStatus.show">测试文字</p>
+			<h2>ng-show demo {{ show.text }}</h2>
+			<button ng-click="show.toogleMenu()">toggle button</button>
+			<p ng-show="show.menuStatus.show">测试文字</p>
 		</div>
 	</section>
 </body>
