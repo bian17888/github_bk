@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="ngsrcApp">
+<head>
+	<meta charset="UTF-8">
+	<title>show</title>
+	<style type="text/css">
+
+	</style>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="ngsrcController.js"></script>
+</head>
+<body>
+<section ng-controller="NgsrcController as ngsrc">
+	<h2>ng-src练习 : 加载图片和超链接 </h2>
+	<p><img ng-src="{{ ngsrc.src }}" alt=""></p>
+	<ul>
+		<li ng-repeat="item in ngsrc.itemList">
+			<a ng-href="{{ item.href }}">{{ item.text }}</a>
+		</li>
+	</ul>
+</section>
+</body>
+</html>
