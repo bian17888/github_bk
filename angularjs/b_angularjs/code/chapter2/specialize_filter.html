@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="shopApp">
+<head>
+	<meta charset="UTF-8">
+	<title>filter</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="specializeFilterController.js"></script>
+</head>
+<body>
+	<section ng-controller="FilterController as filters">
+		<div>
+			<h2>内置过滤器</h2>
+			<ul>
+				<li ng-repeat="item in filters.items">
+					<label for="">{{ item.name }}</label>
+					<span>{{ item.price | currency:number:1 }}</span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h2>自定义过滤器</h2>
+			<ul>
+				<li ng-repeat="item in filters.items">
+					<label for="">{{ item.name | titleCase:'bktag' }}</label>
+					<span>{{ item.price }}</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>
