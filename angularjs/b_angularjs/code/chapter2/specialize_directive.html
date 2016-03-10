@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="shopApp">
+<head>
+	<meta charset="UTF-8">
+	<title>filter</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="specializeDirectiveController.js"></script>
+</head>
+<body>
+	<section ng-controller="DirectiveController as directiveCtrl">
+		<h1>自定义指令 directive</h1>
+		<p>
+			<button ngbk-focus ng-click="directiveCtrl.clickFocused()" type="button">focus me !</button>
+			<button ng-click="directiveCtrl.clickUnfocused()" type="button">unfocus</button>
+		</p>
+		<div>{{ directiveCtrl.message.text }}</div>
+	</section>
+</body>
+</html>
