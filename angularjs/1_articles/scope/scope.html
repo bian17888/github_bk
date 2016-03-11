@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="scopeApp">
+<head>
+	<meta charset="UTF-8">
+	<title>了解作用域</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="scopeController.js"></script>
+</head>
+<body >
+
+<section>
+	<h2></h2>
+	<div ng-controller="scopeController as vm">
+		<p>{{ vm.greeting.text }}</p>
+	</div>
+</section>
+
+</body>
+</html>
