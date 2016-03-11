@@ -3,15 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<title>了解作用域</title>
+	<style>
+		section {
+			width: 80%;
+			border: 1px solid #eee;
+			padding: 10px 3%;
+			margin: 20px auto;
+		}
+	</style>
 	<script src="../bower_components/angular/angular.js"></script>
 	<script src="scopeController.js"></script>
 </head>
-<body >
+<body>
 
 <section>
-	<h2></h2>
-	<div ng-controller="scopeController as vm">
-		<p>{{ vm.greeting.text }}</p>
+	<h2>作用域隔离</h2>
+	<div ng-controller="message1Ctrl">
+		<p>message1Ctrl : {{ message1 }}</p>
+		<p>message2Ctrl : {{ message2 }}</p>
+		<p>rootScope : {{ message0 }}</p>
+	</div>
+	<div ng-controller="message2Ctrl">
+		<p>message1Ctrl : {{ message1 }}</p>
+		<p>message2Ctrl : {{ message2 }}</p>
+		<p>rootScope : {{ message0 }}</p>
+	</div>
+</section>
+
+<section>
+	<h2>作用域嵌套 : string 类型</h2>
+	<div ng-controller="parent1Ctrl">
+		<h3>parentCtrl</h3>
+		<p>parent name : {{ name }}</p>
+		<p>parent hello : {{ hello }}</p>
+		<p><input type="text" ng-model="hello"></p>
+		<div ng-controller="child1Ctrl">
+			<h3>childCtrl</h3>
+			<p>child name : {{ childName }}</p>
+			<p>child hello : {{ hello }}</p>
+			<p><input type="text" ng-model="hello"></p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<h2>作用域嵌套 : object 类型</h2>
+	<div ng-controller="parent2Ctrl">
+		<h3>parentCtrl</h3>
+		<p>parent name : {{ info.name }}</p>
+		<p>parent hello : {{ info.hello }}</p>
+		<p><input type="text" ng-model="info.hello"></p>
+		<div ng-controller="child2Ctrl">
+			<h3>childCtrl</h3>
+			<p>child name : {{ info.childName }}</p>
+			<p>child hello : {{ info.hello }}</p>
+			<p><input type="text" ng-model="info.hello"></p>
+		</div>
+	</div>
+</section>
+
+<section>
+	<h2>$watch</h2>
+	<div ng-controller="watchCtrl">
+		<p>
+			<select ng-options="n for n in [1,2,3]" ng-model="newValue"></select>
+			<button type="button" value="add" ng-click="add()">add</button>
+			<span>数值 {{values}} 的所有和是 {{sum}}</span>
+		</p>
+
+	</div>
+</section>
+
+<section>
+	<h2>$scope$apply</h2>
+	<div ng-controller="applyCtrl">
+		<p>
+			<input type="text" ng-model="message">
+			<span> 输入的信息为 : <em style="color:#f00">{{ message }}</em>, <code>esc</code> 键来清除message值!</span>
+		</p>
+
 	</div>
 </section>
 
