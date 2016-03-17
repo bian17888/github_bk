@@ -1,0 +1,96 @@
+<!doctype html>
+<html ng-app="collectionApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular浅入深出系列 - 集合</title>
+	<style>
+		section {
+			width: 80%;
+			border: 1px solid #eee;
+			padding: 10px 3%;
+			margin: 20px auto;
+		}
+	</style>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="collectionController.js"></script>
+</head>
+<body>
+
+<section>
+	<h2>angular 集合 </h2>
+	<div ng-controller="collection as vm">
+		<h4>一 ng-repeat </h4>
+		<ul>
+			<li ng-repeat="item in vm.items">value : {{ item.name }}</li>
+		</ul>
+		<ul>
+			<li ng-repeat="(key, value) in vm.items">key : {{ key }}, value : {{ value.name }}</li>
+		</ul>
+
+		<h4>二 ng-repeat 使用外层的 $index </h4>
+		<ul>
+			<li ng-repeat="item in vm.items" ng-init=" outIndex = $index ">
+				{{ outIndex + 1 }}. {{ item.name }}
+				<ul>
+					<li ng-repeat="author in item.author">
+						{{ outIndex +1 }}.{{ $index +1 }} author -> {{ author }}
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h4>三 唯一性 </h4>
+		<h5>对比表</h5>
+		<table>
+			<tr>
+				<td>1 === 1</td>
+				<td>{{ 1 === 1 }}</td>
+			</tr>
+			<tr>
+				<td>'1' === '1'</td>
+				<td>{{ '1' === '1' }}</td>
+			</tr>
+			<tr>
+				<td>1 === '1'</td>
+				<td>{{ 1 === '1' }}</td>
+			</tr>
+			<tr>
+				<td>{} === {}</td>
+				<td>{{ {} === {} }}</td>
+			</tr>
+			<tr>
+				<td>{name: 1} === {name: 1}</td>
+				<td>{{ {name: 1} === {name: 1} }}</td>
+			</tr>
+		</table>
+		<ul>
+			<!-- 抛异常 -->
+			<!-- <li ng-repeat="item in [1,2,3,1]"></li> -->
+
+			<!-- 改进版 01 -->
+			<li ng-repeat="item in [1,2,3,1] track by $index">{{ item }}</li>
+
+			<!-- 改进版 02 -->
+			<li ng-repeat="item in [1,2,3,1] track by $index">{{ item }}</li>
+		</ul>
+
+		<h4>四 回调函数 </h4>
+		<ul>
+			<li ng-repeat="item in vm.infos">
+				<span>{{ item.name }}</span>
+				<button type="button" ng-click="vm.destory(item)">删除</button>
+			</li>
+		</ul>
+
+		<h4>五 -start -end </h4>
+		<dl>
+			<dt ng-repeat-start="item in vm.books">书名 :</dt>
+			<dd>{{ item.name }}</dd>
+			<dt ng-repeat-end>价格 :</dt>
+			<dd>{{ item.price }}</dd>
+		</dl>
+	</div>
+</section>
+
+</body>
+</html>
