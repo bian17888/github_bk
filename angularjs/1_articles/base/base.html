@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="baseApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular浅入深出系列 - 基础知识</title>
+	<style>
+		section {
+			width: 80%;
+			border: 1px solid #eee;
+			padding: 10px 3%;
+			margin: 20px auto;
+		}
+	</style>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="baseController.js"></script>
+</head>
+<body>
+
+<section>
+	<h2>angular 表达式 </h2>
+	<div ng-controller="expression as vm">
+		<h4>一 支持部分 </h4>
+		<p>表达式 : 3 + 2 = {{ 3 + 2 }}</p>
+		<p>变量定义提升 : {{ a }} 另一个双大括号中还是 {{ a = 1 }} </p>
+		<p>三目表达式 : b = {{ b = true;  b ? 3 : 2 }}</p>
+		<p>== 和 === : {{ 2 == '2' }} , {{ 2 === '2' }}</p>
+		<p>转换为大写 toUpperCase :  angular -> {{ 'angular'.toUpperCase() }}</p>
+
+		<h4>二 不支持部分 </h4>
+		<p>++和-- : <span>{{z = 1; ++z}}</span> <span>{{z = 1; --z}}</span></p>
+		<p>for 循环 : {{for (y = 0; y < 4; y = y + 1) {y}}}</p>
+		<p>全局函数和对象 : {{Math.random()}}</p>
+	</div>
+</section>
+
+</body>
+</html>
