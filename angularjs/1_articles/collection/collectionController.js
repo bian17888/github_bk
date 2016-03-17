@@ -12,6 +12,8 @@ collectionModule.controller('collection', function () {
 
 	var self = this;
 
+
+
 	self.items = [
 		{name: 'name1', author: ['作者1', '作者2']},
 		{name: 'name2', author: ['作者1', '作者2', '作者3']},
