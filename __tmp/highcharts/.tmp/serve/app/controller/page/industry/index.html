@@ -1,0 +1,16 @@
+
+<!--
+Created by yangdongxu on 16/3/11.
+
+-->
+<div ng-controller="PageIndustryController as vm" ng-init="vm.init()">
+  <div class="industry-wrap">
+    <div ng-if="vm.isLoading" class="g-loading"><i class="fa fa-spin fa-spinner"></i><span style="font-size: 16px; margin-left: 10px" class="loading-dot">数据加载中</span></div>
+    <div class="highchart-wrapper">
+      <highchart ng-attr-id="{{chartID_0}}" config="chartConfig_0" style="height : 800px"></highchart>
+    </div>
+    <div timeline-bar init-time="vm.initTime"></div>
+  </div>
+  <div option-panel list="vm.list" tabs="vm.tabs" need-compare="vm.needCompare">{{vm.compares}}</div>
+  <div compare-container compares="vm.compares" cate="vm.cate"></div>
+</div>

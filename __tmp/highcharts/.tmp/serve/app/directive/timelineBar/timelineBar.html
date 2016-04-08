@@ -1,0 +1,25 @@
+
+<!--
+Created by yangdongxu on 16/3/31.
+
+-->
+<div ng-init="vm.init()" class="timeline-bar">
+  <table>
+    <tr>
+      <td ng-repeat="item in vm.months" ng-class="{true:&quot;active&quot;}[item.cur === true]" class="tip-td">
+        <div class="tip">
+          <div data-ng-bind="item.year + &quot;-&quot; + item.month" class="tip-content"></div>
+        </div><i class="fa fa-caret-down tip-caret"></i>
+        <div><img src="https://img.alicdn.com/tps/TB1qFH_MXXXXXbUXXXXXXXXXXXX-20-34.png"></div>
+      </td>
+    </tr>
+    <tr>
+      <td ng-repeat="item in vm.months" class="line">
+        <div ng-click="vm.changeTime($index)" ng-class="{true:&quot;active&quot;}[item.cur]" class="line-bar"></div>
+      </td>
+    </tr>
+    <tr>
+      <td ng-repeat="item in vm.months" width="8%"><span ng-if="item.month===1"><span data-ng-bind="item.year"></span>-</span><span data-ng-bind="item.month"></span></td>
+    </tr>
+  </table>
+</div>

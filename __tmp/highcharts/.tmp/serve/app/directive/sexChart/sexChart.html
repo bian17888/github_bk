@@ -1,0 +1,18 @@
+
+<!--
+Created by yangdongxu on 16/4/1.
+
+-->
+<div ng-init="vm.init()" class="sex-chart-container">
+  <h4>性别分布</h4>
+  <div ng-style="vm.size.femaleSizeOutObj" class="sex-circle sex-female">
+    <div ng-style="vm.size.femaleSizeObj" class="circle-color"></div><span>{{vm.female}} %</span>
+  </div>
+  <div ng-style="vm.size.maleSizeOutObj" class="sex-circle sex-male">
+    <div ng-style="vm.size.maleSizeObj" class="circle-color"></div><span>{{vm.male}} %</span>
+  </div>
+  <div class="sex-legend">
+    <div class="legend"><span class="male-legend"></span>女性</div>
+    <div class="legend"><span class="female-legend"></span>男性</div>
+  </div>
+</div>

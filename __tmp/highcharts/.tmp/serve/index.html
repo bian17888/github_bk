@@ -1,0 +1,93 @@
+<!doctype html>
+<html ng-app="cloudIndex">
+  <head>
+    <meta charset="utf-8">
+    <title>云栖指数</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="../bower_components/angular-loading-bar/build/loading-bar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/index.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div st-navbar creationDate="main.creationDate"></div>
+
+    <div ui-view></div>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/malarkey/dist/malarkey.min.js"></script>
+    <script src="../bower_components/raphael/raphael.js"></script>
+    <script src="../bower_components/lodash/lodash.js"></script>
+    <script src="../bower_components/highcharts/highcharts.js"></script>
+    <script src="../bower_components/highcharts/highcharts-more.js"></script>
+    <script src="../bower_components/highcharts/modules/exporting.js"></script>
+    <script src="../bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+    <script src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <script src="app/index.module.js"></script>
+    <script src="app/controller/page/region/index.js"></script>
+    <script src="app/controller/page/industry/index.js"></script>
+    <script src="app/controller/page/about/index.js"></script>
+    <script src="app/directive/timelineBar/timelineBar.js"></script>
+    <script src="app/directive/spiderWeb/spiderWeb.js"></script>
+    <script src="app/directive/sexChart/sexChart.js"></script>
+    <script src="app/directive/optionPanel/optionPanel.directive.js"></script>
+    <script src="app/directive/navbar/navbar.directive.js"></script>
+    <script src="app/directive/mapChart/mapChart.js"></script>
+    <script src="app/directive/industryChart/industryChart.js"></script>
+    <script src="app/directive/compareContainer/compareContainer.js"></script>
+    <script src="app/directive/ageChart/ageChart.js"></script>
+    <script src="app/controller/page/index.js"></script>
+    <script src="app/service/utils.js"></script>
+    <script src="app/service/trades.js"></script>
+    <script src="app/service/stHighchartConfig.js"></script>
+    <script src="app/service/regions.js"></script>
+    <script src="app/service/loader.js"></script>
+    <script src="app/service/geomap.js"></script>
+    <script src="app/service/color.js"></script>
+    <script src="app/service/apiService.js"></script>
+    <script src="app/service/ajax.js"></script>
+    <script src="app/model/companyModels.js"></script>
+    <script src="app/constant/events.js"></script>
+    <script src="app/constant/chinaMapGeoJSON.js"></script>
+    <script src="app/constant/apis.js"></script>
+    <script src="app/index.run.js"></script>
+    <script src="app/index.route.js"></script>
+    <script src="app/index.constants.js"></script>
+    <script src="app/index.config.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+<nav ng-init="vm.init()" class="navbar navbar-static-top navbar-inverse st-navbar-text">
+  <div class="container-fluid">
+    <div class="navbar-header"><a ui-sref="map" style="padding:0" class="navbar-brand"><img src="https://img.alicdn.com/tps/TB1JCEaMXXXXXX1XXXXXXXXXXXX-332-66.png" width="166" height="33"></a></div>
+    <div id="bs-navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in vm.navs" ng-class="{true:&quot;active&quot;}[vm.curState.which === item.key]"><a ui-sref="page({which:item.href})" href="javascript:;">{{item.title}}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

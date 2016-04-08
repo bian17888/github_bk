@@ -1,0 +1,51 @@
+
+<!--
+Created by yangdongxu on 16/3/31.
+
+-->
+<div ng-init="vm.init()" class="spider-web-wrap">
+  <div ng-if="vm.showTopBox" class="top-box">
+    <h3 ng-bind="vm.topBoxTitle"></h3>
+    <table>
+      <tr ng-repeat="item in vm.topBoxData track by $index">
+        <td ng-bind="$index + 1" class="num"></td>
+        <td ng-bind="item.name"></td>
+        <td>
+          <div ng-style="item.style" class="bar top10color_{{$index}}"></div>
+        </td>
+        <td ng-bind="item.rank" class="num"></td>
+      </tr>
+    </table>
+  </div>
+  <ul class="compare-tab">
+    <li ng-repeat="item in vm.compares track by $index"><span data-ng-bind="item.name"></span><i ng-click="vm.removeCompare($index)" class="fa fa-close"></i></li>
+  </ul>
+  <highchart config="vm.chartConfig"></highchart>
+  <div class="spider-web-table-wrap">
+    <table class="spider-web-table table-{{vm.compares.length}}">
+      <tr class="fst-tr">
+        <td ng-bind="vm.compares[0].name" class="region-name"></td>
+        <td>
+          <div ng-mouseover="vm.mouseover(&quot;云栖指数&quot;, &quot;idx&quot;)" ng-mouseout="vm.mouseout()" class="square"><span ng-bind="vm.items[0].summary.idx.rank" class="index-rank rank"></span><span class="name">云栖指数</span></div>
+        </td>
+        <td ng-repeat="item in vm.keys track by $index">
+          <div ng-mouseover="vm.mouseover(item.name, item.key)" ng-mouseout="vm.mouseout()" class="square"><span ng-bind="vm.items[0].summary[item.key].rank" class="rank"></span><span class="name">{{item.name}}</span></div>
+        </td>
+      </tr>
+      <tr ng-if="vm.compares.length === 2" class="scd-tr">
+        <td>PK</td>
+        <td><span class="name">云栖指数</span></td>
+        <td ng-repeat="item in vm.keys track by $index"><span class="name">{{item.name}}</span></td>
+      </tr>
+      <tr ng-if="vm.compares.length === 2" class="trd-tr">
+        <td ng-bind="vm.compares[1].name" class="region-name"></td>
+        <td>
+          <div class="square"><span ng-bind="vm.items[1].summary.idx.rank" class="index-rank-2 rank"></span></div>
+        </td>
+        <td ng-repeat="item in vm.keys track by $index">
+          <div class="square"><span ng-bind="vm.items[1].summary[item.key].rank" class="rank"></span></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

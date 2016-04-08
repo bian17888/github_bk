@@ -1,0 +1,134 @@
+
+<!--
+Created by yangdongxu on 16/4/1.
+
+-->
+<div ng-init="vm.init()" class="age-chart-container">
+  <h4>年龄分布</h4>
+  <div class="age-chart-table-wrap">
+    <div class="left-box"><span>%</span><span>100</span><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+    <div class="right-box">
+      <table class="chart-background">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <table class="chart-column">
+        <tr>
+          <td>
+            <div data-ng-bind="vm.columns[0].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[0]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[1].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[1]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[2].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[2]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[3].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[3]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[4].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[4]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[5].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[5]" class="column"></div>
+          </td>
+          <td>
+            <div data-ng-bind="vm.columns[6].percent + &quot;%&quot;" class="num"></div>
+            <div ng-style="vm.columns[6]" class="column"></div>
+          </td>
+        </tr>
+      </table>
+      <table class="chart-label">
+        <tr>
+          <td>&gt;20</td>
+          <td>25</td>
+          <td>30</td>
+          <td>35</td>
+          <td>40</td>
+          <td>&lt;45</td>
+          <td>age</td>
+        </tr>
+      </table>
+      <table class="chart-legend">
+        <tr>
+          <td>年龄段</td>
+          <td><span ng-style="vm.legends[0]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[1]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[2]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[3]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[4]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[5]" class="legend-span"></span></td>
+          <td><span ng-style="vm.legends[6]" class="legend-span"></span></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>>20&nbsp;&nbsp;&nbsp;</td>
+          <td>20~25</td>
+          <td>25~30</td>
+          <td>30~35</td>
+          <td>35~40</td>
+          <td>40~45</td>
+          <td>>45</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

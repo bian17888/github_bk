@@ -1,0 +1,18 @@
+
+<!--
+Created by yangdongxu on 16/3/11.
+
+-->
+<div ng-controller="PageRegionIndexController as vm" ng-init="vm.init()" class="dy-map">
+  <div ng-if="vm.isLoading" style="position: absolute" class="g-loading"><i class="fa fa-spin fa-spinner"></i><span style="font-size: 16px; margin-left: 10px" class="loading-dot">数据加载中</span></div>
+  <div ng-if="!vm.isLoading || vm.isInited" class="dy-map-box">
+    <div ng-if="vm.showMapLabel" class="dy-map-label">
+      <div class="color-label"><span ng-repeat="item in vm.mapColor track by $index" ng-style="{background:item}"></span></div>
+      <div class="color-label-text">颜色越浅表示用户越多</div>
+    </div>
+    <div id="china-map"></div>
+    <div timeline-bar init-time="vm.initTime" ng-if="vm.hasMapShow"></div>
+  </div>
+  <div option-panel list="vm.list" tabs="vm.tabs" need-compare="vm.needCompare"></div>{{vm.compares}}
+  <div compare-container compares="vm.compares" cate="vm.cate"></div>
+</div>
