@@ -4,6 +4,7 @@
 **/source/*
 !**/source/*.zip
 **/bower_components/
+**/node_modules/
 
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
