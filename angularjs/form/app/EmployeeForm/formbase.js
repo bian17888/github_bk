@@ -15,6 +15,7 @@ function FormBase($scope, efService, $uibModalInstance) {
 
   $scope.submitForm = function() {
     console.log($scope.baseForm);
+    console.log($scope.employee);
   }
 
   $scope.cancleForm = function() {

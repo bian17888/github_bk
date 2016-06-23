@@ -1,126 +1,138 @@
 ﻿<form class="form-horizontal" name="baseForm" novalidate role="form">
-    <div class="modal-header">
-        <h3 class="modal-title">Basic Form ! </h3>
-    </div>
-    <div class="modal-body">
+	<div class="modal-header">
+		<h3 class="modal-title">Basic Form ! </h3>
+	</div>
+	<div class="modal-body">
 
-        <div class="form-group" ng-class="{'has-error' : baseForm.fullName.$touched && baseForm.fullName.$invalid }">
-            <label for="fullName" class="col-sm-3 control-label">Name</label>
-            <div class="col-sm-9">
-                <input type="text" id="fullName" name="fullName" class="form-control"
-                       placeholder="请输入..." ng-model="employee.fullName" ng-required="true" ng-minlength="2"
-                       ng-maxlength="5"/>
-                <div ng-show="baseForm.$submitted || baseForm.fullName.$touched">
-                    <span class="help-block" ng-show="baseForm.fullName.$error.required">必须填写.</span>
+		<div class="form-group" ng-class="{'has-error' : baseForm.userName.$touched && baseForm.userName.$invalid }">
+			<label for="userName" class="col-sm-3 control-label">User Name (async valid)</label>
+			<div class="col-sm-9">
+				<input type="text" id="userName" name="userName" class="form-control"
+				       placeholder="异步验证用户名..." ng-model="employee.userName" username/>
+				<div ng-show="baseForm.$submitted || baseForm.userName.$touched">
+					<span class="help-block" ng-show="baseForm.userName.$pending.username">正在查询中...</span>
+					<span class="help-block" ng-show="baseForm.userName.$error.username">用户名已存在</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group" ng-class="{'has-error' : baseForm.fullName.$touched && baseForm.fullName.$invalid }">
+			<label for="fullName" class="col-sm-3 control-label">Name</label>
+			<div class="col-sm-9">
+				<input type="text" id="fullName" name="fullName" class="form-control"
+				       placeholder="请输入..." ng-model="employee.fullName" ng-required="true" ng-minlength="2"
+				       ng-maxlength="5"/>
+				<div ng-show="baseForm.$submitted || baseForm.fullName.$touched">
+					<span class="help-block" ng-show="baseForm.fullName.$error.required">必须填写.</span>
                     <span class="help-block"
                           ng-show="baseForm.fullName.$error.minlength || baseForm.fullName.$error.maxlength">长度在2~5个字符.</span>
-                </div>
-            </div>
-        </div>
+				</div>
+			</div>
+		</div>
 
-        <div class="form-group" ng-class="{'has-error' : baseForm.address.$touched && baseForm.address.$invalid }">
-            <label for="address" class="col-sm-3 control-label">Adress</label>
-            <div class="col-sm-9">
-                <input type="text" id="address" name="address" class="form-control"
-                       placeholder="请输入..." ng-model="employee.address" ng-required="true" ng-pattern="/^[abc]+/"/>
-                <div ng-show="baseForm.$submitted || baseForm.address.$touched">
-                    <span class="help-block" ng-show="baseForm.address.$error.required">必须填写.</span>
-                    <span class="help-block" ng-if="baseForm.address.$error.pattern">必须以 abc 开头.</span>
-                </div>
-            </div>
-        </div>
+		<div class="form-group" ng-class="{'has-error' : baseForm.address.$touched && baseForm.address.$invalid }">
+			<label for="address" class="col-sm-3 control-label">Adress</label>
+			<div class="col-sm-9">
+				<input type="text" id="address" name="address" class="form-control"
+				       placeholder="请输入..." ng-model="employee.address" ng-required="true" ng-pattern="/^[abc]+/"/>
+				<div ng-show="baseForm.$submitted || baseForm.address.$touched">
+					<span class="help-block" ng-show="baseForm.address.$error.required">必须填写.</span>
+					<span class="help-block" ng-if="baseForm.address.$error.pattern">必须以 abc 开头.</span>
+				</div>
+			</div>
+		</div>
 
-        <div class="form-group" ng-class="{'has-error' : baseForm.email.$touched && baseForm.email.$invalid }">
-            <label for="email" class="col-sm-3 control-label">Email</label>
-            <div class="col-sm-9">
-                <input type="email" id="email" name="email" class="form-control"
-                       placeholder="请输入..." ng-model="employee.email" ng-required="true"/>
-                <div ng-show="baseForm.$submitted || baseForm.email.$touched">
-                    <span class="help-block" ng-if="baseForm.$submitted || baseForm.email.$touched">必须是邮箱类型.</span>
-                </div>
-            </div>
-        </div>
+		<div class="form-group" ng-class="{'has-error' : baseForm.email.$touched && baseForm.email.$invalid }">
+			<label for="email" class="col-sm-3 control-label">Email</label>
+			<div class="col-sm-9">
+				<input type="email" id="email" name="email" class="form-control"
+				       placeholder="请输入..." ng-model="employee.email" ng-required="true"/>
+				<div ng-show="baseForm.$submitted || baseForm.email.$touched">
+					<span class="help-block" ng-if="baseForm.$submitted || baseForm.email.$touched">必须是邮箱类型.</span>
+				</div>
+			</div>
+		</div>
 
-        <div class="form-group">
-            <label for="notes" class="col-sm-3 control-label">Notes</label>
-            <div class="col-sm-9">
+		<div class="form-group">
+			<label for="notes" class="col-sm-3 control-label">Notes</label>
+			<div class="col-sm-9">
                 <textarea name="notes" id="notes" class="form-control" rows="5" cols="40"
                           ng-model="employee.notes"></textarea>
-            </div>
-        </div>
+			</div>
+		</div>
 
-        <div class="form-group">
-            <label for="department" class="col-sm-3 control-label">Department</label>
-            <div class="col-sm-9">
-                <select name="department" id="department" class="form-control"
-                        ng-model="employee.department"
-                        ng-options="dept for dept in departments"></select>
-            </div>
-        </div>
+		<div class="form-group">
+			<label for="department" class="col-sm-3 control-label">Department</label>
+			<div class="col-sm-9">
+				<select name="department" id="department" class="form-control"
+				        ng-model="employee.department"
+				        ng-options="dept for dept in departments"></select>
+			</div>
+		</div>
 
-        <div class="form-group">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-9">
+		<div class="form-group">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-9">
 
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkCar"
-                               ng-model="employee.perkCar"/>Company Car
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkStock"
-                               ng-model="employee.perkStock"/>Stock Options
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="perkSixWeeks"
-                               ng-model="employee.perkSixWeeks"/>Six Weeks Vacation
-                    </label>
-                </div>
-            </div>
-        </div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="perkCar"
+						       ng-model="employee.perkCar"/>Company Car
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="perkStock"
+						       ng-model="employee.perkStock"/>Stock Options
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="perkSixWeeks"
+						       ng-model="employee.perkSixWeeks"/>Six Weeks Vacation
+					</label>
+				</div>
+			</div>
+		</div>
 
 
-        <div class="form-group">
-            <div class="col-sm-3">
-            </div>
-            <div class="col-sm-9">
+		<div class="form-group">
+			<div class="col-sm-3">
+			</div>
+			<div class="col-sm-9">
 
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="payrollType" value="w2"
-                               ng-model="employee.payrollType"/> W-2
-                    </label><br/>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="payrollType" value="ten99"
-                               ng-model="employee.payrollType"/> 1099
-                    </label><br/>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="payrollType" value="none"
-                               ng-model="employee.payrollType"/> None
-                    </label><br/>
-                </div>
-                <br/>
+				<div class="radio">
+					<label>
+						<input type="radio" name="payrollType" value="w2"
+						       ng-model="employee.payrollType"/> W-2
+					</label><br/>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="payrollType" value="ten99"
+						       ng-model="employee.payrollType"/> 1099
+					</label><br/>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="payrollType" value="none"
+						       ng-model="employee.payrollType"/> None
+					</label><br/>
+				</div>
+				<br/>
 
-            </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <div class="col-sm-offset-3 col-sm-9">
-            <input type="submit" class="btn btn-primary" value="Submit"
-                   ng-click="submitForm()" ng-disabled="baseForm.$invalid"/>
-            <input type="button" class="btn btn-default" value="Cancle"
-                   ng-click="cancleForm()"/>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<div class="col-sm-offset-3 col-sm-9">
+			<input type="submit" class="btn btn-primary" value="Submit"
+			       ng-click="submitForm()" ng-disabled="baseForm.$invalid"/>
+			<input type="button" class="btn btn-default" value="Cancle"
+			       ng-click="cancleForm()"/>
+		</div>
+	</div>
 </form>
 
 
