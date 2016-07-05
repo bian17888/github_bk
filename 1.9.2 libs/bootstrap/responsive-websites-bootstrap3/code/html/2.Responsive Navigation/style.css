@@ -1,0 +1,13 @@
+header {
+	padding: 0;
+}
+
+header .navbar {
+	padding: 30px 15px;
+}
+
+header .navbar-header img {
+	display: block;
+	width: 70%;
+	height: 70%;
+}
