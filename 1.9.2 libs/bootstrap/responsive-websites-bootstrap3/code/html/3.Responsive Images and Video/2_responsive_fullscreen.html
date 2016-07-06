@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Title</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="style_fullscreen.css">
+</head>
+<body>
+
+<header class="container-fluid">
+	<h2>Footer</h2>
+</header>
+
+<article class="container-fluid">
+	<div class="row">
+		<div class="fill-screen" style="background-image: url(/images/lake.jpg);"></div>
+	</div>
+	<div class="row">
+		<div class="content-filler"></div>
+		<div class="fill-screen fixed-attachment" style="background-image: url(/images/elk.jpg);"></div>
+	</div>
+	<div class="row">
+		<div class="content-filler"></div>
+		<div class="fill-screen fixed-attachment" style="background-image: url(/images/snowboarder.jpg);"></div>
+	</div>
+</article>
+
+<footer class="container-fluid">
+	<h2>Footer</h2>
+</footer>
+
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(window).on('load resize', function(){
+			$('.fill-screen').css("height", window.innerHeight);
+		})
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+header {
+	padding: 0;
+}
+
+header .navbar {
+	padding: 30px 15px;
+}
+
+.container-fluid {
+	padding: 0;
+	margin: 0;
+}
+
+.fill-screen {
+	background-position: center;;
+	background-size: cover;
+}
+
+.fixed-attachment {
+	background-attachment: fixed;
+}
+
+.content-filler {
+	min-height: 350px;
+}
+
+@media (max-width: 1024px) {
+	.fixed-attachment {
+		background-attachment: scroll;
+	}
+}
