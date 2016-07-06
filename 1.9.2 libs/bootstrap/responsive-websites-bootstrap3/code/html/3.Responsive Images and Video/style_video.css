@@ -1,5 +1,17 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top: 110px;
+}
+
 header {
-	padding: 0;
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+	min-height: 100%;
 }
 
 header .navbar {
