@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_practice",
+  "homepage": "https://github.com/bian17888/github_bk",
+  "authors": [
+    "zhuzhen.bk <zhuzhen.bk@alibaba-inc.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "formstone": "^1.2.0",
+    "components-font-awesome": "^4.6.3",
+    "jquery.easing": "^1.3.1",
+    "jquery.stellar": "^0.6.2"
+  }
+}
