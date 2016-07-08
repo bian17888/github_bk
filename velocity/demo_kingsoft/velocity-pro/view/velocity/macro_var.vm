@@ -1,3 +1,0 @@
-#set($project = "console")
-#set($WEB_ROOT = "")
-#set($STATIC_ROOT = $WEB_ROOT + "/resources/" + $project +"/")

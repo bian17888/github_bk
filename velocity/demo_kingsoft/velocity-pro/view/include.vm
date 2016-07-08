@@ -1,3 +1,0 @@
-
-#set( $all = "include" )
-parse :all is ${all}

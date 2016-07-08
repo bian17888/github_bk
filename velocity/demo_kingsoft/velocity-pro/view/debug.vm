@@ -1,4 +1,0 @@
-看不见调试信息的亲， <br>
-只有加?debug=true 才会显示  <br>
-
-#debug("cychai")
