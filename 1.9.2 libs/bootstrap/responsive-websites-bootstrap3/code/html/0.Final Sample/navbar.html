@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Navbar</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bower_components/formstone/dist/css/background.css">
+	<link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="/bower_components/nanoGALLERY/dist/css/nanogallery.min.css">
+	<link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grounped for better mobile display -->
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+				        data-target="#bs_navbar_collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="img-logo" src="/images/site-logo-white-70pct.png" alt="site-logo-white-70pct">
+			</div>
+
+			<!-- Collect the nav links, and other content for toggling -->
+			<div id="bs_navbar_collapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#sights">Sights</a></li>
+					<li><a href="#sports">Sports</a></li>
+					<li><a href="#activities">Activities</a></li>
+
+
+					<li class="dropdown">
+						<a id="drop1" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Contact Us <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="drop1">
+							<li class="dropdown">
+								<a id="drop11" href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Contact Us <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="drop11">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<div class="container-fluid">
+	<section id="home" class="row title-row">
+		<div class="fill-screen" data-source="/images/1.jpg">
+			<div class="title-image" data-stellar-ratio="2">
+				<img src="/images/site-logo-white.png" alt="Rocky Mountain Outdoors Logo"/>
+			</div>
+			<div class="down-button" data-stellar-ratio="2">
+				<a class="btn" href="#sights">
+					<i class="fa fa-arrow-circle-down fa-4x"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- sights -->
+	<section id="sights" class="row text-banner wow fadeInDown">
+		<h2>VISIT THE ROCKY MOUNTAINS</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat.</p>
+	</section>
+
+	<!-- sports -->
+	<section id="sports" class="row">
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1"></li>
+				<li data-target="#carousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="/images/201.jpg" alt="Scale Mountain">
+					<div class="carousel-caption">
+						<h3>Scale the Mountain</h3>
+						<p>Our sub-title goes here</p>
+					</div>
+				</div>
+				<div class="item">
+					<img src="/images/202.jpg" alt="Mountain">
+				</div>
+				<div class="item">
+					<img src="/images/203.jpg" alt="Rockies">
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<!-- activities -->
+	<section id="activities" class="row text-banner">
+		<div class="activity-element col-md-4 wow fadeInLeft">
+			<img src="/images/map.png"/>
+			<h2>Orienteering</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua.</p>
+		</div>
+		<div class="activity-element col-md-4 wow fadeInLeft">
+			<img src="/images/pic.png"/>
+			<h2>Rock Climbing</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+		</div>
+		<div class="activity-element col-md-4 wow fadeInLeft">
+			<img src="/images/backpack.png"/>
+			<h2>Backpacking</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+		</div>
+	</section>
+	<section class="row">
+		<div id="nanoGallery">
+			<a href="buller-lake.jpg" data-ngthumb="buller-lake.jpg">Buller Lake</a>
+			<a href="canada.jpg" data-ngthumb="canada.jpg">Canadian Rockies</a>
+			<a href="landscape.jpg" data-ngthumb="landscape.jpg">Landscape</a>
+			<a href="mountain-flowers.jpg" data-ngthumb="mountain-flowers.jpg">Mountain Flowers</a>
+			<a href="road-sign.jpg" data-ngthumb="road-sign.jpg">Icy Road Sign</a>
+			<a href="rockies.jpg" data-ngthumb="rockies.jpg">Rockies</a>
+			<a href="scale-mountain.jpg" data-ngthumb="scale-mountain.jpg">Scaling</a>
+			<a href="sit-on-mountain.jpg" data-ngthumb="sit-on-mountain.jpg">Looking</a>
+		</div>
+	</section>
+
+	<!-- contact-us -->
+	<section class="row">
+		<div class="fill-screen fixed-attachment" data-source="/images/3.jpg"></div>
+	</section>
+	<section id="contact_us" class="row text-banner wow fadeInDown">
+		<h1>CONTACT US</h1>
+		<h3>Somewhere in Colorado</h3>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p>Lorem ipsum dolor sit amet</p>
+	</section>
+</div>
+
+<footer class="container-fluid">
+	<h2>Footer</h2>
+</footer>
+
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/jquery.easing/js/jquery.easing.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/bower_components/formstone/dist/js/core.js"></script>
+<script src="/bower_components/formstone/dist/js/transition.js"></script>
+<script src="/bower_components/formstone/dist/js/background.js"></script>
+<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
+<script src="/bower_components/wow/dist/wow.js"></script>
+<script src="/bower_components/nanoGALLERY/dist/jquery.nanogallery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
