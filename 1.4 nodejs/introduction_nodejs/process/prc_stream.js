@@ -14,3 +14,9 @@ process.stdin.on('data', function (chunk) {
 process.stdin.on('end', function () {
 	process.stdout.write('End \n');
 });
+
+console.log(process.env);
+console.log(process.pid);
+console.log(process.uptime());
+console.log(process.cwd());
+
