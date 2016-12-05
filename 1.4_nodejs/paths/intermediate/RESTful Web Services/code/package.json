@@ -1,0 +1,19 @@
+{
+  "name": "restful_web_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bian17888",
+  "license": "ISC",
+  "dependencies": {
+    "co-body": "^4.2.0",
+    "koa": "^1.2.4",
+    "koa-route": "^2.4.2",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.7.0",
+    "monk": "^3.1.3"
+  }
+}
