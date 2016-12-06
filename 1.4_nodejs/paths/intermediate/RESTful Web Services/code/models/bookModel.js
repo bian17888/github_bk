@@ -13,7 +13,9 @@ var url = 'mongodb://localhost:27017/quickstart';
 module.exports = {
 	findCollection    : findCollection,
 	findCollectionById: findCollectionById,
-	insertCollection  : insertCollection
+	insertCollection  : insertCollection,
+	updateCollection  : updateCollection,
+	updateCollectionAttribute : updateCollectionAttribute
 };
 
 //////////////////////////////////////////////////
@@ -53,6 +55,40 @@ function insertCollection(name, newObj) {
 				fn(null, result);
 				db.close();
 			});
+		});
+	}
+}
+
+function updateCollection(name, id, newObj) {
+	return function (fn) {
+		MongoClient.connect(url, function (err, db) {
+			var collection = db.collection(name);
+			var oldObj = {
+				'_id': new ObjectId(id)
+			};
+			collection
+				.updateOne(oldObj, newObj)
+				.then(function (result) {
+					fn(null, result);
+					db.close();
+				});
+		});
+	}
+}
+
+function updateCollectionAttribute(name, id, newObj) {
+	return function (fn) {
+		MongoClient.connect(url, function (err, db) {
+			var collection = db.collection(name);
+			var oldObj = {
+				'_id': new ObjectId(id)
+			};
+			collection
+				.updateOne(oldObj, {$set : newObj})
+				.then(function (result) {
+					fn(null, result);
+					db.close();
+				});
 		});
 	}
 }

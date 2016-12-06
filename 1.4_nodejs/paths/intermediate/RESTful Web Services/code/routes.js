@@ -10,18 +10,29 @@ var routes = [
 	{
 		method    : 'get',
 		path      : '/books',
-		controller: require('./controllers').index
-	},
-	{
-		method    : 'get',
-		path      : '/books/:bookId',
-		controller: require('./controllers').book
+		controller: require('./controllers').getBooks
 	},
 	{
 		method    : 'post',
 		path      : '/books',
 		controller: require('./controllers').insertBook
+	},
+	{
+		method    : 'get',
+		path      : '/books/:bookId',
+		controller: require('./controllers').getBook
+	},
+	{
+		method    : 'put',
+		path      : '/books/:bookId',
+		controller: require('./controllers').updateBook
+	},
+	{
+		method    : 'patch',
+		path      : '/books/:bookId',
+		controller: require('./controllers').updateBookAttribute
 	}
+
 ];
 
 module.exports.init = function (app) {
