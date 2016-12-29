@@ -58,7 +58,7 @@
 			return $http(_config)
 				.then(commonAjaxComplete)
 				.catch(function (message) {
-					exception.catcher(errInfo)(message);
+					console.log(message + ' ----- ' + errInfo);
 				});
 
 			function commonAjaxComplete(data) {
