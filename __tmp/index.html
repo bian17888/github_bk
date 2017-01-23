@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular-route/angular-route.js"></script>
+	<script src="routes.js"></script>
+</head>
+<body ng-controller="Main as vm">
+<article>
+	<p>{{ vm.title }}</p>
+	<p>
+		<a href="#!/books">books</a>
+		<a href="#!/videos">videos</a>
+	</p>
+</article>
+<article data-ng-view></article>
+</body>
+</html>

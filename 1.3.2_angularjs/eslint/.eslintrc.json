@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser" : true,
+    "node" : true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint-config-airbnb-base",
+    "angular"
+  ],
+  "rules": {
+    "no-console" : "off",
+    "angular/controller-name": [2, "/^[A-Z].*/"]
+  }
+}
