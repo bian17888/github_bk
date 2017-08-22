@@ -27,7 +27,7 @@
 
         function search() {
             if (vm.query) {
-                $location.path('/results').search('q', vm.query);
+                $location.path('/result').search('q', vm.query);
             }
         }
     }

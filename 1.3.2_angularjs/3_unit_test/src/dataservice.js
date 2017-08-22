@@ -6,7 +6,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngResource'])
+        .module('app')
         .factory('dataservice', dataservice);
 
     dataservice.$inject = ['$http', '$q', '$resource'];
