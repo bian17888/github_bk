@@ -17,5 +17,8 @@
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-safaritechpreview-launcher": "^0.0.6",
     "phantomjs": "^1.9.18"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
