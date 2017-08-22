@@ -16,9 +16,9 @@ describe('Search Controller', function () {
     }));
 
     it('should redirect to the search', function(){
-        $this = $controller('Search', {$location : $location}, {query : 'star+wars'});
+        $this = $controller('Search', {$location : $location}, {query : 'github_bk'});
         $this.search();
-        expect($location.url()).toBe('/results?q=star%2Bwars')
+        expect($location.url()).toBe('/result?q=github_bk')
     });
 
     it('should not redirect to the search', function(){
