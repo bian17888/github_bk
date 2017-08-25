@@ -5,6 +5,7 @@
 
 describe('Result Controller', function () {
 
+    var $httpBackend;
     var $rootScope;
     var $location;
     var $q;
@@ -12,10 +13,11 @@ describe('Result Controller', function () {
     var dataservice;
     var $this;
 
-    var result = {name: 'bian17888'};
+    var reposData = readJSON('mock/repos.json');
 
     beforeEach(angular.mock.module('app'));
-    beforeEach(angular.mock.inject(function (_$rootScope_, _$location_, _$q_, _$controller_, _dataservice_) {
+    beforeEach(angular.mock.inject(function (_$httpBackend_, _$rootScope_, _$location_, _$q_, _$controller_, _dataservice_) {
+        $httpBackend = _$httpBackend_;
         $rootScope = _$rootScope_;
         $location = _$location_;
         $q = _$q_;
@@ -24,26 +26,24 @@ describe('Result Controller', function () {
     }));
 
     it('should load search result ', function () {
-        spyOn(dataservice, 'find').and.callFake(function () {
-            var deferred = $q.defer();
-            deferred.resolve(result);
-            return deferred.promise;
-        });
-        $location.search('q', 'star+wars');
+        var expectedUrl = /^https:\/\/api.github.com\/users\/\w+\/repos$/;
+
+        $httpBackend.expect('GET', expectedUrl)
+            .respond(200, reposData);
+        $location.search('q', 'bian17888');
         $this = $controller('Result', {});
-        $rootScope.$apply();
-        expect($this.data.name).toBe(result.name)
+        $httpBackend.flush();
+        expect($this.results).toBeDefined();
     });
 
-    it('should set result status to error ', function () {
-        spyOn(dataservice, 'find').and.callFake(function () {
-            var deferred = $q.defer();
-            deferred.reject();
-            return deferred.promise;
-        });
-        $location.search('q', 'star+wars');
+    it('should load search result to error ', function () {
+        var expectedUrl = /^https:\/\/api.github.com\/users\/\w+\/repos$/;
+
+        $httpBackend.expect('GET', expectedUrl)
+            .respond(500, 'Error!');
+        $location.search('q', 'bian17888');
         $this = $controller('Result', {});
-        $rootScope.$apply();
-        expect($this.data).toBe('error')
+        $httpBackend.flush();
+        expect($this.results.error).toBe('Error!');
     });
 });

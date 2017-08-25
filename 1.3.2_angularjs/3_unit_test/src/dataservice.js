@@ -13,22 +13,23 @@
 
     /* @ngInject */
     function dataservice($http, $q, $resource) {
-        var baseUrl = 'https://api.github.com/repos/bian17888/';
+        var baseUrl = 'https://api.github.com/';
+        var reposUrl = baseUrl + 'users/:username/repos';
         var service = {
-            popularMovie: popularMovie,
+            UserRepos: UserRepos,
             find: find
         };
         return service;
 
         ////////////////
 
-        function popularMovie() {
-            var _Movie = $resource('popular/:movieId', {movieId: '@id'}, {
+        function UserRepos() {
+            var _Repos = $resource(reposUrl, {username: '@name'}, {
                 update: {
                     method: 'PUT'
                 }
             });
-            return _Movie;
+            return _Repos;
         }
 
         function find(repository) {

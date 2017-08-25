@@ -1,16 +1,13 @@
-<div>
+<article>
     <br>
     <ol class="breadcrumb">
         <li><a ng-href="#/">Home</a></li>
         <li>Results</li>
     </ol>
 
-    <accordion>
-        <accordion-group ng-repeat="result in vm.results" is-open="result.open">
-            <accordion-heading>
-                {{result.Title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': result.open, 'glyphicon-chevron-right': !result.open}"></i>
-            </accordion-heading>
-        </accordion-group>
-    </accordion>
-
-</div>
+    <uib-accordion close-others="true">
+        <section uib-accordion-group class="panel-default" heading="{{val.name}}" ng-repeat="val in vm.results">
+            {{val.description}}
+        </section>
+    </uib-accordion>
+</article>

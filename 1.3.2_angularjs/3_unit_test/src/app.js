@@ -11,7 +11,8 @@
             $routeProvider
                 .when('/result', {
                     templateUrl: 'result.html',
-                    controller: 'Result'
+                    controller: 'Result',
+                    controllerAs : 'vm'
                 })
                 .otherwise({
                     redirectTo: '/'

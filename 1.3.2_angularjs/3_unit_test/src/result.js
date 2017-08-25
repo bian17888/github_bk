@@ -15,17 +15,19 @@
     function Result($location, dataservice) {
         var vm = this;
         var query = $location.search().q;
-        vm.data = null;
+
+        vm.results = [];
+        vm.title = '123';
 
         activate();
 
         ////////////////
 
         function activate() {
-            dataservice.find(query).then(function (data) {
-                vm.data = data;
-            }, function(){
-                vm.data = 'error';
+            dataservice.UserRepos().query({username: query}, function (data) {
+                vm.results = data;
+            }, function (err) {
+                vm.results.error = 'Error!'
             })
         }
 

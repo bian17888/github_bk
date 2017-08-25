@@ -9,13 +9,17 @@
         .module('app')
         .controller('Search', Search);
 
-    Search.$inject = ['$location'];
+    Search.$inject = ['$location', '$timeout'];
 
     /* @ngInject */
-    function Search($location) {
+    function Search($location, $timeout) {
         var vm = this;
+        var timer = null;
+
         vm.title = 'Search';
         vm.search = search;
+        vm.keyup = keyup;
+        vm.keydown = keydown;
 
         activate();
 
@@ -26,9 +30,18 @@
         }
 
         function search() {
+            $timeout.cancel(timer);
             if (vm.query) {
                 $location.path('/result').search('q', vm.query);
             }
+        }
+
+        function keyup() {
+            timer = $timeout(search, 1000);
+        }
+
+        function keydown() {
+            $timeout.cancel(timer);
         }
     }
 
