@@ -9,6 +9,11 @@
         .module('app', ['ui.bootstrap', 'ngRoute', 'ngResource'])
         .config(function ($routeProvider) {
             $routeProvider
+                .when('/', {
+                    templateUrl: 'home.html',
+                    controller: 'Home',
+                    controllerAs : 'vm'
+                })
                 .when('/result', {
                     templateUrl: 'result.html',
                     controller: 'Result',
