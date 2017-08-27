@@ -24,24 +24,22 @@ describe('home controller', function () {
         $this = $controller('Home', {$interval: $interval});
     }));
 
-    it('should load the lastest repos and rotate repos every 5 seconds .', function () {
+    it('should load the lastest repos and rotate repos every 2 seconds .', function () {
 
         $httpBackend.expect('GET', expectedUrl)
             .respond(200, reposData);
         $httpBackend.flush();
         expect($this.results).toBeDefined();
 
-        dump(angular.mock.dump($this.repos));
-        
         // should have a default starting movie
         expect($this.repos.name).toEqual(reposData[0].name);
 
-        // after 5 seconds, should be next movie
-        $interval.flush(2000);
-        expect($this.repos.name).toBe(reposData[0].name);
-        // after 5 seconds, should be next movie
+        // after 2 seconds, should be next movie
         $interval.flush(2000);
         expect($this.repos.name).toBe(reposData[1].name);
+        // after 2 seconds, should be next movie
+        $interval.flush(2000);
+        expect($this.repos.name).toBe(reposData[2].name);
     });
 
     it('should load the lastest repos to error .', function () {

@@ -28,8 +28,6 @@
                 vm.results = data;
                 autoShowRepos(data);
             }, function (err) {
-                console.log('==========');
-                console.log(err);
                 vm.results.error = 'Error'
             });
         }
