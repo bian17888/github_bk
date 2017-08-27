@@ -24,7 +24,9 @@ module.exports = function (config) {
             'src/**/*.js',
             'spec/**/*.js',
             // fixtures
-            {pattern: 'mock/**/*.json', included: false}
+            {pattern: 'mock/**/*.json', included: false},
+            // karma load directive templateUrl
+            'src/widgets/**/*.html'
         ],
 
 
@@ -34,8 +36,13 @@ module.exports = function (config) {
 
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-        preprocessors: {},
+        preprocessors: {
+            'src/widgets/**/*.html': ['ng-html2js']
+        },
 
+        ngHtml2JsPreprocessor: {
+            stripPrefix: 'src/'
+        },
 
         // test results reporter to use
         // possible values: 'dots', 'progress'
