@@ -15,7 +15,8 @@
         // ////////////////////////////////////////////////
 
         function upperCaseFilter(parameters) {
-            return parameters.toUpperCase();
+            var _parameters = parameters || '';
+            return _parameters.toUpperCase();
         }
     }
 

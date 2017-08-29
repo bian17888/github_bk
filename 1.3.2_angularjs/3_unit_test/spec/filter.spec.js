@@ -15,7 +15,7 @@ describe('App filters', function () {
     }));
 
     it('should return upper string', function () {
-        dump(angular.mock.dump(f_upperCase('ffjj')));
+        dump(angular.mock.dump(f_upperCase('Beck')));
     });
 
 });
