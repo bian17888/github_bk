@@ -5,6 +5,12 @@ process.stdin.on("data", chunk => {
   process.stdout.write("Data -----> " + chunk);
 });
 
-process.stdin.on("error", err => {
-  process.stdout.write("End! \n");
+process.stdin.on("end", err => {
+  process.stderr.write("End! \n");
 });
+
+process.on("SIGTERM", err => {
+  process.stderr.write("Why are you try to ternate me ?");
+});
+
+console.log("Node is running as process # " + process.pid);
