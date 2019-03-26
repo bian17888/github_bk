@@ -1,5 +1,5 @@
 const chai = require("chai");
-const should = chai.should();
+const expect = chai.expect;
 const sinon = require("sinon");
 const inquirer = require("inquirer");
 const CredentialManager = require("../lib/credential-manager");
@@ -13,16 +13,16 @@ describe("a credential manager", () => {
     it("should prompt the user", async () => {
       sinon.stub(inquirer, "prompt").resolves({ key: "foo", secret: "bar" });
       let [key, secret] = await creds.getKeyAndSecret();
-      key.should.equal("foo");
-      secret.should.equal("bar");
+      expect(key).equal("foo");
+      expect(secret).equal("bar");
       inquirer.prompt.restore();
     });
   });
   context("with existing credentials", () => {
     it("should return them", async () => {
       let [key, secret] = await creds.getKeyAndSecret();
-      key.should.equal("foo");
-      secret.should.equal("bar");
+      expect(key).equal("foo");
+      expect(secret).equal("bar");
     });
   });
   after(() => {
