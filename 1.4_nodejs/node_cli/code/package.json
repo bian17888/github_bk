@@ -7,12 +7,16 @@
     "twine": "./bin/twine.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.15.3"
+    "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-plugin-mocha": "^5.3.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.0"
   },
   "dependencies": {
     "configstore": "^4.0.0",
