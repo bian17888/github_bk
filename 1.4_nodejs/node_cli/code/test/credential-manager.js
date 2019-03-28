@@ -25,8 +25,7 @@ describe("a credential manager", () => {
       expect(secret).equal("bar");
     });
   });
-  after(() => {
-    creds.conf.delete("apiKey");
-    creds.conf.delete("apiSecret");
+  after(async () => {
+    await creds.clearKeyAndSecret();
   });
 });
