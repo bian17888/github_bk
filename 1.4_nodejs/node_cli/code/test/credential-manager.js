@@ -13,16 +13,16 @@ describe("a credential manager", () => {
     it("should prompt the user", async () => {
       sinon.stub(inquirer, "prompt").resolves({ key: "foo", secret: "bar" });
       let [key, secret] = await creds.getKeyAndSecret();
-      expect(key).equal("foo");
-      expect(secret).equal("bar");
+      expect(key).to.equal("foo");
+      expect(secret).to.equal("bar");
       inquirer.prompt.restore();
     });
   });
   context("with existing credentials", () => {
     it("should return them", async () => {
       let [key, secret] = await creds.getKeyAndSecret();
-      expect(key).equal("foo");
-      expect(secret).equal("bar");
+      expect(key).to.equal("foo");
+      expect(secret).to.equal("bar");
     });
   });
   after(async () => {
