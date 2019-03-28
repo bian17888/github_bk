@@ -1,16 +1,17 @@
 const ConfigStore = require("configstore");
 const inquirer = require("inquirer");
-const pkg = require("../package.json");
+const keytar = require("keytar");
 
 class CredentialManager {
   constructor(name) {
     this.conf = new ConfigStore(name);
+    this.service = name;
   }
 
   async getKeyAndSecret() {
     let key = this.conf.get("apiKey");
     if (key) {
-      let secret = this.conf.get("apiSecret");
+      let secret = await keytar.getPassword(this.service, key);
       return [key, secret];
     } else {
       let answers = await inquirer.prompt([
@@ -26,9 +27,14 @@ class CredentialManager {
         }
       ]);
       this.conf.set("apiKey", answers.key);
-      this.conf.set("apiSecret", answers.secret);
+      await keytar.setPassword(this.service, answers.key, answers.secret);
       return [answers.key, answers.secret];
     }
+  }
+  async clearKeyAndSecret() {
+    let key = this.conf.get("apiKey");
+    this.conf.delete(key);
+    await keytar.deletePassword(this.service, key);
   }
 }
 
