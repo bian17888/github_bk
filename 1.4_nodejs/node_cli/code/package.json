@@ -20,6 +20,7 @@
     "sinon": "^7.3.0"
   },
   "dependencies": {
+    "commander": "^2.19.0",
     "configstore": "^4.0.0",
     "inquirer": "^6.2.2",
     "keytar": "^4.4.1"
